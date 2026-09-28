@@ -3,12 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GridLab · Accedi</title>
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>PoleLap · Accedi</title>
 <link rel="stylesheet" href="gl.css">
+<script src="gl-analytics.js"></script>
 </head>
 <body>
 <div class="wrap narrow">
-  <h1>GridLab <span class="dot">·</span> Accedi</h1>
+  <h1>PoleLap <span class="dot">·</span> Accedi</h1>
   <p class="sub">Nessuna password. Ti arriva un link via email, valido una volta sola.</p>
 
   <div class="card">
@@ -22,11 +24,14 @@
 
   <p class="foot">
     Raccogliamo solo l'email, tramite Supabase Auth · nessun altro dato personale ·
-    <a href="index.html">torna al sito</a>
+    <a href="privacy.html">privacy</a> · <a href="index.html">torna al sito</a>
   </p>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<!-- versione FISSATA: "@2" serviva l'ultima 2.x qualunque essa fosse,
+     cioe' codice non revisionato su una pagina che tiene la sessione. -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.106.2/dist/umd/supabase.js"
+        integrity="sha384-m/8UHFJHeU6nrCKP2hBnAseuvAKUmLF+8e5bWos5CJL023vuxX7kiVL5t8yjsJhV" crossorigin="anonymous"></script>
 <script src="sb.js"></script>
 <script>
 const say = (t, k = 'info') => $('#msg').innerHTML = `<div class="msg ${k}">${t}</div>`;
