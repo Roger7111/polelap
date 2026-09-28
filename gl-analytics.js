@@ -18,7 +18,10 @@
 // ── ATTIVAZIONE ────────────────────────────────────────────────────────────
 // 1. registrarsi su https://www.goatcounter.com (nome del sito = CODICE)
 // 2. scrivere quel codice qui sotto
-// 3. ridistribuire con _pubdeploy.bat
+// 3. aprire la CSP, il meta in testa a OGNI pagina (dal 28/09): https://gc.zgo.at in
+//    script-src, https://<CODICE>.goatcounter.com in connect-src e img-src. Senza, il
+//    browser blocca il conteggio in silenzio (tests/test_giunzioni.py vuole CSP uguali)
+// 4. ridistribuire con _pubdeploy.bat
 // Finche' CODICE resta vuoto questo file NON fa una sola richiesta di rete:
 // e' inerte, non rotto.
 const GC_CODE = "";
