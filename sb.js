@@ -1,4 +1,4 @@
-// GridLab — client Supabase condiviso (M2.1). Caricare DOPO il CDN di supabase-js.
+// PoleLap — client Supabase condiviso (M2.1). Caricare DOPO il CDN di supabase-js.
 //
 // La chiave qui sotto e' la ANON key: PUBBLICA by design, e' pensata per stare nel
 // browser. La sicurezza NON la fa la segretezza della chiave ma le RLS del database,
@@ -12,7 +12,7 @@ const sb = supabase.createClient(SB_URL, SB_ANON);
 const $ = s => document.querySelector(s);
 
 // URL assoluto di una pagina vicina. Serve per emailRedirectTo: il sito vive su
-// roger7111.github.io/gridlab-f1/, quindi window.location.origin da solo perderebbe
+// roger7111.github.io/polelap/, quindi window.location.origin da solo perderebbe
 // il sottopercorso e il magic link atterrerebbe fuori dal sito.
 const pagina = nome => new URL(nome, window.location.href).href;
 
