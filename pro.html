@@ -3,12 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GridLab · Previsioni pro</title>
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>PoleLap · Previsioni pro</title>
 <link rel="stylesheet" href="gl.css">
+<script src="gl-analytics.js"></script>
 </head>
 <body>
 <div class="wrap">
-  <h1>GridLab <span class="dot">·</span> Previsioni pro</h1>
+  <h1>PoleLap <span class="dot">·</span> Previsioni pro</h1>
   <p class="sub">Profondita completa e freeze anticipati. Il gating non e' in questa
      pagina: e' nel database (RLS). Se non hai diritto, la query torna vuota — non
      nascosta lato client.</p>
@@ -18,10 +20,13 @@
   <div id="bar" class="sub"></div>
   <div id="out"><div class="card"><span class="sub">Caricamento…</span></div></div>
   <p class="foot">Probabilita calibrate su backtest storico · non sono consigli di
-     scommessa · vedi VALIDATION.md nel repo pubblico</p>
+     scommessa · vedi VALIDATION.md nel repo pubblico · <a href="privacy.html">privacy</a></p>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<!-- versione FISSATA: "@2" serviva l'ultima 2.x qualunque essa fosse,
+     cioe' codice non revisionato su una pagina che tiene la sessione. -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.106.2/dist/umd/supabase.js"
+        integrity="sha384-m/8UHFJHeU6nrCKP2hBnAseuvAKUmLF+8e5bWos5CJL023vuxX7kiVL5t8yjsJhV" crossorigin="anonymous"></script>
 <script src="sb.js"></script>
 <script>
 const card = h => $('#out').innerHTML = `<div class="card">${h}</div>`;
