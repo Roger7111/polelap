@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GridLab · Live dal database</title>
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>PoleLap · Live dal database</title>
 <!-- M2.1 (BACKEND_ROADMAP): prova end-to-end del pattern statico + supabase-js.
      La chiave qui sotto e' la ANON key: PUBBLICA by design, le RLS proteggono i
      dati (boundary free/pro certificato da certifica_rls.py). NON e' un segreto.
@@ -42,10 +43,11 @@
   .err{background:#2a1414;border:1px solid #5a2020;color:#f0b0b0;padding:14px;border-radius:10px}
   a{color:var(--silver)}
 </style>
+<script src="gl-analytics.js"></script>
 </head>
 <body>
 <div class="wrap">
-  <h1>GridLab <span class="dot">·</span> Live</h1>
+  <h1>PoleLap <span class="dot">·</span> Live</h1>
   <p class="sub">Previsioni lette in tempo reale dal database (Supabase), non da file statici.</p>
 
   <div class="bar-row">
@@ -57,10 +59,13 @@
   <div id="out"></div>
 
   <p class="foot">Dati serviti via <code>supabase-js</code> con chiave anonima · RLS attiva
-     (le previsioni <b>pro</b> non sono leggibili senza login) · <a href="index.html">torna al sito</a></p>
+     (le previsioni <b>pro</b> non sono leggibili senza login) · <a href="privacy.html">privacy</a> · <a href="index.html">torna al sito</a></p>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<!-- versione FISSATA: "@2" serviva l'ultima 2.x qualunque essa fosse,
+     cioe' codice non revisionato su una pagina che tiene la sessione. -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.106.2/dist/umd/supabase.js"
+        integrity="sha384-m/8UHFJHeU6nrCKP2hBnAseuvAKUmLF+8e5bWos5CJL023vuxX7kiVL5t8yjsJhV" crossorigin="anonymous"></script>
 <script>
 const SB_URL = "https://zakblhuidoiarhahzlsu.supabase.co";
 const SB_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpha2JsaHVpZG9pYXJoYWh6bHN1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQyNzgwMjIsImV4cCI6MjA5OTg1NDAyMn0.-pZBLIeZnVObOIIRA4ZXpZsnwk2wPNvtTcqAvWEwEa8";
@@ -111,7 +116,9 @@ function render(row){
 (async () => {
   const { data, error } = await sb.from("predictions")
     .select("race_id,stage,computed_at,payload")
-    .eq("audience","free").eq("prediction_type","race");
+    .eq("audience","free").eq("prediction_type","race")
+    // solo freeze PRIMA della gara: i post-race sono fotografie a gara finita, non previsioni
+    .in("stage",["pre-weekend","post-fp2","post-fp3","post-quali"]);
   if (error){ $("#out").innerHTML = `<div class="err">Errore lettura DB: ${error.message}</div>`; return; }
   if (!data || !data.length){ $("#out").innerHTML = '<div class="err">Nessuna previsione nel database.</div>'; return; }
   const races = latestPerRace(data);
