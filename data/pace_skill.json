@@ -1,77 +1,101 @@
 {
- "generato_utc": "2026-07-27T16:51:27Z",
+ "generato_utc": "2026-09-26T21:09:20Z",
  "metodo": "previsione leakage-free vs passo gara fuel-corrected (DNF-immune), 2026",
  "season": {
-  "n_gare": 11,
-  "spearman_pace": 0.901,
-  "spearman_finish": 0.636
+  "n_gare": 15,
+  "spearman_pace": 0.91,
+  "spearman_finish": 0.649
  },
  "gare": [
   {
    "race": "Australian Grand Prix",
    "circuit": "balanced",
-   "spearman_pace": 0.696,
-   "spearman_finish": 0.322
+   "spearman_pace": 0.716,
+   "spearman_finish": 0.348
   },
   {
    "race": "Chinese Grand Prix",
    "circuit": "power",
-   "spearman_pace": 0.773,
-   "spearman_finish": 0.577
+   "spearman_pace": 0.897,
+   "spearman_finish": 0.606
   },
   {
    "race": "Japanese Grand Prix",
    "circuit": "aero",
-   "spearman_pace": 0.888,
-   "spearman_finish": 0.837
+   "spearman_pace": 0.892,
+   "spearman_finish": 0.844
   },
   {
    "race": "Miami Grand Prix",
    "circuit": "balanced",
-   "spearman_pace": 0.942,
-   "spearman_finish": 0.643
+   "spearman_pace": 0.946,
+   "spearman_finish": 0.645
   },
   {
    "race": "Canadian Grand Prix",
    "circuit": "balanced",
-   "spearman_pace": 0.932,
-   "spearman_finish": 0.409
+   "spearman_pace": 0.942,
+   "spearman_finish": 0.423
   },
   {
    "race": "Monaco Grand Prix",
    "circuit": "street",
-   "spearman_pace": 0.9,
-   "spearman_finish": 0.373
+   "spearman_pace": 0.91,
+   "spearman_finish": 0.357
   },
   {
    "race": "Barcelona Grand Prix",
    "circuit": "aero",
-   "spearman_pace": 0.956,
-   "spearman_finish": 0.739
+   "spearman_pace": 0.965,
+   "spearman_finish": 0.722
   },
   {
    "race": "Austrian Grand Prix",
    "circuit": "power",
-   "spearman_pace": 0.946,
-   "spearman_finish": 0.933
+   "spearman_pace": 0.923,
+   "spearman_finish": 0.913
   },
   {
    "race": "British Grand Prix",
    "circuit": "aero",
-   "spearman_pace": 0.958,
+   "spearman_pace": 0.968,
    "spearman_finish": 0.589
   },
   {
    "race": "Belgian Grand Prix",
    "circuit": "power",
-   "spearman_pace": 0.978,
-   "spearman_finish": 0.77
+   "spearman_pace": 0.935,
+   "spearman_finish": 0.74
   },
   {
    "race": "Hungarian Grand Prix",
    "circuit": "aero",
-   "spearman_pace": 0.945,
-   "spearman_finish": 0.806
+   "spearman_pace": 0.911,
+   "spearman_finish": 0.77
+  },
+  {
+   "race": "Dutch Grand Prix",
+   "circuit": "aero",
+   "spearman_pace": 0.872,
+   "spearman_finish": 0.744
+  },
+  {
+   "race": "Italian Grand Prix",
+   "circuit": "power",
+   "spearman_pace": 0.868,
+   "spearman_finish": 0.701
+  },
+  {
+   "race": "Spanish Grand Prix",
+   "circuit": "street",
+   "spearman_pace": 0.96,
+   "spearman_finish": 0.784
+  },
+  {
+   "race": "Azerbaijan Grand Prix",
+   "circuit": "power",
+   "spearman_pace": 0.949,
+   "spearman_finish": 0.551
   }
  ]
 }
