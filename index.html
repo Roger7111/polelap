@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GridLab — Previsioni F1 2026</title>
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>PoleLap — Previsioni F1 2026</title>
 <style>
 :root{--bg:#0b0e14;--panel:#141925;--panel2:#1c2333;--line:#2a3142;--txt:#e8ecf3;--mut:#8b97ad;--acc:#e10600;--acc2:#00d7b6;--gold:#d8b766;--silver:#cdd6e3;--bronze:#c8895b;--premium:#f0c060;}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -328,6 +329,7 @@ footer p{color:var(--mut);font-size:12px;margin-bottom:5px;max-width:880px}
 #pwa-banner .btn-install{background:var(--acc);color:#fff}
 #pwa-banner .btn-close{background:transparent;color:var(--mut);padding:7px 8px}
 </style>
+<script src="gl-analytics.js"></script>
 </head>
 <body>
 
@@ -337,7 +339,7 @@ footer p{color:var(--mut);font-size:12px;margin-bottom:5px;max-width:880px}
 </form>
 
 <header><div class="nav">
-  <div class="brand">Grid<span>Lab</span></div>
+  <div class="brand">Pole<span>Lap</span></div>
   <div class="tabs">
     <div class="tab active" data-s="qualifica">Qualifica</div>
     <div class="tab" data-s="gara">Gara <span class="star">★</span></div>
@@ -677,7 +679,7 @@ footer p{color:var(--mut);font-size:12px;margin-bottom:5px;max-width:880px}
     <b>Serie chiusa il 28/07/2026.</b> Il confronto col mercato è sospeso e i nuovi freeze non
     includono più le quote. I dati qui sotto restano quelli congelati prima di ogni gara e sono
     verificabili nei freeze pubblici — non li abbiamo riscritti.
-    <a href="https://github.com/Roger7111/gridlab-f1/blob/main/track_record/NOTA_20260728_benchmark.md" target="_blank" rel="noopener">Perché →</a>
+    <a href="https://github.com/Roger7111/polelap/blob/main/track_record/NOTA_20260728_benchmark.md" target="_blank" rel="noopener">Perché →</a>
   </p>
   <div id="mktBench"><p class="lead" style="color:var(--mut)">Caricamento…</p></div>
   <h2 style="margin-bottom:3px">Gare — Previsto vs Reale</h2>
@@ -697,12 +699,12 @@ footer p{color:var(--mut);font-size:12px;margin-bottom:5px;max-width:880px}
 </div><!-- /wrap -->
 
 <footer><div class="wrap">
-  <p><b>GridLab</b> — previsioni statistiche sulla Formula 1, a scopo informativo e di intrattenimento.</p>
+  <p><b>PoleLap</b> — previsioni statistiche sulla Formula 1, a scopo informativo e di intrattenimento.</p>
   <p>Le previsioni sono prodotte da un modello probabilistico. Non sono garanzia di alcun risultato.</p>
   <!-- Disclaimer nel testo LETTERALE richiesto dalle Guidelines FOM (sez. "Internet"):
        va in footer della home, e non va tradotto né parafrasato. Cantiere legale 28/07/2026. -->
   <p style="font-size:11px;color:var(--mut)">This website is unofficial and is not associated in any way with the Formula 1 companies. F1, FORMULA ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and related marks are trade marks of Formula One Licensing B.V.</p>
-  <div class="disc">⚠️ GridLab non promuove scommesse né gioco con vincita in denaro, non ospita link ad operatori di gioco e non fornisce consigli di scommessa. In Italia la pubblicità del gioco con vincita in denaro è vietata (art. 9 D.L. 87/2018).</div>
+  <div class="disc">⚠️ PoleLap non promuove scommesse né gioco con vincita in denaro, non ospita link ad operatori di gioco e non fornisce consigli di scommessa. In Italia la pubblicità del gioco con vincita in denaro è vietata (art. 9 D.L. 87/2018).</div>
   <!-- Attribuzione richiesta dalla clausola BY di CC BY-NC-SA 4.0 (jolpica-f1).
        La dichiarazione "non commerciale" non e' cosmetica: e' la condizione della
        clausola NC, ed e' anche cio' che ci tiene nella nozione di "Fans" delle
@@ -713,12 +715,13 @@ footer p{color:var(--mut);font-size:12px;margin-bottom:5px;max-width:880px}
     <a href="https://github.com/jolpica/jolpica-f1" target="_blank" rel="noopener">jolpica-f1</a>
     (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC&nbsp;BY-NC-SA&nbsp;4.0</a>) ·
     <a href="https://github.com/theOehrly/Fast-F1" target="_blank" rel="noopener">FastF1</a>
-    · GridLab è un progetto amatoriale <b>non commerciale</b>.
+    · PoleLap è un progetto amatoriale <b>non commerciale</b>.
   </p>
   <p style="margin-top:6px;font-size:12px">
-    <a href="https://github.com/Roger7111/gridlab-f1" target="_blank" rel="noopener"><b>Track record verificabile →</b></a>
+    <a href="https://github.com/Roger7111/polelap" target="_blank" rel="noopener"><b>Track record verificabile →</b></a>
     <span style="color:var(--mut)">previsioni congelate prima di ogni evento, con hash e commit</span>
   </p>
+  <p style="margin-top:6px;font-size:11px"><a href="privacy.html">Privacy</a></p>
   <p style="margin-top:8px;font-size:11px;color:var(--mut)">Aggiornato: <span id="upd">—</span> · Simulazioni: <span id="nsim">—</span></p>
 </div></footer>
 
@@ -797,7 +800,7 @@ footer p{color:var(--mut);font-size:12px;margin-bottom:5px;max-width:880px}
 
 <!-- STICKY CTA -->
 <div class="sticky-cta" id="stickyCta">
-  <p>★ <strong>GridLab — Accesso anticipato</strong> — previsioni gara, H2H, FantaF1 e molto altro</p>
+  <p>★ <strong>PoleLap — Accesso anticipato</strong> — previsioni gara, H2H, FantaF1 e molto altro</p>
   <button class="btn-cta-sm" onclick="openWaitlist()">Accesso anticipato gratis</button>
   <button class="sticky-close" onclick="closeStickyForever()">×</button>
 </div>
@@ -904,10 +907,17 @@ footer p{color:var(--mut);font-size:12px;margin-bottom:5px;max-width:880px}
   </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<!-- 27/09/2026: da jsDelivr (file identico al pacchetto npm) con SRI: se il CDN servisse altro,
+     il browser non lo esegue. Hash verificato due volte: registry npm e file servito. -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.js"
+        integrity="sha384-dug+JxfBvklEQdJ4AYuBBAIScUz0bVN73xpy273gcAwHjb3qI0fXmuYNaNfdyYJG" crossorigin="anonymous"></script>
 <script>document.write('<script src="data/previsione.js?_=' + Date.now() + '"><\/script>');</script>
 <script>
-const D = window.GRIDLAB_DATA || {};
+// Ponte di rinomina (GridLab -> PoleLap, 29/07/2026). previsione.js e index.html
+// si deployano insieme, ma la CDN di GitHub Pages puo' servirli sfasati per
+// qualche minuto: senza questo fallback la pagina resterebbe vuota nel mezzo.
+// Rimuovibile dopo il primo weekend andato a buon fine.
+const D = window.POLELAP_DATA || window.GRIDLAB_DATA || {};
 const TC = {'Mercedes':'#00D7B6','Ferrari':'#E8002D','McLaren':'#FF8000','Red Bull Racing':'#3671C6','Aston Martin':'#229971','Alpine':'#0093CC','Audi':'#9B1B30','Racing Bulls':'#6C8FF0','Williams':'#1868DB','Haas F1 Team':'#9aa0a6','Cadillac':'#C8A95B'}; // MASTER team colors — unica fonte di verita'
 const NM = {ANT:'Antonelli',RUS:'Russell',LEC:'Leclerc',HAM:'Hamilton',NOR:'Norris',PIA:'Piastri',VER:'Verstappen',HAD:'Hadjar',HUL:'Hülkenberg',COL:'Colapinto',GAS:'Gasly',BOR:'Bortoleto',LIN:'Lindblad',OCO:'Ocon',BEA:'Bearman',SAI:'Sainz',LAW:'Lawson',ALB:'Albon',ALO:'Alonso',PER:'Pérez',BOT:'Bottas',STR:'Stroll'};
 const CIRC = {'power':'Power ⚡','aero':'Aerodinamico 🔽','balanced':'Bilanciato ⚖️','street':'Cittadino 🏙️','monaco':'Monaco 🎲'};
@@ -1099,12 +1109,12 @@ function updateCMP(){
 function shareX(){
   var g = D.griglia || [];
   var top3 = g.slice(0,3).map(function(r,i){return (i+1)+'. '+nm(r.driver)+' ('+pct(r.p_pole)+')';}).join(' · ');
-  var text = '🏎️ GridLab prevede per il '+( D.gp||'prossimo GP')+':\n'+top3+'\n\nPrevisione completa 👇';
-  var url = 'https://twitter.com/intent/tweet?text='+encodeURIComponent(text)+'&url='+encodeURIComponent('https://dreamy-empanada-2f01fb.netlify.app');
+  var text = '🏎️ PoleLap prevede per il '+( D.gp||'prossimo GP')+':\n'+top3+'\n\nPrevisione completa 👇';
+  var url = 'https://twitter.com/intent/tweet?text='+encodeURIComponent(text)+'&url='+encodeURIComponent(location.origin + location.pathname);
   window.open(url,'_blank');
 }
 function copyLink(){
-  navigator.clipboard.writeText('https://dreamy-empanada-2f01fb.netlify.app').then(function(){
+  navigator.clipboard.writeText(location.origin + location.pathname).then(function(){
     var btn = document.querySelector('.btn-copy');
     btn.textContent = '✓ Copiato!';
     setTimeout(function(){btn.innerHTML='🔗 Copia link';},2000);
@@ -1440,7 +1450,7 @@ async function netlifySubmit(nome,email,interesse,successEl,successHtml,report){
       successEl.innerHTML=successHtml;
     } else {
       // Fallback: apri mailto
-      window.location.href='mailto:gridlabf1@gmail.com?subject=Iscrizione+GridLab&body=Nome:+'+encodeURIComponent(nome)+'%0AEmail:+'+encodeURIComponent(email)+'%0AInteresse:+'+encodeURIComponent(interesse);
+      window.location.href='mailto:andrea.bonavita117@gmail.com?subject=Iscrizione+PoleLap&body=Nome:+'+encodeURIComponent(nome)+'%0AEmail:+'+encodeURIComponent(email)+'%0AInteresse:+'+encodeURIComponent(interesse);
       successEl.innerHTML=successHtml;
     }
   } catch(e){
@@ -1961,7 +1971,7 @@ renderStorico();renderModello();renderAccCards();renderCalendario();renderDelta(
 if(Object.keys(ESE_SCENARIOS).length){renderEseCards();setEseScenario("asciutto");}
 // ===== PWA / SERVICE WORKER =====
 // SW NON registrato: su GitHub Pages '/sw.js' era comunque un 404 (path assoluto
-// fuori da /gridlab-f1/), e un SW che cacha e' veleno per un sito di track record
+// fuori da /polelap/), e un SW che cacha e' veleno per un sito di track record
 // (rischio previsioni stale). Unregister difensivo per eventuali SW residui.
 let _pwaPrompt = null;
 
@@ -1973,7 +1983,8 @@ if ('serviceWorker' in navigator) {
 
 // ===== AUTO-REFRESH: ricarica le tab quando esce una nuova previsione (fine sessione) =====
 (function(){
-  var _loaded = (window.GRIDLAB_DATA||{}).generato_at || (window.GRIDLAB_DATA||{}).aggiornato;
+  var _D = window.POLELAP_DATA || window.GRIDLAB_DATA || {};   // vedi ponte di rinomina sopra
+  var _loaded = _D.generato_at || _D.aggiornato;
   function _check(){
     fetch('data/previsione.json?_=' + Date.now(), {cache:'no-store'})
       .then(function(r){ return r.json(); })
@@ -2940,7 +2951,7 @@ function renderTyreSimu() {
   <div id="ts-placeholder" style="display:none;text-align:center;padding:60px 20px;background:var(--card);border-radius:12px;border:1px dashed var(--line)">
     <div style="font-size:40px;margin-bottom:12px">🏁</div>
     <div style="font-size:16px;font-weight:700;margin-bottom:8px">Dati FP2 non ancora disponibili</div>
-    <div style="font-size:13px;color:var(--txt-dim)">Il simulatore sarà calibrato automaticamente dopo le Prove Libere 2.<br>Scarica i dati FP2 con <code style="background:var(--bg);padding:2px 6px;border-radius:4px">python scarica.py</code> e rigenera la previsione.</div>
+    <div style="font-size:13px;color:var(--txt-dim)">Il simulatore si calibra da solo dopo le Prove Libere 2.</div>
   </div>
 
   <!-- Controlli — nascosti finché non c'è FP2 -->
