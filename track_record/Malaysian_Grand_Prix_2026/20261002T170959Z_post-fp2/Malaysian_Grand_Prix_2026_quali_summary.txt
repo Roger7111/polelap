@@ -1,0 +1,35 @@
+==============================================================================================
+  🕐  PREVISIONE QUALIFICA: Malaysian Grand Prix 2026
+  Simulazioni MC: 50,000  |  ⚠️  Non influenza la previsione gara/sprint
+  ⚠️  Tempi PROIETTATI sulla baseline Malaysian Grand Prix 2026 (pole~91.0s): gap relativi dalla forma corrente, non ancora dati reali del circuito.
+==============================================================================================
+Pos Driver Team                    Best Lap      Pace  P(Pole) P(Top3)  P(Q3)  P(Q2)   Fascia80%
+----------------------------------------------------------------------------------------------
+  ── Q3 (Top 10) ──
+  1 VER    Red Bull Racing         1:31.188  1:31.020   26.0%   58.8%  98.7% 100.0%       P1-P7
+  2 LEC    Ferrari                 1:31.180  1:31.110   22.3%   54.2%  98.2% 100.0%       P1-P8
+  3 HAD    Red Bull Racing         1:31.255  1:31.255   11.2%   36.3%  95.6% 100.0%       P1-P9
+  4 NOR    McLaren                 1:31.311  1:31.311   11.4%   35.8%  95.5%  99.9%       P1-P9
+  5 RUS    Mercedes                1:31.502  1:31.439    8.1%   28.8%  93.5%  99.9%      P2-P10
+  6 HAM    Ferrari                 1:31.477  1:31.477    6.9%   25.9%  92.5%  99.9%      P2-P10
+  7 ANT    Mercedes                1:31.669  1:31.494    7.2%   26.7%  92.8%  99.9%      P2-P10
+  8 PIA    McLaren                 1:31.538  1:31.538    4.9%   19.9%  89.0%  99.8%      P2-P11
+  9 GAS    Alpine                  1:32.135  1:31.860    1.1%    6.7%  71.5%  98.9%      P4-P13
+ 10 LAW    Racing Bulls            1:32.077  1:31.984    0.6%    4.1%  62.2%  98.1%      P5-P13
+
+  ── Q2 (P11–P15) ──
+ 11 LIN    Racing Bulls            1:32.232  1:32.107                          96.2%
+ 12 HUL    Audi                    1:32.651  1:32.402                          88.4%
+ 13 BOR    Audi                    1:32.617  1:32.617                          79.2%
+ 14 OCO    Haas F1 Team            1:32.888  1:32.722                          72.5%
+ 15 ALO    Aston Martin            1:33.071  1:32.909                          54.3%
+
+  ── Eliminati in Q1 (P16–P22) ──
+ 16 BEA    Haas F1 Team            1:33.212
+ 17 SAI    Williams                1:33.402
+ 18 STR    Aston Martin            1:33.730
+ 19 ALB    Williams                1:33.724
+ 20 BOT    Cadillac                1:33.710
+ 21 COL    Alpine                  1:33.950
+ 22 PER    Cadillac                1:34.266
+==============================================================================================
