@@ -1,0 +1,19 @@
+{
+ "race": "Malaysian Grand Prix 2026",
+ "stage": "post-quali",
+ "frozen_at_utc": "20261003T114425Z",
+ "note": "Freeze ufficiale post-qualifiche",
+ "files": {
+  "Malaysian_Grand_Prix_2026_grid.csv": "b4e48d39988fe448355e5c3bb5194ef41a458d0f63acff355b7f3f3297634247",
+  "Malaysian_Grand_Prix_2026_h2h.csv": "427472c80bdf46c62d26f60e76e64b7d1903a4d8826502c8184e13e73ce7ae05",
+  "Malaysian_Grand_Prix_2026_probabilities.csv": "20499a2de0d9e70ec6c4d3382fa5cb5eac5be862289f3badbfefcf048c2a784a",
+  "Malaysian_Grand_Prix_2026_quali_grid.csv": "ecb60ab35ba9df46965e900d76c309efb4f0bf91d3fcac4e019316361dc54c6f",
+  "Malaysian_Grand_Prix_2026_quali_probabilities.csv": "4cefc46fc0ecaa76dc5c082217864f4fea7d8142c6b3aca71bd4ca91e742343c",
+  "Malaysian_Grand_Prix_2026_summary.txt": "9bf5e8dd71457cc78edf92cbdf334f6e0af78f673b58cc3c98c88527fed0ded2",
+  "Malaysian_Grand_Prix_2026_team_points.csv": "c84e74c184705413ba32f86f8802fdc010dc2b5041bd2c8638353dcf144334ba"
+ },
+ "results_db_sha256": "64f58b0c26f18ba5ecccad0606da0d1acefba152a2b69a2e36e71b380f5ef2a8",
+ "results_db_races": 20,
+ "git_commit": "90f690fff74d23e32daf8daae5da2ad0f8011299",
+ "market_files": {}
+}
