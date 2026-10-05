@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://zakblhuidoiarhahzlsu.supabase.co https://api.open-meteo.com https://formspree.io; form-action 'self'; base-uri 'self'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net/npm/chart.js@4.4.1/ https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.106.2/ https://gc.zgo.at/count.v5.js; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://roger7.goatcounter.com; connect-src 'self' https://zakblhuidoiarhahzlsu.supabase.co https://api.open-meteo.com https://formspree.io https://roger7.goatcounter.com; form-action 'self'; base-uri 'self'; object-src 'none'">
 <title>PoleLap · Accedi</title>
 <link rel="stylesheet" href="gl.css">
 <script src="gl-analytics.js"></script>
@@ -34,32 +34,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.106.2/dist/umd/supabase.js"
         integrity="sha384-m/8UHFJHeU6nrCKP2hBnAseuvAKUmLF+8e5bWos5CJL023vuxX7kiVL5t8yjsJhV" crossorigin="anonymous"></script>
 <script src="sb.js"></script>
-<script>
-const say = (t, k = 'info') => $('#msg').innerHTML = `<div class="msg ${k}">${t}</div>`;
-
-// Chi ha gia' una sessione valida non deve rivedere il form.
-(async () => {
-  if (await sessione()) location.replace('account.html');
-})();
-
-$('#f').addEventListener('submit', async e => {
-  e.preventDefault();
-  const email = $('#email').value.trim();
-  $('#go').disabled = true;
-  say('Invio in corso…');
-  const { error } = await sb.auth.signInWithOtp({
-    email,
-    options: { emailRedirectTo: pagina('account.html') }
-  });
-  if (error) {
-    // Rate limit del tier gratuito Supabase: ~30 email/ora. Va detto, non nascosto.
-    say(`Non ha funzionato: ${error.message}`, 'err');
-    $('#go').disabled = false;
-    return;
-  }
-  say(`Fatto. Controlla <b>${email}</b> e apri il link per entrare.<br>
-       Se non arriva entro qualche minuto, guarda nello spam.`, 'ok');
-});
-</script>
+<script src="login.js?v=71b1dd62"></script>
 </body>
 </html>
