@@ -1,0 +1,72 @@
+// pro.html - era inline nella pagina; file a parte dal 29/09/2026 (CSP senza 'unsafe-inline').
+const card = h => $('#out').innerHTML = `<div class="card">${h}</div>`;
+
+const COLS = [
+  ['Pilota',        d => `<span class="code">${d.driver}</span> <span class="k">${d.team || ''}</span>`],
+  ['Gr.',           d => d.grid || '—'],
+  ['P(vitt.)',      d => pct(parseFloat(d.p_win))],
+  ['P(podio)',      d => pct(parseFloat(d.p_podium))],
+  ['P(top5)',       d => pct(parseFloat(d.p_top5))],
+  ['P(punti)',      d => pct(parseFloat(d.p_points))],
+  ['Punti attesi',  d => num(d.expected_points, 1)],
+  ['Rischio DNF',   d => pct(parseFloat(d.p_dnf))],
+  ['Passo (s)',     d => num(d.long_run_pace_s, 3)],
+  ['Degrado s/g',   d => num(d.degradation_s_lap, 3)],
+  ['vs compagno',   d => pct(parseFloat(d.p_beat_teammate))],
+];
+
+function tabella(rows) {
+  const ds = [...rows].sort((a, b) => (parseFloat(b.p_win) || 0) - (parseFloat(a.p_win) || 0));
+  return `<div class="scroll"><table><thead><tr>${COLS.map(c => `<th>${c[0]}</th>`).join('')}
+    </tr></thead><tbody>${ds.map(d => `<tr>${COLS.map(c => `<td>${c[1](d)}</td>`).join('')}</tr>`)
+    .join('')}</tbody></table></div>`;
+}
+
+(async () => {
+  const s = await sessione();
+  if (!s) {
+    card(`<div class="msg info">Queste previsioni richiedono un accesso.</div>
+          <a href="login.html"><button>Accedi</button></a>`);
+    return;
+  }
+
+  // La query e' identica per tutti: e' il database a decidere cosa torna.
+  const { data, error } = await sb.from('predictions')
+    .select('race_id,stage,computed_at,payload')
+    .eq('audience', 'pro').eq('prediction_type', 'race')
+    .order('computed_at', { ascending: false });
+
+  if (error) { card(`<div class="msg err">Errore lettura DB: ${error.message}</div>`); return; }
+
+  if (!data || !data.length) {
+    const p = await profilo();
+    const tier = (p && p.tier) || 'free';
+    if (tier === 'free') {
+      card(`<div class="msg info">Il tuo piano e <b>Free</b>: vedi le previsioni pubbliche,
+            complete di griglia, dal freeze post-qualifiche.</div>
+            <p class="sub">Il piano Pro aggiunge passo gara, degrado, rischio DNF,
+            head-to-head col compagno di squadra, e i freeze <b>pre-weekend</b> e
+            <b>post-FP2</b> — che il pubblico non vede affatto.</p>
+            <a href="live.html"><button class="ghost">Vai alle previsioni pubbliche</button></a>`);
+    } else {
+      card(`<div class="msg info">Il tuo piano e <b>${tier}</b>, ma non risulta ancora
+            pubblicata nessuna previsione pro. Torna dopo il prossimo weekend.</div>`);
+    }
+    return;
+  }
+
+  const sel = data.map((r, i) =>
+    `<option value="${i}">${(r.payload && r.payload.race) || r.race_id} — ${r.stage}</option>`).join('');
+  $('#bar').innerHTML = `<select id="pick">${sel}</select> <span id="prov" class="k"></span>`;
+
+  const render = i => {
+    const r = data[i], p = r.payload || {};
+    $('#prov').textContent = (p.frozen_at_utc ? 'freeze ' + p.frozen_at_utc : '') +
+                             (p.git_commit ? '  ·  commit ' + p.git_commit.slice(0, 9) : '');
+    const drv = p.drivers || [];
+    $('#out').innerHTML = drv.length ? tabella(drv)
+      : '<div class="card"><div class="msg err">Payload senza griglia piloti.</div></div>';
+  };
+  $('#pick').onchange = e => render(+e.target.value);
+  render(0);
+})();
