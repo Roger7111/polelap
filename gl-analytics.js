@@ -15,16 +15,15 @@
 // persone arrivano e DA DOVE — cioe' per trasformare le stime del funnel (§2)
 // da assunzioni in misure.
 //
-// ── ATTIVAZIONE ────────────────────────────────────────────────────────────
-// 1. registrarsi su https://www.goatcounter.com (nome del sito = CODICE)
-// 2. scrivere quel codice qui sotto
-// 3. aprire la CSP, il meta in testa a OGNI pagina (dal 28/09): https://gc.zgo.at in
-//    script-src, https://<CODICE>.goatcounter.com in connect-src e img-src. Senza, il
-//    browser blocca il conteggio in silenzio (tests/test_giunzioni.py vuole CSP uguali)
-// 4. ridistribuire con _pubdeploy.bat
-// Finche' CODICE resta vuoto questo file NON fa una sola richiesta di rete:
-// e' inerte, non rotto.
-const GC_CODE = "";
+// ── ATTIVAZIONE (fatta il 29/09/2026, codice roger7, pubblicata col commit del 5/10) ──
+// Il codice sta qui e, identico, nella CSP in testa a OGNI pagina: count.v5.js in script-src,
+// https://<CODICE>.goatcounter.com in connect-src e img-src. Senza, il browser blocca il
+// conteggio in silenzio: tests/test_giunzioni.py controlla che codice e CSP coincidano.
+// count.v5.js e' la versione fissa con verifica d'integrita' (SRI): hash uguale fra la
+// pagina delle versioni di GoatCounter e il file servito, controllato il 29/09.
+// Con CODICE vuoto questo file NON fa una sola richiesta di rete: e' inerte, non rotto.
+const GC_CODE = "roger7";
+const GC_SRI = "sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ";
 
 (function () {
   if (!GC_CODE) return;                       // non configurato: silenzio
@@ -35,15 +34,19 @@ const GC_CODE = "";
   if (location.protocol === 'file:' || h === 'localhost' || h === '127.0.0.1' ||
       /^(10\.|192\.168\.|172\.(1[6-9]|2\d|3[01])\.)/.test(h)) return;
 
-  // Auto-esclusione dell'owner. Da attivare UNA VOLTA dalla console del browser:
-  //   localStorage.setItem('gl-nocount', '1')
-  // Senza questo, con 20 visitatori attesi, le nostre visite sarebbero la
-  // maggioranza del campione e ogni conclusione sarebbe su noi stessi.
-  try { if (localStorage.getItem('gl-nocount')) return; } catch (e) {}
+  // Auto-esclusione dell'owner: aprire UNA VOLTA per browser il sito con #noconta in fondo
+  // all'indirizzo (https://roger7111.github.io/polelap/#noconta). Senza, con 20 visitatori
+  // attesi, le nostre visite sarebbero la maggioranza del campione.
+  try {
+    if (location.hash === '#noconta') localStorage.setItem('gl-nocount', '1');
+    if (localStorage.getItem('gl-nocount')) return;
+  } catch (e) {}
 
   var s = document.createElement('script');
   s.async = true;
-  s.src = 'https://gc.zgo.at/count.js';
+  s.src = 'https://gc.zgo.at/count.v5.js';
+  s.integrity = GC_SRI;
+  s.crossOrigin = 'anonymous';
   s.setAttribute('data-goatcounter', 'https://' + GC_CODE + '.goatcounter.com/count');
   document.head.appendChild(s);
 })();
