@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://zakblhuidoiarhahzlsu.supabase.co https://api.open-meteo.com https://formspree.io; form-action 'self'; base-uri 'self'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net/npm/chart.js@4.4.1/ https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.106.2/ https://gc.zgo.at/count.v5.js; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://roger7.goatcounter.com; connect-src 'self' https://zakblhuidoiarhahzlsu.supabase.co https://api.open-meteo.com https://formspree.io https://roger7.goatcounter.com; form-action 'self'; base-uri 'self'; object-src 'none'">
 <title>PoleLap · Il tuo account</title>
 <link rel="stylesheet" href="gl.css">
 <script src="gl-analytics.js"></script>
@@ -21,56 +21,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.106.2/dist/umd/supabase.js"
         integrity="sha384-m/8UHFJHeU6nrCKP2hBnAseuvAKUmLF+8e5bWos5CJL023vuxX7kiVL5t8yjsJhV" crossorigin="anonymous"></script>
 <script src="sb.js"></script>
-<script>
-// supabase-js legge da solo il token dal frammento dell'URL quando si atterra dal
-// magic link (detectSessionInUrl e' attivo di default) e lo persiste in localStorage:
-// e' questo che rende la sessione viva dopo un reload. Noi qui leggiamo il risultato.
-const TIER = {
-  free:  { et: 'Free',  desc: 'Vedi le previsioni pubbliche: griglia completa dal freeze post-qualifiche.' },
-  pro:   { et: 'Pro',   desc: 'Profondita completa (passo, degrado, rischio DNF, head-to-head) e accesso ai freeze pre-weekend e post-FP2, giorni prima del pubblico.' },
-  elite: { et: 'Elite', desc: 'Accesso integrale a tutto cio che il modello produce.' }
-};
-
-(async () => {
-  const s = await sessione();
-  if (!s) {
-    $('#sub').textContent = 'Non hai una sessione attiva.';
-    $('#out').innerHTML = `<div class="card"><div class="msg info">
-        Il link potrebbe essere scaduto o gia usato: ogni magic link vale una volta sola.
-      </div><a href="login.html"><button>Vai al login</button></a></div>`;
-    return;
-  }
-
-  const p = await profilo();
-  const tier = (p && p.tier) || 'free';
-  const t = TIER[tier] || TIER.free;
-  $('#sub').textContent = 'Sessione attiva.';
-  $('#out').innerHTML = `
-    <div class="card">
-      <div class="row"><span class="k">Email</span><span>${s.user.email}</span></div>
-      <div class="row"><span class="k">Piano</span>
-        <span class="badge ${tier}">${t.et}</span></div>
-      <div class="row"><span class="k">Profilo creato</span>
-        <span>${p && p.created_at ? p.created_at.slice(0, 10) : '—'}</span></div>
-      <p class="sub" style="margin:14px 0 0">${t.desc}</p>
-    </div>
-    <div class="card">
-      <div class="nav">
-        <a href="pro.html">Previsioni pro</a>
-        <a href="live.html">Previsioni pubbliche</a>
-        <a href="index.html">Sito</a>
-      </div>
-      <button class="ghost" id="out-btn">Esci</button>
-    </div>`;
-
-  $('#out-btn').onclick = async () => { await sb.auth.signOut(); location.replace('login.html'); };
-
-  // Diagnostica onesta: se il trigger on_auth_user_created non avesse creato il
-  // profilo, il tier mostrato sarebbe un default del client, non un dato del DB.
-  if (!p) $('#out').insertAdjacentHTML('beforeend',
-    `<div class="msg err">Sessione valida ma nessuna riga in <code>profiles</code>:
-     il trigger di creazione profilo non ha lavorato. Segnalalo.</div>`);
-})();
-</script>
+<script src="account.js?v=4a677738"></script>
 </body>
 </html>
