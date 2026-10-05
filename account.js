@@ -1,0 +1,50 @@
+// account.html - era inline nella pagina; file a parte dal 29/09/2026 (CSP senza 'unsafe-inline').
+// supabase-js legge da solo il token dal frammento dell'URL quando si atterra dal
+// magic link (detectSessionInUrl e' attivo di default) e lo persiste in localStorage:
+// e' questo che rende la sessione viva dopo un reload. Noi qui leggiamo il risultato.
+const TIER = {
+  free:  { et: 'Free',  desc: 'Vedi le previsioni pubbliche: griglia completa dal freeze post-qualifiche.' },
+  pro:   { et: 'Pro',   desc: 'Profondita completa (passo, degrado, rischio DNF, head-to-head) e accesso ai freeze pre-weekend e post-FP2, giorni prima del pubblico.' },
+  elite: { et: 'Elite', desc: 'Accesso integrale a tutto cio che il modello produce.' }
+};
+
+(async () => {
+  const s = await sessione();
+  if (!s) {
+    $('#sub').textContent = 'Non hai una sessione attiva.';
+    $('#out').innerHTML = `<div class="card"><div class="msg info">
+        Il link potrebbe essere scaduto o gia usato: ogni magic link vale una volta sola.
+      </div><a href="login.html"><button>Vai al login</button></a></div>`;
+    return;
+  }
+
+  const p = await profilo();
+  const tier = (p && p.tier) || 'free';
+  const t = TIER[tier] || TIER.free;
+  $('#sub').textContent = 'Sessione attiva.';
+  $('#out').innerHTML = `
+    <div class="card">
+      <div class="row"><span class="k">Email</span><span>${s.user.email}</span></div>
+      <div class="row"><span class="k">Piano</span>
+        <span class="badge ${tier}">${t.et}</span></div>
+      <div class="row"><span class="k">Profilo creato</span>
+        <span>${p && p.created_at ? p.created_at.slice(0, 10) : '—'}</span></div>
+      <p class="sub" style="margin:14px 0 0">${t.desc}</p>
+    </div>
+    <div class="card">
+      <div class="nav">
+        <a href="pro.html">Previsioni pro</a>
+        <a href="live.html">Previsioni pubbliche</a>
+        <a href="index.html">Sito</a>
+      </div>
+      <button class="ghost" id="out-btn">Esci</button>
+    </div>`;
+
+  $('#out-btn').onclick = async () => { await sb.auth.signOut(); location.replace('login.html'); };
+
+  // Diagnostica onesta: se il trigger on_auth_user_created non avesse creato il
+  // profilo, il tier mostrato sarebbe un default del client, non un dato del DB.
+  if (!p) $('#out').insertAdjacentHTML('beforeend',
+    `<div class="msg err">Sessione valida ma nessuna riga in <code>profiles</code>:
+     il trigger di creazione profilo non ha lavorato. Segnalalo.</div>`);
+})();
