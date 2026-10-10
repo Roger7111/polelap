@@ -1,0 +1,25 @@
+{
+ "race": "Singapore Grand Prix 2026",
+ "stage": "post-fp2",
+ "frozen_at_utc": "20261010T060239Z",
+ "note": "",
+ "files": {
+  "Singapore_Grand_Prix_2026_grid.csv": "ee768e14162a8fc4b28aab417ecea8a68394164584485c91d79614ce7ea5644e",
+  "Singapore_Grand_Prix_2026_h2h.csv": "953ed64dba1ce4a14f6bacf82069844e65c4ae792b5e0d8ff13cb2e5cb1458bf",
+  "Singapore_Grand_Prix_2026_probabilities.csv": "02f2ef73e7c68d30f764eb0fc603a24b0277e81d112e9010fd14296ef5dd8f09",
+  "Singapore_Grand_Prix_2026_quali_grid.csv": "b7432c1a30dbb1f3880c0a604a64e2b7c8e286f0d5e654ea8277f3eb2062a7b3",
+  "Singapore_Grand_Prix_2026_quali_probabilities.csv": "c32d15139ead4ca80542e73e9d276116cf5fff4a5042db59c4d2a06cb02153e6",
+  "Singapore_Grand_Prix_2026_quali_summary.txt": "7633b51f1e54f5baaf01b9c4b1c397bcbd633920ce168edf9e9e9bad69cd214c",
+  "Singapore_Grand_Prix_2026_summary.txt": "c4bbb7469ad2720cd3c0bfe817a0cde71bf97bf7fd48ef94e6e2dbca6240f6a1",
+  "Singapore_Grand_Prix_2026_team_points.csv": "01931513675c1b72b392602ed0e7089377472713fff8e7a59c2a17652d7120ef",
+  "Singapore_Grand_Prix_2026_—_SPRINT_grid.csv": "b0009a97ef16f03cca758d4468bf85f1c7508a3f95ac4f4f6b3fb7c3a8697696",
+  "Singapore_Grand_Prix_2026_—_SPRINT_h2h.csv": "9765072a41df13f73063a9eb496c7b6c7cca313261a5a967e7000e550ef0d297",
+  "Singapore_Grand_Prix_2026_—_SPRINT_probabilities.csv": "49a371916b856391a293fab832e39e3aab9af6493316a9d9c6c388da589519cc",
+  "Singapore_Grand_Prix_2026_—_SPRINT_summary.txt": "dbca537c61afab88e9ff057f1699ddbea80aad735efe01f08391b127afaf6feb",
+  "Singapore_Grand_Prix_2026_—_SPRINT_team_points.csv": "a518e8e9088da96e0610f4742303ab068af0d425d7b0edac95b169a3e420ccb7"
+ },
+ "results_db_sha256": "cca59c96555f9170fe2403f477516c82b7f55ea24cc55265ea8535ea2cbb16f1",
+ "results_db_races": 21,
+ "git_commit": "ac65f0d696d8c6dfcb358cb16bdcdd857e231b75",
+ "market_files": {}
+}
