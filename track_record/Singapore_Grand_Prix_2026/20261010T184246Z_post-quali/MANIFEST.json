@@ -1,0 +1,21 @@
+{
+ "race": "Singapore Grand Prix 2026",
+ "stage": "post-quali",
+ "frozen_at_utc": "20261010T184246Z",
+ "note": "Freeze ufficiale post-qualifiche",
+ "files": {
+  "Singapore_Grand_Prix_2026_grid.csv": "471e5417c7df32775b186e205a7e864c2587dfee7f0996e58e259c8901f286f6",
+  "Singapore_Grand_Prix_2026_h2h.csv": "f04cdda4cf2698782b0708d17e087bec534f882ccef4c707be6684a460eae88e",
+  "Singapore_Grand_Prix_2026_probabilities.csv": "c7df490a197ac389bf6017a84fec68204400b9ee933c89ed093888972c8d5491",
+  "Singapore_Grand_Prix_2026_quali_grid.csv": "b7432c1a30dbb1f3880c0a604a64e2b7c8e286f0d5e654ea8277f3eb2062a7b3",
+  "Singapore_Grand_Prix_2026_quali_probabilities.csv": "c32d15139ead4ca80542e73e9d276116cf5fff4a5042db59c4d2a06cb02153e6",
+  "Singapore_Grand_Prix_2026_summary.txt": "2cdbdb97d76040fcc7f25d285c4f8a0781bd8afecf962d08be1f42b4cb04bb04",
+  "Singapore_Grand_Prix_2026_team_points.csv": "919a607d50f9a388317ca799cf4a8fc41862ab7c46e37f8159dc66b1c24cfe01",
+  "Singapore_Grand_Prix_2026_—_SPRINT_h2h.csv": "9765072a41df13f73063a9eb496c7b6c7cca313261a5a967e7000e550ef0d297",
+  "Singapore_Grand_Prix_2026_—_SPRINT_probabilities.csv": "49a371916b856391a293fab832e39e3aab9af6493316a9d9c6c388da589519cc"
+ },
+ "results_db_sha256": "cca59c96555f9170fe2403f477516c82b7f55ea24cc55265ea8535ea2cbb16f1",
+ "results_db_races": 21,
+ "git_commit": "002750727915d08ac7c2e898cefd9b124a961104",
+ "market_files": {}
+}
