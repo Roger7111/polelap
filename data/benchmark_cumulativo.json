@@ -1,5 +1,5 @@
 {
- "generato_utc": "2026-10-05T21:54:09Z",
+ "generato_utc": "2026-10-11T18:59:46Z",
  "aggregato": {
   "n_gare": 2,
   "brier_delta_medio": -0.0169,
@@ -59,6 +59,11 @@
   },
   {
    "race": "Malaysian Grand Prix",
+   "stage": "post-quali",
+   "reason": "quote non congelate (freeze pre-feature)"
+  },
+  {
+   "race": "Singapore Grand Prix",
    "stage": "post-quali",
    "reason": "quote non congelate (freeze pre-feature)"
   },
