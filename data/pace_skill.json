@@ -1,9 +1,9 @@
 {
- "generato_utc": "2026-10-11T19:00:34Z",
+ "generato_utc": "2026-10-12T09:23:09Z",
  "metodo": "previsione leakage-free vs passo gara fuel-corrected (DNF-immune), 2026",
  "season": {
   "n_gare": 17,
-  "spearman_pace": 0.906,
+  "spearman_pace": 0.903,
   "spearman_finish": 0.661
  },
  "gare": [
@@ -106,8 +106,8 @@
   {
    "race": "Singapore Grand Prix",
    "circuit": "street",
-   "spearman_pace": 0.901,
-   "spearman_finish": 0.86
+   "spearman_pace": 0.864,
+   "spearman_finish": 0.852
   }
  ]
 }
