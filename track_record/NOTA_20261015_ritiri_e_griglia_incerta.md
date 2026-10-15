@@ -26,9 +26,9 @@ con questo cambio è il pre-weekend di Austin, lunedì 19 ottobre.
 ### Da Città del Messico: prima della qualifica, la gara si simula su griglie incerte
 
 Dopo le libere la griglia di partenza non si conosce ancora. Finora la gara si simulava sulla griglia
-prevista come se fosse certa. Dal GP di Città del Messico, nelle previsioni dopo le libere (venerdì 30 e
-sabato 31 ottobre), il modello estrae 25 griglie possibili dalla simulazione della qualifica, simula la
-gara su ognuna e fa la media delle probabilità.
+prevista come se fosse certa. Dal GP di Città del Messico, nella previsione fatta dopo le ultime libere
+(sabato 31 ottobre, prima della qualifica), il modello estrae 25 griglie possibili dalla simulazione della
+qualifica, simula la gara su ognuna e fa la media delle probabilità.
 
 Anche questa prova è stata scritta prima, il 6 ottobre. È stata fatta su 91 gare del 2022-2025, che non
 erano servite a costruire l'idea. L'errore scende del 7% circa sulla vittoria, dell'11% sul podio e del
@@ -40,8 +40,9 @@ Un limite, scritto prima della prova: sugli anni passati la qualifica prevista u
 di oggi. La griglia prevista è quindi un po' peggiore di quella che si sarebbe avuta allora, e questo
 favorisce la griglia incerta.
 
-Non cambiano la previsione pre-weekend e quella dopo la qualifica, che è il freeze ufficiale del track
-record.
+La prova riguardava solo il momento in cui tutte le libere sono finite, e il cambio vale solo lì. Non
+cambiano la previsione pre-weekend, quella del venerdì dopo le prime due sessioni di libere e quella dopo
+la qualifica, che è il freeze ufficiale del track record.
 
 ### Cosa non cambia
 
@@ -58,3 +59,7 @@ dopo Austin, misuriamo anche quelli su tutte le gare 2026, con una regola scritt
 podio o la top 10 peggiorano in modo netto, il cambio si spegne e lo scriviamo qui.
 
 *PoleLap, 15 ottobre 2026.*
+
+*Correzione dello stesso giorno: nella prima versione la griglia incerta valeva anche per la previsione
+del venerdì. È stata provata solo con tutte le libere finite, quindi vale solo dopo le ultime libere del
+sabato.*
