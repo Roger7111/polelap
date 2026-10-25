@@ -1,0 +1,19 @@
+{
+ "race": "United States Grand Prix 2026",
+ "stage": "post-quali",
+ "frozen_at_utc": "20261025T045434Z",
+ "note": "Freeze ufficiale post-qualifiche",
+ "files": {
+  "United_States_Grand_Prix_2026_grid.csv": "925214f0851d13f875f2ced22cf67b08789144df23e49b383b0db41daa728dfe",
+  "United_States_Grand_Prix_2026_h2h.csv": "b45844e3ce8e9ffe66cbb2a76a20ed76a0689acee638799f3b98acc6544c3e3a",
+  "United_States_Grand_Prix_2026_probabilities.csv": "92e9cc0597b67a2b831273d9d780029ac17ef3cf05e532da0411c0edf2db4c98",
+  "United_States_Grand_Prix_2026_quali_grid.csv": "2d2d3a375bb411554afbaee469cdf5d88e99709b6223ef5fbe945595b3e5d616",
+  "United_States_Grand_Prix_2026_quali_probabilities.csv": "3fe094834f2b936782c406328f1334411ea670108cc9689b9561588325981823",
+  "United_States_Grand_Prix_2026_summary.txt": "7eddc39c1569fd62bcef309ee085e9e323ae3e2d698056da0b453af26608ad39",
+  "United_States_Grand_Prix_2026_team_points.csv": "15549b7553a0712f855f4bc8e3bcff3baa0e38c2281baff17530498e79e1c3a7"
+ },
+ "results_db_sha256": "a5664021c306cc7a1d902d94a583ebf21d8af4f5f22da4e6845bd9014c8211c1",
+ "results_db_races": 23,
+ "git_commit": "3db65debaa9a7f6dfd2f0ba86fa393fe94c11e35",
+ "market_files": {}
+}
