@@ -191,6 +191,13 @@
    "sha256": "20ea19056b3377eae8273e2ae5da35ede025bb501a029f8f884fc7627f60bed8",
    "registrato_utc": "2026-10-26T13:21:45Z",
    "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Candidato TG: emendamento tecnico del 26/10 alle 17:15, prima di qualunque run",
+   "versione": 1,
+   "sha256": "ec431eacd4ae490fa19b4001ac2bb63d3d186825674fddae95929d2784663565",
+   "registrato_utc": "2026-10-26T16:13:44Z",
+   "commit_privato": "4d0838bdd334def0d4c35835ab644dfeeee0b298"
   }
  ]
 }
