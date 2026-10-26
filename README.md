@@ -1,6 +1,6 @@
-# GridLab F1 — Previsioni con track record verificabile
+# PoleLap — Previsioni con track record verificabile
 
-Sito: **https://roger7111.github.io/gridlab-f1/**
+Sito: **https://roger7111.github.io/polelap/**
 
 > **📌 Aggiornamento 28/07/2026 — il confronto col mercato è sospeso.**
 > I nuovi freeze non includono più le quote di mercato. **I freeze già pubblicati
@@ -53,6 +53,11 @@ metriche standard, ricalcolabili a mano dai CSV congelati.
 > I **freeze già pubblicati non sono stati toccati**: i loro CSV e i relativi
 > SHA256 nel manifest restano validi e verificabili come descritto al punto 2.
 > Il cambiamento vale solo in avanti, e ha una data.
+
+**5. Le regole vengono prima dei numeri.** Ogni cambio del modello deve passare una prova scritta prima di
+guardare i risultati. `track_record/PROTOCOLLI.json` registra l'impronta SHA-256 di ogni protocollo nel
+momento in cui entra nel nostro repo di lavoro, con la data: quando un protocollo viene pubblicato, chiunque può
+rifarne l'impronta e controllare che non sia cambiato dopo. Il file spiega come si calcola.
 
 ## Cosa mostriamo (e cosa no)
 
