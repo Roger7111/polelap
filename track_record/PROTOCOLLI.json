@@ -1,0 +1,196 @@
+{
+ "come_si_verifica": "Impronta SHA-256 del testo del protocollo: dalla riga del titolo fino alla riga prima del suo esito o del titolo dopo, con fine riga LF, senza spazi in coda alle righe e senza righe vuote in fondo, piu' un LF finale, in UTF-8. Le voci si aggiungono e non si cambiano: una versione nuova ha la sua data.",
+ "nato_utc": "2026-10-26T13:21:45Z",
+ "nota_primo_giorno": "Le voci registrate il giorno in cui e' nato il registro raccolgono i protocolli scritti fino ad allora: per loro l'impronta prova il testo da quel giorno in poi, non la data scritta nel titolo.",
+ "protocolli": [
+  {
+   "titolo": "Coda della griglia: da P12 in giù si vince più che da P6-P11 — protocollo fissato PRIMA dei run (28 set)",
+   "versione": 1,
+   "sha256": "959b6d9adc23b7ce58a8dff8b10eb2837400fb606996433abe83359af83238f3",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Passo gara pre-weekend: il peso dell'ultima gara — protocollo fissato PRIMA dei run (28 set, 12:33)",
+   "versione": 1,
+   "sha256": "82ae5cfec041aede825a3783d8f6cee452515755aa4fb3d7e1e7884351c2b212",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Un aggiornamento dichiarato anticipa un salto di passo? Protocollo fissato prima di guardare i dati (28 set, 20:35)",
+   "versione": 1,
+   "sha256": "ba0972bcdfef7f7cee970e25e0fc634068a31b3dcf1d1c9aac4291c34f2bec1a",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Ritiri: incidente o guasto dai messaggi della direzione gara. Regola fissata prima di leggere i messaggi (28 set, 20:41)",
+   "versione": 1,
+   "sha256": "37902947d7e34a3b56b00ae2b76bd94eaee4879cad543cef194ae86c6860ef2e",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Candidato R (ritirati): protocollo completo, fissato prima dei run (23:13)",
+   "versione": 1,
+   "sha256": "7db4d4072887cd26032f2d8c4abfde7bba1f7b3ccfb3891cb7d41b5bca12f253",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Candidato T (compagno del giorno): protocollo fissato prima dei run (23:41)",
+   "versione": 1,
+   "sha256": "8b46ebda127dc4f038705f1ee20dd97f5d052dca163371990902096ff07f6012",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Candidato A (passo in aria libera): protocollo fissato il 29/09 alle 10:12, prima dei run",
+   "versione": 1,
+   "sha256": "6584812a91cc606a0fcf9878a74931867412022ac7e47fd34c0ab2a3bd305c8e",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Stagione 2026 in numeri: protocollo della scorecard (fissato il 29/09 alle 12:02, prima di Sepang)",
+   "versione": 1,
+   "sha256": "b09ea6c203f45dd78e1613b702976faa22a85bc05ba30e1f92d493cea5daac4b",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Dicembre (M4): misura del passo e dispersione insieme. Protocollo fissato il 29/09 alle 18:10, prima di qualunque run",
+   "versione": 1,
+   "sha256": "38653b6512d562acced40dc2dbb88b625740ee3b076d35e80eef7554827c9a5d",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Cloud senza PC: prova generale su Baku e regola per accenderlo, fissata prima di Sepang (29/09, 19:31)",
+   "versione": 1,
+   "sha256": "ec5de6093a56d9fbcecdaa1ecee5f83f4607b8f537af0460f2ba2ebf029eab0e",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Squadra x temperatura e layout che chiede energia: protocollo fissato il 6/10 alle 00:29, prima di guardare i dati",
+   "versione": 1,
+   "sha256": "bdf8490865d78f14002baeb9572fa07fe7d45055318a31efbd9e5190f4d64321",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Candidato G, griglia incerta prima della qualifica: protocollo fissato il 6/10 alle 11:01, prima di qualunque run",
+   "versione": 1,
+   "sha256": "f9badb591f6a3b3aa167d635bc89435a8c169c89e281fe4c25f68ea6344a060e",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Candidato G sul 2022-25, anche con meta' del rumore: protocollo fissato il 6/10 alle 12:18, prima di qualunque run",
+   "versione": 1,
+   "sha256": "fe92a7d2f8bf6af3c9c3937a1de0274c5487779028ea0e752566596b8319d8c9",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Candidato W, peso delle piste simili nella memoria del passo: protocollo fissato il 6/10 alle 11:09, prima di qualunque run",
+   "versione": 1,
+   "sha256": "7f32f0239f9477b56b1c57ad1ef0b781f221e6e41055dfea5a189ed234b40a38",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Tipi di pista dello storico nei banchi di dicembre: emendamento del 7/10 alle 13:33, prima di qualunque run",
+   "versione": 1,
+   "sha256": "b95d9d7a486bd36698b937cbefae2551e3caf4007d1f1e110495691aea74ae05",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Cloud senza PC: i giri a ridosso delle chiamate di safety car e VSC. Misura sul PC e protocollo per Singapore, fissato il 7/10 alle 16:29, prima di misurare B stretta",
+   "versione": 1,
+   "sha256": "d8be7de945a3585dedc897afd9829487308793d78fe350f55616b63cbf1e46d7",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Candidato D, ritiri dopo un problema del giorno prima: protocollo fissato il 12/10 alle 19:25, prima di qualunque run",
+   "versione": 1,
+   "sha256": "bb93b824878620fe539d6df255389c6b8bb7ad97e0070ce1469f25399d5e09c9",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Candidato V, passo in gara dopo un danno o un guasto del giorno prima: protocollo fissato il 13/10 alle 11:58, prima di qualunque run",
+   "versione": 1,
+   "sha256": "34e6136599c6871847d0c9f5ac1819b1204efc40d5c9fc770634f6e2d429a468",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Candidato SQ, la qualifica sprint: protocollo fissato il 13/10 alle 12:20, prima di qualunque run",
+   "versione": 1,
+   "sha256": "d0774d06a18276837e363921bc494484e39dd71571634164b521b6b76555387b",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Candidato V, replica sul 2014-17: protocollo fissato il 13/10 alle 12:49, prima di qualunque run",
+   "versione": 1,
+   "sha256": "2ffc9d76e1436c40799937fc27c8b6b2245bc6abe394f5be89a746a8cb55acac",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Replica di V: il controllo della misura non regge, emendamento dell'owner (13/10, scritto alle 13:38, prima di qualunque run sul 2014-17)",
+   "versione": 1,
+   "sha256": "ba227c40accbe5d1499ddc341dc956267aa12d958ce00e31e87bca0cde0180eb",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Candidato M, danni gravi segnati a mano: protocollo prospettico fissato il 14/10 alle 12:32, prima di Austin",
+   "versione": 1,
+   "sha256": "60207472a813d1de38e560ccfc47a7f187b6c2ff7a3ebe67ff242fe99b03419c",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Domanda B dopo l'adozione: effetto su podio e top10. Protocollo fissato il 14/10 alle 15, prima di Austin",
+   "versione": 1,
+   "sha256": "522d3b57ba7f753f82f07c907d50da1335a572bc5c62dc5cd79d559f47725adf",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Diagnosi del poleman: il modello sottovaluta chi parte primo? Protocollo fissato il 15/10 alle 14:10, prima di qualunque run",
+   "versione": 1,
+   "sha256": "b11e3e839acf726762228ca651d2c35b5c9d99b28e6935b8fe0e4c5abea964d7",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Causa del poleman: quale cambio dal 20/07 ha abbassato chi parte primo? Protocollo fissato il 19/10 alle 10:40, prima di qualunque run",
+   "versione": 1,
+   "sha256": "fb47cbe0c265586aa79fd1ed8d2782e3ad1ae038130413443732ab0f744f1ffb",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Regola del freeze di correzione, fissata il 26/10 prima del GP del Messico",
+   "versione": 1,
+   "sha256": "b315e71b39b77ac13041dcdc5b95c27af430475ab4ebe1a4ca2e3003061007ea",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  },
+  {
+   "titolo": "Candidato TG, la testa della griglia: posizione in pista misurata sui giri a parita' di passo e ritiro al via per casella. Protocollo fissato il 26/10 alle 13:40, prima di qualunque run",
+   "versione": 1,
+   "sha256": "20ea19056b3377eae8273e2ae5da35ede025bb501a029f8f884fc7627f60bed8",
+   "registrato_utc": "2026-10-26T13:21:45Z",
+   "commit_privato": "c4111997a38bfc88db07b1c3581142679609e66c"
+  }
+ ]
+}
