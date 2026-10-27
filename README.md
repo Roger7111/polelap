@@ -17,7 +17,9 @@ numero è verificabile da terzi. E il posizionamento è onesto: pubblichiamo
 
 Ogni cartella `track_record/<gara>/<timestamp>_<stage>/` è una fotografia
 scattata PRIMA dell'evento (lo stage `post-quali` è quello ufficiale: griglia
-reale). Contiene la previsione e un `MANIFEST.json`. I freeze **fino al
+della qualifica; le penalità annunciate dopo il freeze non ci sono, e dal GP
+del Messico entra la griglia FIA se è già uscita). Contiene la previsione e
+un `MANIFEST.json`. I freeze **fino al
 28/07/2026** contengono anche le quote di mercato del momento; quelli successivi
 no — vedi la nota in cima. Il metodo di verifica qui sotto vale per entrambi.
 
@@ -36,6 +38,12 @@ Get-FileHash -Algorithm SHA256 .\<file>            # PowerShell
 sha256sum <file>                                    # Linux/macOS
 ```
 Se un hash non combacia col manifest, il record è compromesso: dillo pubblicamente.
+
+`grid.csv` ha le probabilità di podio e top 10 calibrate, quelle del punteggio;
+`probabilities.csv` ha la simulazione grezza, posizione per posizione, e per
+questo non coincidono. A Singapore i file della sprint non sono nel repository:
+un errore di caricamento, corretto il 12/10, li ha fermati; le loro impronte
+sono nei `MANIFEST.json`, pubblicati prima della sprint.
 
 **3. Nessun leakage dal futuro.** Il manifest registra anche l'hash del database
 risultati (`results_db_sha256`) e il numero di gare presenti al momento del
@@ -95,4 +103,3 @@ Modello Monte Carlo (30k simulazioni) su dati FastF1, ancoraggio alla griglia,
 modello DNF team×circuito, calibrazione isotonica. Il codice sorgente del
 modello è in un repo privato; ciò che serve per la verifica — previsioni
 congelate, quote, manifest, benchmark — è tutto qui.
-
