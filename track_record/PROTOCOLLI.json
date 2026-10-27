@@ -205,6 +205,20 @@
    "sha256": "d01bb1387e989fc5eef0927a5ffcf4eb3266ed113a33d4a8933ae1acc6df42d8",
    "registrato_utc": "2026-10-27T12:33:19Z",
    "commit_privato": "2374ecdc1d4fedabde98cbb3154df03c04353576"
+  },
+  {
+   "titolo": "Banco di dicembre come la produzione: emendamento del 27/10 alle 14:09, prima di qualunque run",
+   "versione": 1,
+   "sha256": "7d72e9cbbed19c6efed00100faeb9e3699c53c8d35ac2721ba9f5fa685b4e81c",
+   "registrato_utc": "2026-10-27T13:39:48Z",
+   "commit_privato": "c974f20e25ab3f51590ef6c71d9a0c7ad3112c05"
+  },
+  {
+   "titolo": "Candidato AF, affidabilita' per pilota: il rumore dei \"problemi\" serve, e va calcolato dalle ultime gare? Protocollo fissato il 27/10 alle 14:09, prima di qualunque run",
+   "versione": 1,
+   "sha256": "1c2707b4a3dfeda5b7b790db8e40f31fb0ec8029b331e3335626259675ea32db",
+   "registrato_utc": "2026-10-27T13:39:48Z",
+   "commit_privato": "c974f20e25ab3f51590ef6c71d9a0c7ad3112c05"
   }
  ]
 }
