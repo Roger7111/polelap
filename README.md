@@ -95,3 +95,4 @@ Modello Monte Carlo (30k simulazioni) su dati FastF1, ancoraggio alla griglia,
 modello DNF team×circuito, calibrazione isotonica. Il codice sorgente del
 modello è in un repo privato; ciò che serve per la verifica — previsioni
 congelate, quote, manifest, benchmark — è tutto qui.
+
