@@ -198,6 +198,13 @@
    "sha256": "ec431eacd4ae490fa19b4001ac2bb63d3d186825674fddae95929d2784663565",
    "registrato_utc": "2026-10-26T16:13:44Z",
    "commit_privato": "4d0838bdd334def0d4c35835ab644dfeeee0b298"
+  },
+  {
+   "titolo": "Candidato GW, giro migliore e giri percorsi del solo weekend: la produzione deve prenderli dal weekend, come il banco? Protocollo fissato il 27/10 alle 13:28, prima di qualunque run",
+   "versione": 1,
+   "sha256": "d01bb1387e989fc5eef0927a5ffcf4eb3266ed113a33d4a8933ae1acc6df42d8",
+   "registrato_utc": "2026-10-27T12:33:19Z",
+   "commit_privato": "2374ecdc1d4fedabde98cbb3154df03c04353576"
   }
  ]
 }
