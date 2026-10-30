@@ -1,0 +1,20 @@
+{
+ "race": "Mexico City Grand Prix 2026",
+ "stage": "post-fp2",
+ "frozen_at_utc": "20261030T235456Z",
+ "note": "",
+ "files": {
+  "Mexico_City_Grand_Prix_2026_grid.csv": "9d62cb8952496631103d7b6332c45cbdbb2e5cfea2bc9ad5e4277bfda932ee20",
+  "Mexico_City_Grand_Prix_2026_h2h.csv": "0562fcf37d130ab13b1988b2f415b5c2cc52a14a4a083ab24ca9902ac8a17e6f",
+  "Mexico_City_Grand_Prix_2026_probabilities.csv": "bc80a0d4243da003956f8345737c02282630c6a2e37c6b2cf4be781f30aee583",
+  "Mexico_City_Grand_Prix_2026_quali_grid.csv": "7d4a40571099f94fdb740c3a1608c597ce4d74cb8be0986edea2ecff20be488b",
+  "Mexico_City_Grand_Prix_2026_quali_probabilities.csv": "e2425255cf068bc0200e885b253e79ecc466c03caf2a16255f4c7da75a662e16",
+  "Mexico_City_Grand_Prix_2026_quali_summary.txt": "fe527a341c65abaac868ec16464e771296a3e2bfe2204bdd4b116adb20e2486f",
+  "Mexico_City_Grand_Prix_2026_summary.txt": "d2f6b9ccd349cf0a5774a1ad9e8357baaba4ecece7b27b9e1a8340272f6c3611",
+  "Mexico_City_Grand_Prix_2026_team_points.csv": "b918dd1e28217af1d0866becc66e8be9af2fb811451b8069724ad7e80c323ab3"
+ },
+ "results_db_sha256": "e2728908e11847b160bc93d189f5b9246b956b25a73b161c1b9aec7618a1762a",
+ "results_db_races": 24,
+ "git_commit": "218708e3fc3d77441fcb1618145955bc680702d5",
+ "market_files": {}
+}
