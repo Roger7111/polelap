@@ -1,16 +1,16 @@
 {
- "generato_utc": "2026-10-26T00:28:26Z",
+ "generato_utc": "2026-11-02T01:32:19Z",
  "metodo": "previsione leakage-free vs passo gara fuel-corrected (DNF-immune), 2026",
  "season": {
-  "n_gare": 18,
-  "spearman_pace": 0.905,
-  "spearman_finish": 0.673
+  "n_gare": 19,
+  "spearman_pace": 0.888,
+  "spearman_finish": 0.678
  },
  "gare": [
   {
    "race": "Australian Grand Prix",
    "circuit": "balanced",
-   "spearman_pace": 0.716,
+   "spearman_pace": 0.511,
    "spearman_finish": 0.348
   },
   {
@@ -22,8 +22,8 @@
   {
    "race": "Japanese Grand Prix",
    "circuit": "aero",
-   "spearman_pace": 0.912,
-   "spearman_finish": 0.866
+   "spearman_pace": 0.92,
+   "spearman_finish": 0.871
   },
   {
    "race": "Miami Grand Prix",
@@ -34,8 +34,8 @@
   {
    "race": "Canadian Grand Prix",
    "circuit": "balanced",
-   "spearman_pace": 0.935,
-   "spearman_finish": 0.411
+   "spearman_pace": 0.932,
+   "spearman_finish": 0.406
   },
   {
    "race": "Monaco Grand Prix",
@@ -46,20 +46,20 @@
   {
    "race": "Barcelona Grand Prix",
    "circuit": "aero",
-   "spearman_pace": 0.961,
-   "spearman_finish": 0.732
+   "spearman_pace": 0.965,
+   "spearman_finish": 0.727
   },
   {
    "race": "Austrian Grand Prix",
    "circuit": "power",
-   "spearman_pace": 0.937,
-   "spearman_finish": 0.946
+   "spearman_pace": 0.934,
+   "spearman_finish": 0.944
   },
   {
    "race": "British Grand Prix",
    "circuit": "aero",
    "spearman_pace": 0.97,
-   "spearman_finish": 0.609
+   "spearman_finish": 0.587
   },
   {
    "race": "Belgian Grand Prix",
@@ -76,8 +76,8 @@
   {
    "race": "Dutch Grand Prix",
    "circuit": "aero",
-   "spearman_pace": 0.871,
-   "spearman_finish": 0.74
+   "spearman_pace": 0.872,
+   "spearman_finish": 0.744
   },
   {
    "race": "Italian Grand Prix",
@@ -88,14 +88,14 @@
   {
    "race": "Spanish Grand Prix",
    "circuit": "street",
-   "spearman_pace": 0.965,
-   "spearman_finish": 0.788
+   "spearman_pace": 0.958,
+   "spearman_finish": 0.789
   },
   {
    "race": "Azerbaijan Grand Prix",
    "circuit": "power",
-   "spearman_pace": 0.949,
-   "spearman_finish": 0.554
+   "spearman_pace": 0.95,
+   "spearman_finish": 0.555
   },
   {
    "race": "Malaysian Grand Prix",
@@ -114,6 +114,12 @@
    "circuit": "balanced",
    "spearman_pace": 0.938,
    "spearman_finish": 0.894
+  },
+  {
+   "race": "Mexico City Grand Prix",
+   "circuit": "balanced",
+   "spearman_pace": 0.773,
+   "spearman_finish": 0.794
   }
  ]
 }
