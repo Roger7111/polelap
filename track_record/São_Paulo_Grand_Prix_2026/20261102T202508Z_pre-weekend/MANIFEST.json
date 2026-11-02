@@ -1,0 +1,20 @@
+{
+ "race": "São Paulo Grand Prix 2026",
+ "stage": "pre-weekend",
+ "frozen_at_utc": "20261102T202508Z",
+ "note": "",
+ "files": {
+  "São_Paulo_Grand_Prix_2026_grid.csv": "b2636466d9336adb06cb67eb11bbd8bf20f865a91747d06a088aacd9f44e5dfe",
+  "São_Paulo_Grand_Prix_2026_h2h.csv": "9c3329553974d4e7b7c73efd83d081181643c11c073173b0e80bc491eeecc402",
+  "São_Paulo_Grand_Prix_2026_probabilities.csv": "0079e8ce78fd32c5953d80236870db80d1c08da41aa284217e44ebcbb20c28ec",
+  "São_Paulo_Grand_Prix_2026_quali_grid.csv": "d5531da53cb788daa6f82fa66d6d0cb69c4ce94299606ab711f4ac691c0b8ca3",
+  "São_Paulo_Grand_Prix_2026_quali_probabilities.csv": "05786c45ef1b7206b8151d5e49c9cd4e8db450e574eb3ad7a12e4dd5e4d1e687",
+  "São_Paulo_Grand_Prix_2026_quali_summary.txt": "0783d1508f8ead7cca367d721255fff5dd8c913be2e190ab6d0d029832c8967c",
+  "São_Paulo_Grand_Prix_2026_summary.txt": "fccd71853b7f2be4c39b913f0327f4790f4633bd3dac0c70e614ebf42e10a9ad",
+  "São_Paulo_Grand_Prix_2026_team_points.csv": "63dc1f082f9e5acc254b85b6173de0780e80608174997e21d82ee555a8d0d682"
+ },
+ "results_db_sha256": "deb56754eb844626fef3b21401c93c7a24af206bf5eef95c4a473d9a3d72d2fe",
+ "results_db_races": 25,
+ "git_commit": "3facc0db2528c0559c5b76950a3af8256095daf5",
+ "market_files": {}
+}
