@@ -17,9 +17,9 @@ numero è verificabile da terzi. E il posizionamento è onesto: pubblichiamo
 
 Ogni cartella `track_record/<gara>/<timestamp>_<stage>/` è una fotografia
 scattata PRIMA dell'evento (lo stage `post-quali` è quello ufficiale: griglia
-     della qualifica; dal GP del Messico entra la griglia FIA se è già uscita, e dal
-     GP del Brasile il freeze la aspetta fino a 6 ore; le penalità annunciate dopo il
-     freeze non ci sono). Contiene la previsione e
+della qualifica; dal GP del Messico entra la griglia FIA se è già uscita, e dal
+GP del Brasile il freeze la aspetta fino a 6 ore; le penalità annunciate dopo il
+freeze non ci sono). Contiene la previsione e
 un `MANIFEST.json`. I freeze **fino al
 28/07/2026** contengono anche le quote di mercato del momento; quelli successivi
 no — vedi la nota in cima. Il metodo di verifica qui sotto vale per entrambi.
