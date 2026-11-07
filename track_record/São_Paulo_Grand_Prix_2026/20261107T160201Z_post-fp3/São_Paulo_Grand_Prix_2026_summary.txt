@@ -1,0 +1,74 @@
+================================================================================
+  🏎  GARA: São Paulo Grand Prix 2026
+  Circuito: BALANCED  |  Gare disputate: 25  |  Simulazioni MC: 50,000
+  P(Safety Car): 73%  |  DNF nel MC: attivo  |  Bimodale: VER, NOR, PIA, RUS, BOR, LIN, HAD, COL, HUL, BEA, ALO, SAI, ALB, STR, PER, BOT
+
+  🌧 METEO: WET | P(pioggia)=91% | SC adj: 58%→73%
+================================================================================
+Pos Driver Team                   Pace Gara  P(Vince) P(Podio) P(Punti) E[Pts]  P(DNF)
+--------------------------------------------------------------------------------
+  1 ANT    Mercedes                1:20.815    26.9%    62.5%    82.2%   14.9   14.6%
+  2 VER    Red Bull Racing         1:20.554    15.4%    42.8%    76.3%   11.4   19.9%
+  3 NOR    McLaren                 1:20.967    18.9%    49.5%    80.5%   12.7   15.7%
+  4 PIA    McLaren                 1:21.431     4.4%    22.9%    78.1%    8.6   15.7%
+  5 HAM    Ferrari                 1:20.712     8.1%    36.8%    81.2%   10.9   14.6%
+  6 LEC    Ferrari                 1:20.732     9.1%    34.0%    77.6%   10.1   14.6%
+  7 RUS    Mercedes                1:21.110     1.7%     9.4%    69.8%    5.8   14.6%
+  8 BOR    Audi                    1:22.124     0.6%     2.5%    48.7%    2.6   15.3%
+  9 LAW    Racing Bulls            1:21.638     2.0%     7.9%    63.5%    4.6    9.6%
+ 10 LIN    Racing Bulls            1:22.194     0.9%     2.9%    41.7%    2.1    9.6%
+ 11 HAD    Red Bull Racing         1:21.508     1.2%     3.2%    44.8%    2.6   19.9%
+ 12 GAS    Alpine                  1:21.748     1.1%     5.4%    59.3%    3.9   17.3%
+ 13 COL    Alpine                  1:22.345     0.6%     2.0%    37.2%    1.9   17.3%
+ 14 HUL    Audi                    1:22.025     2.7%     5.1%    25.6%    2.0   15.3%
+--------------------------------------------------------------------------------
+  GRIGLIA COMPLETA (P15–P22):
+  15. BEA    (Haas F1 Team)  P(punti): 33.3%  Griglia: P14
+  16. ALO    (Aston Martin)  P(punti): 16.2%  Griglia: P16
+  17. SAI    (Williams)  P(punti): 17.9%  Griglia: P17
+  18. ALB    (Williams)  P(punti): 16.3%  Griglia: P19
+  19. CAM    (Haas F1 Team)  P(punti): 15.1%  Griglia: P15
+  20. STR    (Aston Martin)  P(punti): 12.1%  Griglia: P21
+  21. PER    (Cadillac)  P(punti): 11.3%  Griglia: P22
+  22. BOT    (Cadillac)  P(punti): 11.0%  Griglia: P20
+--------------------------------------------------------------------------------
+  📊 FORM BOOK — Stagione 2026:
+--------------------------------------------------------------------------------
+  🔧 AFFIDABILITÀ + P(DNF):
+  CAM   0.910  ██████████████████  P(DNF)=22.6%
+  ANT   0.880  █████████████████  P(DNF)=14.6%
+  HAM   0.870  █████████████████  P(DNF)=14.6%
+  GAS   0.870  █████████████████  P(DNF)=17.3%
+  LAW   0.850  █████████████████  P(DNF)=9.6%
+  OCO   0.840  ████████████████  P(DNF)=6.4%
+  LEC   0.816  ████████████████  P(DNF)=14.6%
+  SAI   0.770  ███████████████  P(DNF)=28.5%
+  RUS   0.716  ██████████████  P(DNF)=14.6%
+  COL   0.710  ██████████████  P(DNF)=17.3%
+  VER   0.700  ██████████████  P(DNF)=19.9%
+  HAD   0.700  ██████████████  P(DNF)=19.9%
+  NOR   0.700  ██████████████  P(DNF)=15.7%
+  PIA   0.700  ██████████████  P(DNF)=15.7%
+  ALO   0.700  ██████████████  P(DNF)=40.0%
+  STR   0.700  ██████████████  P(DNF)=40.0%
+  HUL   0.700  ██████████████  P(DNF)=15.3%
+  BOR   0.700  ██████████████  P(DNF)=15.3%
+  LIN   0.700  ██████████████  P(DNF)=9.6%
+  ALB   0.700  ██████████████  P(DNF)=28.5%
+  BEA   0.700  ██████████████  P(DNF)=22.6%
+  PER   0.700  ██████████████  P(DNF)=40.0%
+  BOT   0.700  ██████████████  P(DNF)=40.0%
+--------------------------------------------------------------------------------
+  🏆 PUNTI ATTESI COSTRUTTORI:
+  McLaren                    21.3 pts  █████████████████████
+  Ferrari                    21.0 pts  █████████████████████
+  Mercedes                   20.7 pts  ████████████████████
+  Red Bull Racing            14.0 pts  █████████████
+  Racing Bulls                6.7 pts  ██████
+  Alpine                      5.8 pts  █████
+  Audi                        4.6 pts  ████
+  Haas F1 Team                2.4 pts  ██
+  Williams                    2.1 pts  ██
+  Aston Martin                1.5 pts  █
+  Cadillac                    0.7 pts  █
+================================================================================
