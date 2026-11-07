@@ -8,8 +8,8 @@
   "sq_griglia_reale": null,
   "sq_reale": false,
   "sprint_prediction": null,
-  "aggiornato": "2026-11-07",
-  "generato_at": "2026-11-07T17:31:08",
+  "aggiornato": "2026-11-08",
+  "generato_at": "2026-11-08T00:05:26",
   "n_sim": 30000,
   "standings_top3": [
     {
@@ -34,11 +34,11 @@
       "pos": 1,
       "driver": "ANT",
       "team": "Mercedes",
-      "pos_exp": 3.4,
+      "pos_exp": 3.3,
       "fascia": "P1–P7",
-      "p_pole": 0.2879,
-      "p_top3": 0.6237,
-      "p_q3": 0.9815
+      "p_pole": 0.2931,
+      "p_top3": 0.6276,
+      "p_q3": 0.9823
     },
     {
       "pos": 2,
@@ -46,9 +46,9 @@
       "team": "McLaren",
       "pos_exp": 4.5,
       "fascia": "P1–P9",
-      "p_pole": 0.1563,
-      "p_top3": 0.4506,
-      "p_q3": 0.9545
+      "p_pole": 0.157,
+      "p_top3": 0.4514,
+      "p_q3": 0.954
     },
     {
       "pos": 3,
@@ -56,9 +56,9 @@
       "team": "Red Bull Racing",
       "pos_exp": 4.5,
       "fascia": "P1–P9",
-      "p_pole": 0.16,
-      "p_top3": 0.4557,
-      "p_q3": 0.9519
+      "p_pole": 0.1539,
+      "p_top3": 0.4546,
+      "p_q3": 0.9559
     },
     {
       "pos": 4,
@@ -66,9 +66,9 @@
       "team": "Mercedes",
       "pos_exp": 4.8,
       "fascia": "P1–P9",
-      "p_pole": 0.1301,
-      "p_top3": 0.4087,
-      "p_q3": 0.9439
+      "p_pole": 0.1334,
+      "p_top3": 0.4059,
+      "p_q3": 0.9449
     },
     {
       "pos": 5,
@@ -76,19 +76,19 @@
       "team": "McLaren",
       "pos_exp": 5.1,
       "fascia": "P1–P10",
-      "p_pole": 0.1139,
-      "p_top3": 0.3656,
-      "p_q3": 0.9347
+      "p_pole": 0.1096,
+      "p_top3": 0.3635,
+      "p_q3": 0.9338
     },
     {
       "pos": 6,
       "driver": "HAM",
       "team": "Ferrari",
-      "pos_exp": 6.2,
+      "pos_exp": 6.1,
       "fascia": "P2–P11",
-      "p_pole": 0.064,
-      "p_top3": 0.248,
-      "p_q3": 0.8836
+      "p_pole": 0.066,
+      "p_top3": 0.2516,
+      "p_q3": 0.8837
     },
     {
       "pos": 7,
@@ -96,9 +96,9 @@
       "team": "Ferrari",
       "pos_exp": 6.4,
       "fascia": "P2–P11",
-      "p_pole": 0.0577,
-      "p_top3": 0.2297,
-      "p_q3": 0.8667
+      "p_pole": 0.0571,
+      "p_top3": 0.2325,
+      "p_q3": 0.8698
     },
     {
       "pos": 8,
@@ -106,9 +106,9 @@
       "team": "Audi",
       "pos_exp": 9.9,
       "fascia": "P5–P15",
-      "p_pole": 0.0073,
-      "p_top3": 0.0498,
-      "p_q3": 0.5652
+      "p_pole": 0.0077,
+      "p_top3": 0.0496,
+      "p_q3": 0.5641
     },
     {
       "pos": 9,
@@ -116,9 +116,9 @@
       "team": "Racing Bulls",
       "pos_exp": 10.5,
       "fascia": "P5–P16",
-      "p_pole": 0.0052,
-      "p_top3": 0.0363,
-      "p_q3": 0.4967
+      "p_pole": 0.005,
+      "p_top3": 0.0339,
+      "p_q3": 0.4976
     },
     {
       "pos": 10,
@@ -126,29 +126,29 @@
       "team": "Red Bull Racing",
       "pos_exp": 10.4,
       "fascia": "P5–P15",
-      "p_pole": 0.0057,
-      "p_top3": 0.0366,
-      "p_q3": 0.5106
+      "p_pole": 0.0058,
+      "p_top3": 0.0387,
+      "p_q3": 0.5119
     },
     {
       "pos": 11,
       "driver": "LAW",
       "team": "Racing Bulls",
-      "pos_exp": 10.7,
+      "pos_exp": 10.8,
       "fascia": "P6–P16",
-      "p_pole": 0.0048,
-      "p_top3": 0.0321,
-      "p_q3": 0.4823
+      "p_pole": 0.0042,
+      "p_top3": 0.0301,
+      "p_q3": 0.4712
     },
     {
       "pos": 12,
       "driver": "GAS",
       "team": "Alpine",
-      "pos_exp": 11.3,
+      "pos_exp": 11.4,
       "fascia": "P6–P16",
-      "p_pole": 0.0031,
-      "p_top3": 0.0243,
-      "p_q3": 0.4119
+      "p_pole": 0.0026,
+      "p_top3": 0.0213,
+      "p_q3": 0.4107
     },
     {
       "pos": 13,
@@ -156,9 +156,9 @@
       "team": "Alpine",
       "pos_exp": 11.7,
       "fascia": "P7–P17",
-      "p_pole": 0.0019,
-      "p_top3": 0.0183,
-      "p_q3": 0.3725
+      "p_pole": 0.0023,
+      "p_top3": 0.0177,
+      "p_q3": 0.3732
     },
     {
       "pos": 14,
@@ -166,9 +166,9 @@
       "team": "Haas F1 Team",
       "pos_exp": 11.8,
       "fascia": "P7–P17",
-      "p_pole": 0.0019,
-      "p_top3": 0.0176,
-      "p_q3": 0.365
+      "p_pole": 0.0021,
+      "p_top3": 0.0184,
+      "p_q3": 0.3667
     },
     {
       "pos": 15,
@@ -177,8 +177,8 @@
       "pos_exp": 14.8,
       "fascia": "P10–P19",
       "p_pole": 0.0001,
-      "p_top3": 0.0018,
-      "p_q3": 0.1242
+      "p_top3": 0.002,
+      "p_q3": 0.1252
     },
     {
       "pos": 16,
@@ -188,7 +188,7 @@
       "fascia": "P12–P21",
       "p_pole": 0.0001,
       "p_top3": 0.0004,
-      "p_q3": 0.0486
+      "p_q3": 0.0481
     },
     {
       "pos": 17,
@@ -196,16 +196,16 @@
       "team": "Williams",
       "pos_exp": 16.6,
       "fascia": "P12–P21",
-      "p_pole": 0.0,
+      "p_pole": 0.0001,
       "p_top3": 0.0005,
-      "p_q3": 0.0495
+      "p_q3": 0.0492
     },
     {
       "pos": 18,
       "driver": "HUL",
       "team": "Audi",
       "pos_exp": 17.9,
-      "fascia": "P14–P21",
+      "fascia": "P14–P22",
       "p_pole": 0.0,
       "p_top3": 0.0001,
       "p_q3": 0.0216
@@ -218,7 +218,7 @@
       "fascia": "P15–P22",
       "p_pole": 0.0,
       "p_top3": 0.0001,
-      "p_q3": 0.0111
+      "p_q3": 0.012
     },
     {
       "pos": 20,
@@ -228,7 +228,7 @@
       "fascia": "P15–P22",
       "p_pole": 0.0,
       "p_top3": 0.0001,
-      "p_q3": 0.0118
+      "p_q3": 0.012
     },
     {
       "pos": 21,
@@ -237,8 +237,8 @@
       "pos_exp": 19.0,
       "fascia": "P15–P22",
       "p_pole": 0.0,
-      "p_top3": 0.0001,
-      "p_q3": 0.0079
+      "p_top3": 0.0,
+      "p_q3": 0.0077
     },
     {
       "pos": 22,
@@ -251,10 +251,254 @@
       "p_q3": 0.0046
     }
   ],
-  "griglia_reale": null,
-  "quali_reale": false,
-  "griglia_partenza": null,
-  "griglia_partenza_fonte": null,
+  "griglia_reale": [
+    {
+      "pos": 1,
+      "driver": "NOR",
+      "team": "McLaren",
+      "gap": 0.725
+    },
+    {
+      "pos": 2,
+      "driver": "RUS",
+      "team": "Mercedes",
+      "gap": 0.0
+    },
+    {
+      "pos": 3,
+      "driver": "ANT",
+      "team": "Mercedes",
+      "gap": 1.35
+    },
+    {
+      "pos": 4,
+      "driver": "LEC",
+      "team": "Ferrari",
+      "gap": 1.337
+    },
+    {
+      "pos": 5,
+      "driver": "LAW",
+      "team": "Racing Bulls",
+      "gap": 0.304
+    },
+    {
+      "pos": 6,
+      "driver": "HUL",
+      "team": "Audi",
+      "gap": 1.616
+    },
+    {
+      "pos": 7,
+      "driver": "HAD",
+      "team": "Red Bull Racing",
+      "gap": 0.473
+    },
+    {
+      "pos": 8,
+      "driver": "BEA",
+      "team": "Haas F1 Team",
+      "gap": 2.385
+    },
+    {
+      "pos": 9,
+      "driver": "ALO",
+      "team": "Aston Martin",
+      "gap": 2.327
+    },
+    {
+      "pos": 10,
+      "driver": "ALB",
+      "team": "Williams",
+      "gap": 2.173
+    },
+    {
+      "pos": 11,
+      "driver": "HAM",
+      "team": "Ferrari",
+      "gap": 3.256
+    },
+    {
+      "pos": 12,
+      "driver": "PIA",
+      "team": "McLaren",
+      "gap": 3.624
+    },
+    {
+      "pos": 13,
+      "driver": "CAM",
+      "team": "Haas F1 Team",
+      "gap": 4.77
+    },
+    {
+      "pos": 14,
+      "driver": "LIN",
+      "team": "Racing Bulls",
+      "gap": 4.942
+    },
+    {
+      "pos": 15,
+      "driver": "SAI",
+      "team": "Williams",
+      "gap": 5.04
+    },
+    {
+      "pos": 16,
+      "driver": "VER",
+      "team": "Red Bull Racing",
+      "gap": 4.493
+    },
+    {
+      "pos": 17,
+      "driver": "COL",
+      "team": "Alpine",
+      "gap": 6.582
+    },
+    {
+      "pos": 18,
+      "driver": "GAS",
+      "team": "Alpine",
+      "gap": 6.704
+    },
+    {
+      "pos": 19,
+      "driver": "STR",
+      "team": "Aston Martin",
+      "gap": 6.908
+    },
+    {
+      "pos": 20,
+      "driver": "BOT",
+      "team": "Cadillac",
+      "gap": 7.029
+    },
+    {
+      "pos": 21,
+      "driver": "PER",
+      "team": "Cadillac",
+      "gap": 7.764
+    },
+    {
+      "pos": 22,
+      "driver": "BOR",
+      "team": "Audi",
+      "gap": 14.819
+    }
+  ],
+  "quali_reale": true,
+  "griglia_partenza": [
+    {
+      "pos": 1,
+      "driver": "NOR",
+      "team": "McLaren"
+    },
+    {
+      "pos": 2,
+      "driver": "ANT",
+      "team": "Mercedes"
+    },
+    {
+      "pos": 3,
+      "driver": "LAW",
+      "team": "Racing Bulls"
+    },
+    {
+      "pos": 4,
+      "driver": "HUL",
+      "team": "Audi"
+    },
+    {
+      "pos": 5,
+      "driver": "HAD",
+      "team": "Red Bull Racing"
+    },
+    {
+      "pos": 6,
+      "driver": "BEA",
+      "team": "Haas F1 Team"
+    },
+    {
+      "pos": 7,
+      "driver": "RUS",
+      "team": "Mercedes"
+    },
+    {
+      "pos": 8,
+      "driver": "ALO",
+      "team": "Aston Martin"
+    },
+    {
+      "pos": 9,
+      "driver": "ALB",
+      "team": "Williams"
+    },
+    {
+      "pos": 10,
+      "driver": "PIA",
+      "team": "McLaren"
+    },
+    {
+      "pos": 11,
+      "driver": "CAM",
+      "team": "Haas F1 Team"
+    },
+    {
+      "pos": 12,
+      "driver": "LIN",
+      "team": "Racing Bulls"
+    },
+    {
+      "pos": 13,
+      "driver": "SAI",
+      "team": "Williams"
+    },
+    {
+      "pos": 14,
+      "driver": "LEC",
+      "team": "Ferrari"
+    },
+    {
+      "pos": 15,
+      "driver": "COL",
+      "team": "Alpine"
+    },
+    {
+      "pos": 16,
+      "driver": "GAS",
+      "team": "Alpine"
+    },
+    {
+      "pos": 17,
+      "driver": "STR",
+      "team": "Aston Martin"
+    },
+    {
+      "pos": 18,
+      "driver": "BOT",
+      "team": "Cadillac"
+    },
+    {
+      "pos": 19,
+      "driver": "BOR",
+      "team": "Audi"
+    },
+    {
+      "pos": 20,
+      "driver": "HAM",
+      "team": "Ferrari"
+    },
+    {
+      "pos": 21,
+      "driver": "VER",
+      "team": "Red Bull Racing"
+    },
+    {
+      "pos": 22,
+      "driver": "PER",
+      "team": "Cadillac"
+    }
+  ],
+  "griglia_partenza_fonte": "ufficiale FIA",
   "arrivo_reale": null,
   "gara_reale": false,
   "driver_standings": [
@@ -1592,12 +1836,12 @@
     {
       "driver": "ANT",
       "team": "Mercedes",
-      "pos_exp": 4.74,
-      "p_win": 0.3369,
+      "pos_exp": 4.59,
+      "p_win": 0.3331,
       "p_dnf": 0.1463,
-      "p_podio": 0.7341,
-      "exp_pts": 16.39,
-      "p_points": 0.8413,
+      "p_podio": 0.7668,
+      "exp_pts": 16.7,
+      "p_points": 0.8505,
       "pos_p10": 1,
       "pos_p90": 19,
       "mkt_prob": 0.0
@@ -1605,130 +1849,117 @@
     {
       "driver": "NOR",
       "team": "McLaren",
-      "pos_exp": 5.42,
-      "p_win": 0.235,
+      "pos_exp": 5.13,
+      "p_win": 0.2558,
       "p_dnf": 0.1566,
-      "p_podio": 0.6406,
-      "exp_pts": 14.55,
-      "p_points": 0.8108,
+      "p_podio": 0.6886,
+      "exp_pts": 15.27,
+      "p_points": 0.8219,
       "pos_p10": 1,
-      "pos_p90": 19,
-      "mkt_prob": 0.0
-    },
-    {
-      "driver": "PIA",
-      "team": "McLaren",
-      "pos_exp": 6.75,
-      "p_win": 0.0542,
-      "p_dnf": 0.1566,
-      "p_podio": 0.3583,
-      "exp_pts": 10.46,
-      "p_points": 0.8008,
-      "pos_p10": 2,
       "pos_p90": 19,
       "mkt_prob": 0.0
     },
     {
       "driver": "LAW",
       "team": "Racing Bulls",
-      "pos_exp": 8.04,
-      "p_win": 0.0158,
+      "pos_exp": 5.55,
+      "p_win": 0.0359,
       "p_dnf": 0.0956,
-      "p_podio": 0.1408,
-      "exp_pts": 6.9,
-      "p_points": 0.758,
-      "pos_p10": 3,
-      "pos_p90": 17,
+      "p_podio": 0.3811,
+      "exp_pts": 11.5,
+      "p_points": 0.87,
+      "pos_p10": 2,
+      "pos_p90": 10,
       "mkt_prob": 0.0
     },
     {
       "driver": "RUS",
       "team": "Mercedes",
-      "pos_exp": 8.54,
-      "p_win": 0.0208,
+      "pos_exp": 7.44,
+      "p_win": 0.0088,
       "p_dnf": 0.1463,
-      "p_podio": 0.1566,
-      "exp_pts": 6.9,
-      "p_points": 0.7046,
+      "p_podio": 0.1751,
+      "exp_pts": 8.41,
+      "p_points": 0.8064,
       "pos_p10": 3,
       "pos_p90": 19,
       "mkt_prob": 0.0
     },
     {
-      "driver": "GAS",
-      "team": "Alpine",
-      "pos_exp": 9.11,
-      "p_win": 0.0103,
-      "p_dnf": 0.1728,
-      "p_podio": 0.1136,
-      "exp_pts": 6.11,
-      "p_points": 0.7009,
-      "pos_p10": 3,
-      "pos_p90": 20,
-      "mkt_prob": 0.0
-    },
-    {
-      "driver": "HAM",
-      "team": "Ferrari",
-      "pos_exp": 10.24,
-      "p_win": 0.0677,
-      "p_dnf": 0.1463,
-      "p_podio": 0.1615,
-      "exp_pts": 5.42,
-      "p_points": 0.5295,
-      "pos_p10": 2,
-      "pos_p90": 19,
-      "mkt_prob": 0.0
-    },
-    {
-      "driver": "LEC",
-      "team": "Ferrari",
-      "pos_exp": 10.28,
-      "p_win": 0.0768,
-      "p_dnf": 0.1463,
-      "p_podio": 0.1727,
-      "exp_pts": 5.58,
-      "p_points": 0.5219,
-      "pos_p10": 2,
-      "pos_p90": 19,
-      "mkt_prob": 0.0
-    },
-    {
-      "driver": "BOR",
+      "driver": "HUL",
       "team": "Audi",
-      "pos_exp": 10.3,
-      "p_win": 0.0064,
+      "pos_exp": 8.49,
+      "p_win": 0.0046,
       "p_dnf": 0.153,
-      "p_podio": 0.0596,
-      "exp_pts": 4.16,
-      "p_points": 0.5952,
+      "p_podio": 0.0975,
+      "exp_pts": 6.5,
+      "p_points": 0.7697,
       "pos_p10": 4,
       "pos_p90": 19,
-      "mkt_prob": 0.0
-    },
-    {
-      "driver": "LIN",
-      "team": "Racing Bulls",
-      "pos_exp": 10.47,
-      "p_win": 0.0042,
-      "p_dnf": 0.0956,
-      "p_podio": 0.0323,
-      "exp_pts": 3.16,
-      "p_points": 0.5514,
-      "pos_p10": 5,
-      "pos_p90": 17,
       "mkt_prob": 0.0
     },
     {
       "driver": "HAD",
       "team": "Red Bull Racing",
-      "pos_exp": 10.98,
-      "p_win": 0.0093,
+      "pos_exp": 9.4,
+      "p_win": 0.0025,
       "p_dnf": 0.1992,
-      "p_podio": 0.057,
-      "exp_pts": 3.92,
-      "p_points": 0.5465,
+      "p_podio": 0.0631,
+      "exp_pts": 5.58,
+      "p_points": 0.7176,
       "pos_p10": 4,
+      "pos_p90": 20,
+      "mkt_prob": 0.0
+    },
+    {
+      "driver": "LEC",
+      "team": "Ferrari",
+      "pos_exp": 9.56,
+      "p_win": 0.0553,
+      "p_dnf": 0.1463,
+      "p_podio": 0.1597,
+      "exp_pts": 5.88,
+      "p_points": 0.6085,
+      "pos_p10": 2,
+      "pos_p90": 19,
+      "mkt_prob": 0.0
+    },
+    {
+      "driver": "PIA",
+      "team": "McLaren",
+      "pos_exp": 10.09,
+      "p_win": 0.0045,
+      "p_dnf": 0.1566,
+      "p_podio": 0.0455,
+      "exp_pts": 4.07,
+      "p_points": 0.6384,
+      "pos_p10": 5,
+      "pos_p90": 19,
+      "mkt_prob": 0.0
+    },
+    {
+      "driver": "HAM",
+      "team": "Ferrari",
+      "pos_exp": 10.96,
+      "p_win": 0.1004,
+      "p_dnf": 0.1463,
+      "p_podio": 0.18,
+      "exp_pts": 5.43,
+      "p_points": 0.4518,
+      "pos_p10": 1,
+      "pos_p90": 19,
+      "mkt_prob": 0.0
+    },
+    {
+      "driver": "BEA",
+      "team": "Haas F1 Team",
+      "pos_exp": 11.26,
+      "p_win": 0.002,
+      "p_dnf": 0.2256,
+      "p_podio": 0.0065,
+      "exp_pts": 2.83,
+      "p_points": 0.5939,
+      "pos_p10": 6,
       "pos_p90": 20,
       "mkt_prob": 0.0
     },
@@ -1736,115 +1967,128 @@
       "driver": "VER",
       "team": "Red Bull Racing",
       "pos_exp": 11.47,
-      "p_win": 0.1026,
+      "p_win": 0.0988,
       "p_dnf": 0.1992,
-      "p_podio": 0.173,
-      "exp_pts": 5.09,
-      "p_points": 0.4103,
-      "pos_p10": 1,
+      "p_podio": 0.1723,
+      "exp_pts": 5.12,
+      "p_points": 0.4189,
+      "pos_p10": 2,
+      "pos_p90": 20,
+      "mkt_prob": 0.0
+    },
+    {
+      "driver": "LIN",
+      "team": "Racing Bulls",
+      "pos_exp": 11.88,
+      "p_win": 0.0045,
+      "p_dnf": 0.0956,
+      "p_podio": 0.0236,
+      "exp_pts": 1.94,
+      "p_points": 0.3717,
+      "pos_p10": 6,
+      "pos_p90": 18,
+      "mkt_prob": 0.0
+    },
+    {
+      "driver": "GAS",
+      "team": "Alpine",
+      "pos_exp": 12.32,
+      "p_win": 0.0281,
+      "p_dnf": 0.1728,
+      "p_podio": 0.0759,
+      "exp_pts": 2.98,
+      "p_points": 0.3526,
+      "pos_p10": 4,
+      "pos_p90": 20,
+      "mkt_prob": 0.0
+    },
+    {
+      "driver": "BOR",
+      "team": "Audi",
+      "pos_exp": 13.45,
+      "p_win": 0.032,
+      "p_dnf": 0.153,
+      "p_podio": 0.069,
+      "exp_pts": 2.39,
+      "p_points": 0.2454,
+      "pos_p10": 5,
       "pos_p90": 20,
       "mkt_prob": 0.0
     },
     {
       "driver": "COL",
       "team": "Alpine",
-      "pos_exp": 11.57,
-      "p_win": 0.0028,
+      "pos_exp": 13.6,
+      "p_win": 0.0099,
       "p_dnf": 0.1728,
-      "p_podio": 0.0281,
-      "exp_pts": 2.7,
-      "p_points": 0.4689,
-      "pos_p10": 5,
+      "p_podio": 0.0319,
+      "exp_pts": 1.57,
+      "p_points": 0.2268,
+      "pos_p10": 7,
       "pos_p90": 20,
-      "mkt_prob": 0.0
-    },
-    {
-      "driver": "BEA",
-      "team": "Haas F1 Team",
-      "pos_exp": 12.21,
-      "p_win": 0.0042,
-      "p_dnf": 0.2256,
-      "p_podio": 0.0356,
-      "exp_pts": 2.68,
-      "p_points": 0.4206,
-      "pos_p10": 5,
-      "pos_p90": 20,
-      "mkt_prob": 0.0
-    },
-    {
-      "driver": "HUL",
-      "team": "Audi",
-      "pos_exp": 12.9,
-      "p_win": 0.0168,
-      "p_dnf": 0.153,
-      "p_podio": 0.0427,
-      "exp_pts": 2.0,
-      "p_points": 0.2899,
-      "pos_p10": 6,
-      "pos_p90": 19,
-      "mkt_prob": 0.0
-    },
-    {
-      "driver": "CAM",
-      "team": "Haas F1 Team",
-      "pos_exp": 14.44,
-      "p_win": 0.0023,
-      "p_dnf": 0.2256,
-      "p_podio": 0.0076,
-      "exp_pts": 0.72,
-      "p_points": 0.1768,
-      "pos_p10": 9,
-      "pos_p90": 20,
-      "mkt_prob": 0.0
-    },
-    {
-      "driver": "SAI",
-      "team": "Williams",
-      "pos_exp": 14.45,
-      "p_win": 0.0062,
-      "p_dnf": 0.2847,
-      "p_podio": 0.0168,
-      "exp_pts": 1.05,
-      "p_points": 0.2034,
-      "pos_p10": 8,
-      "pos_p90": 21,
       "mkt_prob": 0.0
     },
     {
       "driver": "ALB",
       "team": "Williams",
-      "pos_exp": 14.97,
-      "p_win": 0.0089,
+      "pos_exp": 13.65,
+      "p_win": 0.002,
       "p_dnf": 0.2847,
-      "p_podio": 0.0225,
-      "exp_pts": 1.01,
-      "p_points": 0.1681,
-      "pos_p10": 9,
+      "p_podio": 0.0044,
+      "exp_pts": 0.91,
+      "p_points": 0.2748,
+      "pos_p10": 8,
       "pos_p90": 21,
       "mkt_prob": 0.0
     },
     {
       "driver": "ALO",
       "team": "Aston Martin",
-      "pos_exp": 15.32,
-      "p_win": 0.0041,
+      "pos_exp": 14.23,
+      "p_win": 0.002,
       "p_dnf": 0.4,
-      "p_podio": 0.0127,
-      "exp_pts": 0.93,
-      "p_points": 0.1809,
-      "pos_p10": 9,
+      "p_podio": 0.0044,
+      "exp_pts": 0.97,
+      "p_points": 0.2995,
+      "pos_p10": 8,
+      "pos_p90": 21,
+      "mkt_prob": 0.0
+    },
+    {
+      "driver": "CAM",
+      "team": "Haas F1 Team",
+      "pos_exp": 14.46,
+      "p_win": 0.002,
+      "p_dnf": 0.2256,
+      "p_podio": 0.0044,
+      "exp_pts": 0.5,
+      "p_points": 0.1617,
+      "pos_p10": 10,
+      "pos_p90": 20,
+      "mkt_prob": 0.0
+    },
+    {
+      "driver": "SAI",
+      "team": "Williams",
+      "pos_exp": 14.58,
+      "p_win": 0.0027,
+      "p_dnf": 0.2847,
+      "p_podio": 0.0126,
+      "exp_pts": 0.95,
+      "p_points": 0.1879,
+      "pos_p10": 8,
       "pos_p90": 21,
       "mkt_prob": 0.0
     },
     {
       "driver": "STR",
       "team": "Aston Martin",
-      "pos_exp": 16.52,
-      "p_win": 0.0055,
+      "pos_exp": 16.49,
+      "p_win": 0.0056,
       "p_dnf": 0.4,
-      "p_podio": 0.0133,
-      "exp_pts": 0.56,
-      "p_points": 0.1164,
+      "p_podio": 0.0148,
+      "exp_pts": 0.63,
+      "p_points": 0.123,
       "pos_p10": 11,
       "pos_p90": 21,
       "mkt_prob": 0.0
@@ -1852,12 +2096,12 @@
     {
       "driver": "PER",
       "team": "Cadillac",
-      "pos_exp": 16.9,
-      "p_win": 0.0073,
+      "pos_exp": 16.8,
+      "p_win": 0.0076,
       "p_dnf": 0.4,
-      "p_podio": 0.0162,
-      "exp_pts": 0.59,
-      "p_points": 0.1104,
+      "p_podio": 0.0183,
+      "exp_pts": 0.67,
+      "p_points": 0.1161,
       "pos_p10": 12,
       "pos_p90": 21,
       "mkt_prob": 0.0
@@ -1865,13 +2109,13 @@
     {
       "driver": "BOT",
       "team": "Cadillac",
-      "pos_exp": 17.36,
+      "pos_exp": 17.6,
       "p_win": 0.002,
       "p_dnf": 0.4,
-      "p_podio": 0.0044,
-      "exp_pts": 0.14,
-      "p_points": 0.1102,
-      "pos_p10": 13,
+      "p_podio": 0.0045,
+      "exp_pts": 0.2,
+      "p_points": 0.111,
+      "pos_p10": 14,
       "pos_p90": 21,
       "mkt_prob": 0.0
     }
@@ -1894,156 +2138,156 @@
   },
   "h2h": {
     "drivers": [
-      "ANT",
       "NOR",
-      "PIA",
-      "BOR",
-      "RUS",
+      "ANT",
       "LAW",
-      "LIN",
+      "RUS",
+      "HUL",
       "HAD",
-      "GAS",
+      "LEC",
+      "PIA",
+      "BEA",
       "VER"
     ],
     "matrix": [
       {
-        "driver": "ANT",
-        "vs": {
-          "NOR": 0.57,
-          "PIA": 0.745,
-          "BOR": 0.841,
-          "RUS": 0.821,
-          "LAW": 0.814,
-          "LIN": 0.845,
-          "HAD": 0.843,
-          "GAS": 0.836,
-          "VER": 0.757
-        }
-      },
-      {
         "driver": "NOR",
         "vs": {
-          "ANT": 0.43,
-          "PIA": 0.683,
-          "BOR": 0.812,
-          "RUS": 0.76,
-          "LAW": 0.77,
-          "LIN": 0.823,
-          "HAD": 0.821,
-          "GAS": 0.78,
-          "VER": 0.733
+          "ANT": 0.444,
+          "LAW": 0.716,
+          "RUS": 0.791,
+          "HUL": 0.814,
+          "HAD": 0.828,
+          "LEC": 0.763,
+          "PIA": 0.833,
+          "BEA": 0.854,
+          "VER": 0.745
         }
       },
       {
-        "driver": "PIA",
+        "driver": "ANT",
         "vs": {
-          "ANT": 0.255,
-          "NOR": 0.317,
-          "BOR": 0.757,
-          "RUS": 0.65,
-          "LAW": 0.66,
-          "LIN": 0.785,
-          "HAD": 0.751,
-          "GAS": 0.686,
-          "VER": 0.693
-        }
-      },
-      {
-        "driver": "BOR",
-        "vs": {
-          "ANT": 0.159,
-          "NOR": 0.188,
-          "PIA": 0.243,
-          "RUS": 0.373,
-          "LAW": 0.347,
-          "LIN": 0.536,
-          "HAD": 0.528,
-          "GAS": 0.407,
-          "VER": 0.563
-        }
-      },
-      {
-        "driver": "RUS",
-        "vs": {
-          "ANT": 0.179,
-          "NOR": 0.24,
-          "PIA": 0.35,
-          "BOR": 0.627,
-          "LAW": 0.485,
-          "LIN": 0.665,
-          "HAD": 0.664,
-          "GAS": 0.534,
-          "VER": 0.634
+          "NOR": 0.556,
+          "LAW": 0.783,
+          "RUS": 0.84,
+          "HUL": 0.85,
+          "HAD": 0.861,
+          "LEC": 0.791,
+          "PIA": 0.855,
+          "BEA": 0.871,
+          "VER": 0.762
         }
       },
       {
         "driver": "LAW",
         "vs": {
-          "ANT": 0.186,
-          "NOR": 0.23,
-          "PIA": 0.34,
-          "BOR": 0.653,
-          "RUS": 0.515,
-          "LIN": 0.694,
-          "HAD": 0.664,
-          "GAS": 0.542,
-          "VER": 0.661
+          "NOR": 0.284,
+          "ANT": 0.217,
+          "RUS": 0.677,
+          "HUL": 0.764,
+          "HAD": 0.805,
+          "LEC": 0.734,
+          "PIA": 0.839,
+          "BEA": 0.895,
+          "VER": 0.74
         }
       },
       {
-        "driver": "LIN",
+        "driver": "RUS",
         "vs": {
-          "ANT": 0.155,
-          "NOR": 0.177,
-          "PIA": 0.215,
-          "BOR": 0.464,
-          "RUS": 0.335,
-          "LAW": 0.306,
-          "HAD": 0.495,
-          "GAS": 0.373,
-          "VER": 0.565
+          "NOR": 0.209,
+          "ANT": 0.16,
+          "LAW": 0.323,
+          "HUL": 0.612,
+          "HAD": 0.663,
+          "LEC": 0.637,
+          "PIA": 0.731,
+          "BEA": 0.8,
+          "VER": 0.673
+        }
+      },
+      {
+        "driver": "HUL",
+        "vs": {
+          "NOR": 0.186,
+          "ANT": 0.15,
+          "LAW": 0.236,
+          "RUS": 0.389,
+          "HAD": 0.552,
+          "LEC": 0.57,
+          "PIA": 0.641,
+          "BEA": 0.716,
+          "VER": 0.634
         }
       },
       {
         "driver": "HAD",
         "vs": {
-          "ANT": 0.157,
-          "NOR": 0.179,
-          "PIA": 0.249,
-          "BOR": 0.472,
-          "RUS": 0.336,
-          "LAW": 0.336,
-          "LIN": 0.505,
-          "GAS": 0.385,
-          "VER": 0.534
+          "NOR": 0.172,
+          "ANT": 0.139,
+          "LAW": 0.195,
+          "RUS": 0.337,
+          "HUL": 0.448,
+          "LEC": 0.525,
+          "PIA": 0.592,
+          "BEA": 0.668,
+          "VER": 0.598
         }
       },
       {
-        "driver": "GAS",
+        "driver": "LEC",
         "vs": {
-          "ANT": 0.164,
-          "NOR": 0.22,
-          "PIA": 0.314,
-          "BOR": 0.593,
-          "RUS": 0.466,
-          "LAW": 0.458,
-          "LIN": 0.627,
-          "HAD": 0.615,
-          "VER": 0.61
+          "NOR": 0.237,
+          "ANT": 0.209,
+          "LAW": 0.266,
+          "RUS": 0.363,
+          "HUL": 0.43,
+          "HAD": 0.475,
+          "PIA": 0.531,
+          "BEA": 0.586,
+          "VER": 0.59
+        }
+      },
+      {
+        "driver": "PIA",
+        "vs": {
+          "NOR": 0.167,
+          "ANT": 0.145,
+          "LAW": 0.161,
+          "RUS": 0.269,
+          "HUL": 0.359,
+          "HAD": 0.408,
+          "LEC": 0.469,
+          "BEA": 0.568,
+          "VER": 0.577
+        }
+      },
+      {
+        "driver": "BEA",
+        "vs": {
+          "NOR": 0.146,
+          "ANT": 0.129,
+          "LAW": 0.105,
+          "RUS": 0.2,
+          "HUL": 0.284,
+          "HAD": 0.332,
+          "LEC": 0.414,
+          "PIA": 0.432,
+          "VER": 0.528
         }
       },
       {
         "driver": "VER",
         "vs": {
-          "ANT": 0.243,
-          "NOR": 0.267,
-          "PIA": 0.307,
-          "BOR": 0.437,
-          "RUS": 0.366,
-          "LAW": 0.339,
-          "LIN": 0.435,
-          "HAD": 0.466,
-          "GAS": 0.39
+          "NOR": 0.255,
+          "ANT": 0.238,
+          "LAW": 0.26,
+          "RUS": 0.327,
+          "HUL": 0.366,
+          "HAD": 0.402,
+          "LEC": 0.41,
+          "PIA": 0.423,
+          "BEA": 0.472
         }
       }
     ]
@@ -2052,178 +2296,178 @@
     {
       "driver": "ANT",
       "team": "Mercedes",
-      "exp_pts": 16.39,
-      "p_win": 0.3369,
-      "p_podio": 0.7341,
-      "p_points": 0.8413
+      "exp_pts": 16.7,
+      "p_win": 0.3331,
+      "p_podio": 0.7668,
+      "p_points": 0.8505
     },
     {
       "driver": "NOR",
       "team": "McLaren",
-      "exp_pts": 14.55,
-      "p_win": 0.235,
-      "p_podio": 0.6406,
-      "p_points": 0.8108
-    },
-    {
-      "driver": "PIA",
-      "team": "McLaren",
-      "exp_pts": 10.46,
-      "p_win": 0.0542,
-      "p_podio": 0.3583,
-      "p_points": 0.8008
+      "exp_pts": 15.27,
+      "p_win": 0.2558,
+      "p_podio": 0.6886,
+      "p_points": 0.8219
     },
     {
       "driver": "LAW",
       "team": "Racing Bulls",
-      "exp_pts": 6.9,
-      "p_win": 0.0158,
-      "p_podio": 0.1408,
-      "p_points": 0.758
+      "exp_pts": 11.5,
+      "p_win": 0.0359,
+      "p_podio": 0.3811,
+      "p_points": 0.87
     },
     {
       "driver": "RUS",
       "team": "Mercedes",
-      "exp_pts": 6.9,
-      "p_win": 0.0208,
-      "p_podio": 0.1566,
-      "p_points": 0.7046
-    },
-    {
-      "driver": "GAS",
-      "team": "Alpine",
-      "exp_pts": 6.11,
-      "p_win": 0.0103,
-      "p_podio": 0.1136,
-      "p_points": 0.7009
-    },
-    {
-      "driver": "LEC",
-      "team": "Ferrari",
-      "exp_pts": 5.58,
-      "p_win": 0.0768,
-      "p_podio": 0.1727,
-      "p_points": 0.5219
-    },
-    {
-      "driver": "HAM",
-      "team": "Ferrari",
-      "exp_pts": 5.42,
-      "p_win": 0.0677,
-      "p_podio": 0.1615,
-      "p_points": 0.5295
-    },
-    {
-      "driver": "VER",
-      "team": "Red Bull Racing",
-      "exp_pts": 5.09,
-      "p_win": 0.1026,
-      "p_podio": 0.173,
-      "p_points": 0.4103
-    },
-    {
-      "driver": "BOR",
-      "team": "Audi",
-      "exp_pts": 4.16,
-      "p_win": 0.0064,
-      "p_podio": 0.0596,
-      "p_points": 0.5952
-    },
-    {
-      "driver": "HAD",
-      "team": "Red Bull Racing",
-      "exp_pts": 3.92,
-      "p_win": 0.0093,
-      "p_podio": 0.057,
-      "p_points": 0.5465
-    },
-    {
-      "driver": "LIN",
-      "team": "Racing Bulls",
-      "exp_pts": 3.16,
-      "p_win": 0.0042,
-      "p_podio": 0.0323,
-      "p_points": 0.5514
-    },
-    {
-      "driver": "COL",
-      "team": "Alpine",
-      "exp_pts": 2.7,
-      "p_win": 0.0028,
-      "p_podio": 0.0281,
-      "p_points": 0.4689
-    },
-    {
-      "driver": "BEA",
-      "team": "Haas F1 Team",
-      "exp_pts": 2.68,
-      "p_win": 0.0042,
-      "p_podio": 0.0356,
-      "p_points": 0.4206
+      "exp_pts": 8.41,
+      "p_win": 0.0088,
+      "p_podio": 0.1751,
+      "p_points": 0.8064
     },
     {
       "driver": "HUL",
       "team": "Audi",
-      "exp_pts": 2.0,
-      "p_win": 0.0168,
-      "p_podio": 0.0427,
-      "p_points": 0.2899
+      "exp_pts": 6.5,
+      "p_win": 0.0046,
+      "p_podio": 0.0975,
+      "p_points": 0.7697
     },
     {
-      "driver": "SAI",
-      "team": "Williams",
-      "exp_pts": 1.05,
-      "p_win": 0.0062,
-      "p_podio": 0.0168,
-      "p_points": 0.2034
+      "driver": "LEC",
+      "team": "Ferrari",
+      "exp_pts": 5.88,
+      "p_win": 0.0553,
+      "p_podio": 0.1597,
+      "p_points": 0.6085
     },
     {
-      "driver": "ALB",
-      "team": "Williams",
-      "exp_pts": 1.01,
-      "p_win": 0.0089,
-      "p_podio": 0.0225,
-      "p_points": 0.1681
+      "driver": "HAD",
+      "team": "Red Bull Racing",
+      "exp_pts": 5.58,
+      "p_win": 0.0025,
+      "p_podio": 0.0631,
+      "p_points": 0.7176
+    },
+    {
+      "driver": "HAM",
+      "team": "Ferrari",
+      "exp_pts": 5.43,
+      "p_win": 0.1004,
+      "p_podio": 0.18,
+      "p_points": 0.4518
+    },
+    {
+      "driver": "VER",
+      "team": "Red Bull Racing",
+      "exp_pts": 5.12,
+      "p_win": 0.0988,
+      "p_podio": 0.1723,
+      "p_points": 0.4189
+    },
+    {
+      "driver": "PIA",
+      "team": "McLaren",
+      "exp_pts": 4.07,
+      "p_win": 0.0045,
+      "p_podio": 0.0455,
+      "p_points": 0.6384
+    },
+    {
+      "driver": "GAS",
+      "team": "Alpine",
+      "exp_pts": 2.98,
+      "p_win": 0.0281,
+      "p_podio": 0.0759,
+      "p_points": 0.3526
+    },
+    {
+      "driver": "BEA",
+      "team": "Haas F1 Team",
+      "exp_pts": 2.83,
+      "p_win": 0.002,
+      "p_podio": 0.0065,
+      "p_points": 0.5939
+    },
+    {
+      "driver": "BOR",
+      "team": "Audi",
+      "exp_pts": 2.39,
+      "p_win": 0.032,
+      "p_podio": 0.069,
+      "p_points": 0.2454
+    },
+    {
+      "driver": "LIN",
+      "team": "Racing Bulls",
+      "exp_pts": 1.94,
+      "p_win": 0.0045,
+      "p_podio": 0.0236,
+      "p_points": 0.3717
+    },
+    {
+      "driver": "COL",
+      "team": "Alpine",
+      "exp_pts": 1.57,
+      "p_win": 0.0099,
+      "p_podio": 0.0319,
+      "p_points": 0.2268
     },
     {
       "driver": "ALO",
       "team": "Aston Martin",
-      "exp_pts": 0.93,
-      "p_win": 0.0041,
-      "p_podio": 0.0127,
-      "p_points": 0.1809
+      "exp_pts": 0.97,
+      "p_win": 0.002,
+      "p_podio": 0.0044,
+      "p_points": 0.2995
     },
     {
-      "driver": "CAM",
-      "team": "Haas F1 Team",
-      "exp_pts": 0.72,
-      "p_win": 0.0023,
-      "p_podio": 0.0076,
-      "p_points": 0.1768
+      "driver": "SAI",
+      "team": "Williams",
+      "exp_pts": 0.95,
+      "p_win": 0.0027,
+      "p_podio": 0.0126,
+      "p_points": 0.1879
+    },
+    {
+      "driver": "ALB",
+      "team": "Williams",
+      "exp_pts": 0.91,
+      "p_win": 0.002,
+      "p_podio": 0.0044,
+      "p_points": 0.2748
     },
     {
       "driver": "PER",
       "team": "Cadillac",
-      "exp_pts": 0.59,
-      "p_win": 0.0073,
-      "p_podio": 0.0162,
-      "p_points": 0.1104
+      "exp_pts": 0.67,
+      "p_win": 0.0076,
+      "p_podio": 0.0183,
+      "p_points": 0.1161
     },
     {
       "driver": "STR",
       "team": "Aston Martin",
-      "exp_pts": 0.56,
-      "p_win": 0.0055,
-      "p_podio": 0.0133,
-      "p_points": 0.1164
+      "exp_pts": 0.63,
+      "p_win": 0.0056,
+      "p_podio": 0.0148,
+      "p_points": 0.123
+    },
+    {
+      "driver": "CAM",
+      "team": "Haas F1 Team",
+      "exp_pts": 0.5,
+      "p_win": 0.002,
+      "p_podio": 0.0044,
+      "p_points": 0.1617
     },
     {
       "driver": "BOT",
       "team": "Cadillac",
-      "exp_pts": 0.14,
+      "exp_pts": 0.2,
       "p_win": 0.002,
-      "p_podio": 0.0044,
-      "p_points": 0.1102
+      "p_podio": 0.0045,
+      "p_points": 0.111
     }
   ],
   "weather_info": {
@@ -6962,10 +7206,10 @@
       }
     ],
     "next_session": {
-      "name": "Qualifica",
+      "name": "Gara",
       "gp": "São Paulo GP",
       "tz": "America/Sao_Paulo",
-      "dt": "2026-11-07T18:00:00Z"
+      "dt": "2026-11-08T17:00:00Z"
     }
   },
   "prediction_delta": [
@@ -7265,7 +7509,7 @@
           "delta": 0.0001
         },
         {
-          "driver": "STR",
+          "driver": "ALO",
           "team": "Aston Martin",
           "p_pre": 0.0,
           "p_post": 0.0,
@@ -7279,7 +7523,7 @@
           "delta": 0.0
         },
         {
-          "driver": "ALO",
+          "driver": "STR",
           "team": "Aston Martin",
           "p_pre": 0.0,
           "p_post": 0.0,
@@ -7340,85 +7584,8 @@
           "delta": -0.1937
         },
         {
-          "driver": "GAS",
-          "team": "Alpine",
-          "p_pre": 0.0003,
-          "p_post": 0.0,
-          "delta": -0.0003
-        },
-        {
-          "driver": "STR",
-          "team": "Aston Martin",
-          "p_pre": 0.0,
-          "p_post": 0.0,
-          "delta": 0.0
-        },
-        {
-          "driver": "HAD",
-          "team": "Red Bull Racing",
-          "p_pre": 0.0005,
-          "p_post": 0.0,
-          "delta": -0.0004
-        },
-        {
-          "driver": "LAW",
-          "team": "Racing Bulls",
-          "p_pre": 0.0,
-          "p_post": 0.0,
-          "delta": 0.0
-        },
-        {
-          "driver": "COL",
-          "team": "Alpine",
-          "p_pre": 0.0002,
-          "p_post": 0.0,
-          "delta": -0.0002
-        },
-        {
-          "driver": "OCO",
-          "team": "?",
-          "p_pre": 0.0,
-          "p_post": 0.0,
-          "delta": 0.0
-        },
-        {
-          "driver": "ALB",
-          "team": "Williams",
-          "p_pre": 0.0,
-          "p_post": 0.0,
-          "delta": 0.0
-        },
-        {
-          "driver": "BOR",
-          "team": "Audi",
-          "p_pre": 0.0,
-          "p_post": 0.0,
-          "delta": 0.0
-        },
-        {
-          "driver": "PER",
-          "team": "Cadillac",
-          "p_pre": 0.0,
-          "p_post": 0.0,
-          "delta": 0.0
-        },
-        {
           "driver": "BEA",
           "team": "Haas F1 Team",
-          "p_pre": 0.0,
-          "p_post": 0.0,
-          "delta": 0.0
-        },
-        {
-          "driver": "BOT",
-          "team": "Cadillac",
-          "p_pre": 0.0,
-          "p_post": 0.0,
-          "delta": 0.0
-        },
-        {
-          "driver": "LIN",
-          "team": "Racing Bulls",
           "p_pre": 0.0,
           "p_post": 0.0,
           "delta": 0.0
@@ -7431,8 +7598,85 @@
           "delta": 0.0
         },
         {
+          "driver": "LAW",
+          "team": "Racing Bulls",
+          "p_pre": 0.0,
+          "p_post": 0.0,
+          "delta": 0.0
+        },
+        {
           "driver": "SAI",
           "team": "Williams",
+          "p_pre": 0.0,
+          "p_post": 0.0,
+          "delta": 0.0
+        },
+        {
+          "driver": "BOT",
+          "team": "Cadillac",
+          "p_pre": 0.0,
+          "p_post": 0.0,
+          "delta": 0.0
+        },
+        {
+          "driver": "COL",
+          "team": "Alpine",
+          "p_pre": 0.0002,
+          "p_post": 0.0,
+          "delta": -0.0002
+        },
+        {
+          "driver": "PER",
+          "team": "Cadillac",
+          "p_pre": 0.0,
+          "p_post": 0.0,
+          "delta": 0.0
+        },
+        {
+          "driver": "BOR",
+          "team": "Audi",
+          "p_pre": 0.0,
+          "p_post": 0.0,
+          "delta": 0.0
+        },
+        {
+          "driver": "ALB",
+          "team": "Williams",
+          "p_pre": 0.0,
+          "p_post": 0.0,
+          "delta": 0.0
+        },
+        {
+          "driver": "GAS",
+          "team": "Alpine",
+          "p_pre": 0.0003,
+          "p_post": 0.0,
+          "delta": -0.0003
+        },
+        {
+          "driver": "OCO",
+          "team": "?",
+          "p_pre": 0.0,
+          "p_post": 0.0,
+          "delta": 0.0
+        },
+        {
+          "driver": "HAD",
+          "team": "Red Bull Racing",
+          "p_pre": 0.0005,
+          "p_post": 0.0,
+          "delta": -0.0004
+        },
+        {
+          "driver": "LIN",
+          "team": "Racing Bulls",
+          "p_pre": 0.0,
+          "p_post": 0.0,
+          "delta": 0.0
+        },
+        {
+          "driver": "STR",
+          "team": "Aston Martin",
           "p_pre": 0.0,
           "p_post": 0.0,
           "delta": 0.0
@@ -7527,18 +7771,18 @@
           "delta": 0.0011
         },
         {
-          "driver": "OCO",
-          "team": "?",
-          "p_pre": 0.0,
-          "p_post": 0.0004,
-          "delta": 0.0003
-        },
-        {
           "driver": "BOR",
           "team": "Audi",
           "p_pre": 0.0,
           "p_post": 0.0004,
           "delta": 0.0004
+        },
+        {
+          "driver": "OCO",
+          "team": "?",
+          "p_pre": 0.0,
+          "p_post": 0.0004,
+          "delta": 0.0003
         },
         {
           "driver": "BEA",
@@ -7555,29 +7799,8 @@
           "delta": -0.0002
         },
         {
-          "driver": "STR",
+          "driver": "ALO",
           "team": "Aston Martin",
-          "p_pre": 0.0,
-          "p_post": 0.0,
-          "delta": 0.0
-        },
-        {
-          "driver": "CRA",
-          "team": "?",
-          "p_pre": 0.0,
-          "p_post": 0.0,
-          "delta": 0.0
-        },
-        {
-          "driver": "COL",
-          "team": "Alpine",
-          "p_pre": 0.0,
-          "p_post": 0.0,
-          "delta": 0.0
-        },
-        {
-          "driver": "ALB",
-          "team": "Williams",
           "p_pre": 0.0,
           "p_post": 0.0,
           "delta": 0.0
@@ -7590,13 +7813,6 @@
           "delta": -0.0
         },
         {
-          "driver": "PER",
-          "team": "Cadillac",
-          "p_pre": 0.0,
-          "p_post": 0.0,
-          "delta": 0.0
-        },
-        {
           "driver": "BOT",
           "team": "Cadillac",
           "p_pre": 0.0,
@@ -7604,7 +7820,35 @@
           "delta": 0.0
         },
         {
-          "driver": "ALO",
+          "driver": "COL",
+          "team": "Alpine",
+          "p_pre": 0.0,
+          "p_post": 0.0,
+          "delta": 0.0
+        },
+        {
+          "driver": "PER",
+          "team": "Cadillac",
+          "p_pre": 0.0,
+          "p_post": 0.0,
+          "delta": 0.0
+        },
+        {
+          "driver": "CRA",
+          "team": "?",
+          "p_pre": 0.0,
+          "p_post": 0.0,
+          "delta": 0.0
+        },
+        {
+          "driver": "ALB",
+          "team": "Williams",
+          "p_pre": 0.0,
+          "p_post": 0.0,
+          "delta": 0.0
+        },
+        {
+          "driver": "STR",
           "team": "Aston Martin",
           "p_pre": 0.0,
           "p_post": 0.0,
@@ -7679,15 +7923,15 @@
           "delta": 0.0001
         },
         {
-          "driver": "STR",
-          "team": "Aston Martin",
+          "driver": "BEA",
+          "team": "Haas F1 Team",
           "p_pre": 0.0,
           "p_post": 0.0,
           "delta": 0.0
         },
         {
-          "driver": "HAD",
-          "team": "Red Bull Racing",
+          "driver": "ALO",
+          "team": "Aston Martin",
           "p_pre": 0.0,
           "p_post": 0.0,
           "delta": 0.0
@@ -7700,43 +7944,8 @@
           "delta": 0.0
         },
         {
-          "driver": "OCO",
-          "team": "?",
-          "p_pre": 0.0,
-          "p_post": 0.0,
-          "delta": 0.0
-        },
-        {
-          "driver": "ALB",
-          "team": "Williams",
-          "p_pre": 0.0,
-          "p_post": 0.0,
-          "delta": 0.0
-        },
-        {
           "driver": "SAI",
           "team": "Williams",
-          "p_pre": 0.0,
-          "p_post": 0.0,
-          "delta": 0.0
-        },
-        {
-          "driver": "BOR",
-          "team": "Audi",
-          "p_pre": 0.0,
-          "p_post": 0.0,
-          "delta": 0.0
-        },
-        {
-          "driver": "PER",
-          "team": "Cadillac",
-          "p_pre": 0.0,
-          "p_post": 0.0,
-          "delta": 0.0
-        },
-        {
-          "driver": "BEA",
-          "team": "Haas F1 Team",
           "p_pre": 0.0,
           "p_post": 0.0,
           "delta": 0.0
@@ -7749,6 +7958,41 @@
           "delta": 0.0
         },
         {
+          "driver": "PER",
+          "team": "Cadillac",
+          "p_pre": 0.0,
+          "p_post": 0.0,
+          "delta": 0.0
+        },
+        {
+          "driver": "BOR",
+          "team": "Audi",
+          "p_pre": 0.0,
+          "p_post": 0.0,
+          "delta": 0.0
+        },
+        {
+          "driver": "ALB",
+          "team": "Williams",
+          "p_pre": 0.0,
+          "p_post": 0.0,
+          "delta": 0.0
+        },
+        {
+          "driver": "OCO",
+          "team": "?",
+          "p_pre": 0.0,
+          "p_post": 0.0,
+          "delta": 0.0
+        },
+        {
+          "driver": "HAD",
+          "team": "Red Bull Racing",
+          "p_pre": 0.0,
+          "p_post": 0.0,
+          "delta": 0.0
+        },
+        {
           "driver": "LIN",
           "team": "Racing Bulls",
           "p_pre": 0.0,
@@ -7756,15 +8000,15 @@
           "delta": 0.0
         },
         {
-          "driver": "HUL",
-          "team": "Audi",
+          "driver": "STR",
+          "team": "Aston Martin",
           "p_pre": 0.0,
           "p_post": 0.0,
           "delta": 0.0
         },
         {
-          "driver": "ALO",
-          "team": "Aston Martin",
+          "driver": "HUL",
+          "team": "Audi",
           "p_pre": 0.0,
           "p_post": 0.0,
           "delta": 0.0
@@ -7859,8 +8103,22 @@
           "delta": -0.0002
         },
         {
-          "driver": "STR",
+          "driver": "BEA",
+          "team": "Haas F1 Team",
+          "p_pre": 0.0007,
+          "p_post": 0.0,
+          "delta": -0.0007
+        },
+        {
+          "driver": "ALO",
           "team": "Aston Martin",
+          "p_pre": 0.0,
+          "p_post": 0.0,
+          "delta": 0.0
+        },
+        {
+          "driver": "BOT",
+          "team": "Cadillac",
           "p_pre": 0.0,
           "p_post": 0.0,
           "delta": 0.0
@@ -7873,11 +8131,11 @@
           "delta": -0.0003
         },
         {
-          "driver": "OCO",
-          "team": "?",
-          "p_pre": 0.001,
+          "driver": "PER",
+          "team": "Cadillac",
+          "p_pre": 0.0,
           "p_post": 0.0,
-          "delta": -0.001
+          "delta": 0.0
         },
         {
           "driver": "BOR",
@@ -7887,25 +8145,11 @@
           "delta": -0.0077
         },
         {
-          "driver": "PER",
-          "team": "Cadillac",
-          "p_pre": 0.0,
+          "driver": "OCO",
+          "team": "?",
+          "p_pre": 0.001,
           "p_post": 0.0,
-          "delta": 0.0
-        },
-        {
-          "driver": "BEA",
-          "team": "Haas F1 Team",
-          "p_pre": 0.0007,
-          "p_post": 0.0,
-          "delta": -0.0007
-        },
-        {
-          "driver": "BOT",
-          "team": "Cadillac",
-          "p_pre": 0.0,
-          "p_post": 0.0,
-          "delta": 0.0
+          "delta": -0.001
         },
         {
           "driver": "LIN",
@@ -7915,7 +8159,7 @@
           "delta": -0.001
         },
         {
-          "driver": "ALO",
+          "driver": "STR",
           "team": "Aston Martin",
           "p_pre": 0.0,
           "p_post": 0.0,
@@ -7940,12 +8184,12 @@
         {
           "driver": "ANT",
           "team": "Mercedes",
-          "pos_exp": 4.74,
-          "p_win": 0.3369,
+          "pos_exp": 4.59,
+          "p_win": 0.3331,
           "p_dnf": 0.1463,
-          "p_podio": 0.7341,
-          "exp_pts": 16.39,
-          "p_points": 0.8413,
+          "p_podio": 0.7668,
+          "exp_pts": 16.7,
+          "p_points": 0.8505,
           "pos_p10": 1,
           "pos_p90": 19,
           "mkt_prob": 0.0,
@@ -7955,28 +8199,13 @@
         {
           "driver": "NOR",
           "team": "McLaren",
-          "pos_exp": 5.42,
-          "p_win": 0.235,
+          "pos_exp": 5.13,
+          "p_win": 0.2558,
           "p_dnf": 0.1566,
-          "p_podio": 0.6406,
-          "exp_pts": 14.55,
-          "p_points": 0.8108,
+          "p_podio": 0.6886,
+          "exp_pts": 15.27,
+          "p_points": 0.8219,
           "pos_p10": 1,
-          "pos_p90": 19,
-          "mkt_prob": 0.0,
-          "delta_win": 0.0,
-          "delta_podio": 0.0
-        },
-        {
-          "driver": "PIA",
-          "team": "McLaren",
-          "pos_exp": 6.75,
-          "p_win": 0.0542,
-          "p_dnf": 0.1566,
-          "p_podio": 0.3583,
-          "exp_pts": 10.46,
-          "p_points": 0.8008,
-          "pos_p10": 2,
           "pos_p90": 19,
           "mkt_prob": 0.0,
           "delta_win": 0.0,
@@ -7985,14 +8214,14 @@
         {
           "driver": "LAW",
           "team": "Racing Bulls",
-          "pos_exp": 8.04,
-          "p_win": 0.0158,
+          "pos_exp": 5.55,
+          "p_win": 0.0359,
           "p_dnf": 0.0956,
-          "p_podio": 0.1408,
-          "exp_pts": 6.9,
-          "p_points": 0.758,
-          "pos_p10": 3,
-          "pos_p90": 17,
+          "p_podio": 0.3811,
+          "exp_pts": 11.5,
+          "p_points": 0.87,
+          "pos_p10": 2,
+          "pos_p90": 10,
           "mkt_prob": 0.0,
           "delta_win": 0.0,
           "delta_podio": 0.0
@@ -8000,12 +8229,12 @@
         {
           "driver": "RUS",
           "team": "Mercedes",
-          "pos_exp": 8.54,
-          "p_win": 0.0208,
+          "pos_exp": 7.44,
+          "p_win": 0.0088,
           "p_dnf": 0.1463,
-          "p_podio": 0.1566,
-          "exp_pts": 6.9,
-          "p_points": 0.7046,
+          "p_podio": 0.1751,
+          "exp_pts": 8.41,
+          "p_points": 0.8064,
           "pos_p10": 3,
           "pos_p90": 19,
           "mkt_prob": 0.0,
@@ -8013,76 +8242,16 @@
           "delta_podio": 0.0
         },
         {
-          "driver": "GAS",
-          "team": "Alpine",
-          "pos_exp": 9.11,
-          "p_win": 0.0103,
-          "p_dnf": 0.1728,
-          "p_podio": 0.1136,
-          "exp_pts": 6.11,
-          "p_points": 0.7009,
-          "pos_p10": 3,
-          "pos_p90": 20,
-          "mkt_prob": 0.0,
-          "delta_win": 0.0,
-          "delta_podio": 0.0
-        },
-        {
-          "driver": "HAM",
-          "team": "Ferrari",
-          "pos_exp": 10.24,
-          "p_win": 0.0677,
-          "p_dnf": 0.1463,
-          "p_podio": 0.1615,
-          "exp_pts": 5.42,
-          "p_points": 0.5295,
-          "pos_p10": 2,
-          "pos_p90": 19,
-          "mkt_prob": 0.0,
-          "delta_win": 0.0,
-          "delta_podio": 0.0
-        },
-        {
-          "driver": "LEC",
-          "team": "Ferrari",
-          "pos_exp": 10.28,
-          "p_win": 0.0768,
-          "p_dnf": 0.1463,
-          "p_podio": 0.1727,
-          "exp_pts": 5.58,
-          "p_points": 0.5219,
-          "pos_p10": 2,
-          "pos_p90": 19,
-          "mkt_prob": 0.0,
-          "delta_win": 0.0,
-          "delta_podio": 0.0
-        },
-        {
-          "driver": "BOR",
+          "driver": "HUL",
           "team": "Audi",
-          "pos_exp": 10.3,
-          "p_win": 0.0064,
+          "pos_exp": 8.49,
+          "p_win": 0.0046,
           "p_dnf": 0.153,
-          "p_podio": 0.0596,
-          "exp_pts": 4.16,
-          "p_points": 0.5952,
+          "p_podio": 0.0975,
+          "exp_pts": 6.5,
+          "p_points": 0.7697,
           "pos_p10": 4,
           "pos_p90": 19,
-          "mkt_prob": 0.0,
-          "delta_win": 0.0,
-          "delta_podio": 0.0
-        },
-        {
-          "driver": "LIN",
-          "team": "Racing Bulls",
-          "pos_exp": 10.47,
-          "p_win": 0.0042,
-          "p_dnf": 0.0956,
-          "p_podio": 0.0323,
-          "exp_pts": 3.16,
-          "p_points": 0.5514,
-          "pos_p10": 5,
-          "pos_p90": 17,
           "mkt_prob": 0.0,
           "delta_win": 0.0,
           "delta_podio": 0.0
@@ -8090,13 +8259,73 @@
         {
           "driver": "HAD",
           "team": "Red Bull Racing",
-          "pos_exp": 10.98,
-          "p_win": 0.0093,
+          "pos_exp": 9.4,
+          "p_win": 0.0025,
           "p_dnf": 0.1992,
-          "p_podio": 0.057,
-          "exp_pts": 3.92,
-          "p_points": 0.5465,
+          "p_podio": 0.0631,
+          "exp_pts": 5.58,
+          "p_points": 0.7176,
           "pos_p10": 4,
+          "pos_p90": 20,
+          "mkt_prob": 0.0,
+          "delta_win": 0.0,
+          "delta_podio": 0.0
+        },
+        {
+          "driver": "LEC",
+          "team": "Ferrari",
+          "pos_exp": 9.56,
+          "p_win": 0.0553,
+          "p_dnf": 0.1463,
+          "p_podio": 0.1597,
+          "exp_pts": 5.88,
+          "p_points": 0.6085,
+          "pos_p10": 2,
+          "pos_p90": 19,
+          "mkt_prob": 0.0,
+          "delta_win": 0.0,
+          "delta_podio": 0.0
+        },
+        {
+          "driver": "PIA",
+          "team": "McLaren",
+          "pos_exp": 10.09,
+          "p_win": 0.0045,
+          "p_dnf": 0.1566,
+          "p_podio": 0.0455,
+          "exp_pts": 4.07,
+          "p_points": 0.6384,
+          "pos_p10": 5,
+          "pos_p90": 19,
+          "mkt_prob": 0.0,
+          "delta_win": 0.0,
+          "delta_podio": 0.0
+        },
+        {
+          "driver": "HAM",
+          "team": "Ferrari",
+          "pos_exp": 10.96,
+          "p_win": 0.1004,
+          "p_dnf": 0.1463,
+          "p_podio": 0.18,
+          "exp_pts": 5.43,
+          "p_points": 0.4518,
+          "pos_p10": 1,
+          "pos_p90": 19,
+          "mkt_prob": 0.0,
+          "delta_win": 0.0,
+          "delta_podio": 0.0
+        },
+        {
+          "driver": "BEA",
+          "team": "Haas F1 Team",
+          "pos_exp": 11.26,
+          "p_win": 0.002,
+          "p_dnf": 0.2256,
+          "p_podio": 0.0065,
+          "exp_pts": 2.83,
+          "p_points": 0.5939,
+          "pos_p10": 6,
           "pos_p90": 20,
           "mkt_prob": 0.0,
           "delta_win": 0.0,
@@ -8106,12 +8335,57 @@
           "driver": "VER",
           "team": "Red Bull Racing",
           "pos_exp": 11.47,
-          "p_win": 0.1026,
+          "p_win": 0.0988,
           "p_dnf": 0.1992,
-          "p_podio": 0.173,
-          "exp_pts": 5.09,
-          "p_points": 0.4103,
-          "pos_p10": 1,
+          "p_podio": 0.1723,
+          "exp_pts": 5.12,
+          "p_points": 0.4189,
+          "pos_p10": 2,
+          "pos_p90": 20,
+          "mkt_prob": 0.0,
+          "delta_win": 0.0,
+          "delta_podio": 0.0
+        },
+        {
+          "driver": "LIN",
+          "team": "Racing Bulls",
+          "pos_exp": 11.88,
+          "p_win": 0.0045,
+          "p_dnf": 0.0956,
+          "p_podio": 0.0236,
+          "exp_pts": 1.94,
+          "p_points": 0.3717,
+          "pos_p10": 6,
+          "pos_p90": 18,
+          "mkt_prob": 0.0,
+          "delta_win": 0.0,
+          "delta_podio": 0.0
+        },
+        {
+          "driver": "GAS",
+          "team": "Alpine",
+          "pos_exp": 12.32,
+          "p_win": 0.0281,
+          "p_dnf": 0.1728,
+          "p_podio": 0.0759,
+          "exp_pts": 2.98,
+          "p_points": 0.3526,
+          "pos_p10": 4,
+          "pos_p90": 20,
+          "mkt_prob": 0.0,
+          "delta_win": 0.0,
+          "delta_podio": 0.0
+        },
+        {
+          "driver": "BOR",
+          "team": "Audi",
+          "pos_exp": 13.45,
+          "p_win": 0.032,
+          "p_dnf": 0.153,
+          "p_podio": 0.069,
+          "exp_pts": 2.39,
+          "p_points": 0.2454,
+          "pos_p10": 5,
           "pos_p90": 20,
           "mkt_prob": 0.0,
           "delta_win": 0.0,
@@ -8120,74 +8394,14 @@
         {
           "driver": "COL",
           "team": "Alpine",
-          "pos_exp": 11.57,
-          "p_win": 0.0028,
+          "pos_exp": 13.6,
+          "p_win": 0.0099,
           "p_dnf": 0.1728,
-          "p_podio": 0.0281,
-          "exp_pts": 2.7,
-          "p_points": 0.4689,
-          "pos_p10": 5,
+          "p_podio": 0.0319,
+          "exp_pts": 1.57,
+          "p_points": 0.2268,
+          "pos_p10": 7,
           "pos_p90": 20,
-          "mkt_prob": 0.0,
-          "delta_win": 0.0,
-          "delta_podio": 0.0
-        },
-        {
-          "driver": "BEA",
-          "team": "Haas F1 Team",
-          "pos_exp": 12.21,
-          "p_win": 0.0042,
-          "p_dnf": 0.2256,
-          "p_podio": 0.0356,
-          "exp_pts": 2.68,
-          "p_points": 0.4206,
-          "pos_p10": 5,
-          "pos_p90": 20,
-          "mkt_prob": 0.0,
-          "delta_win": 0.0,
-          "delta_podio": 0.0
-        },
-        {
-          "driver": "HUL",
-          "team": "Audi",
-          "pos_exp": 12.9,
-          "p_win": 0.0168,
-          "p_dnf": 0.153,
-          "p_podio": 0.0427,
-          "exp_pts": 2.0,
-          "p_points": 0.2899,
-          "pos_p10": 6,
-          "pos_p90": 19,
-          "mkt_prob": 0.0,
-          "delta_win": 0.0,
-          "delta_podio": 0.0
-        },
-        {
-          "driver": "CAM",
-          "team": "Haas F1 Team",
-          "pos_exp": 14.44,
-          "p_win": 0.0023,
-          "p_dnf": 0.2256,
-          "p_podio": 0.0076,
-          "exp_pts": 0.72,
-          "p_points": 0.1768,
-          "pos_p10": 9,
-          "pos_p90": 20,
-          "mkt_prob": 0.0,
-          "delta_win": 0.0,
-          "delta_podio": 0.0
-        },
-        {
-          "driver": "SAI",
-          "team": "Williams",
-          "pos_exp": 14.45,
-          "p_win": 0.0062,
-          "p_dnf": 0.2847,
-          "p_podio": 0.0168,
-          "exp_pts": 1.05,
-          "p_points": 0.2034,
-          "pos_p10": 8,
-          "pos_p90": 21,
           "mkt_prob": 0.0,
           "delta_win": 0.0,
           "delta_podio": 0.0
@@ -8195,13 +8409,13 @@
         {
           "driver": "ALB",
           "team": "Williams",
-          "pos_exp": 14.97,
-          "p_win": 0.0089,
+          "pos_exp": 13.65,
+          "p_win": 0.002,
           "p_dnf": 0.2847,
-          "p_podio": 0.0225,
-          "exp_pts": 1.01,
-          "p_points": 0.1681,
-          "pos_p10": 9,
+          "p_podio": 0.0044,
+          "exp_pts": 0.91,
+          "p_points": 0.2748,
+          "pos_p10": 8,
           "pos_p90": 21,
           "mkt_prob": 0.0,
           "delta_win": 0.0,
@@ -8210,13 +8424,43 @@
         {
           "driver": "ALO",
           "team": "Aston Martin",
-          "pos_exp": 15.32,
-          "p_win": 0.0041,
+          "pos_exp": 14.23,
+          "p_win": 0.002,
           "p_dnf": 0.4,
-          "p_podio": 0.0127,
-          "exp_pts": 0.93,
-          "p_points": 0.1809,
-          "pos_p10": 9,
+          "p_podio": 0.0044,
+          "exp_pts": 0.97,
+          "p_points": 0.2995,
+          "pos_p10": 8,
+          "pos_p90": 21,
+          "mkt_prob": 0.0,
+          "delta_win": 0.0,
+          "delta_podio": 0.0
+        },
+        {
+          "driver": "CAM",
+          "team": "Haas F1 Team",
+          "pos_exp": 14.46,
+          "p_win": 0.002,
+          "p_dnf": 0.2256,
+          "p_podio": 0.0044,
+          "exp_pts": 0.5,
+          "p_points": 0.1617,
+          "pos_p10": 10,
+          "pos_p90": 20,
+          "mkt_prob": 0.0,
+          "delta_win": 0.0,
+          "delta_podio": 0.0
+        },
+        {
+          "driver": "SAI",
+          "team": "Williams",
+          "pos_exp": 14.58,
+          "p_win": 0.0027,
+          "p_dnf": 0.2847,
+          "p_podio": 0.0126,
+          "exp_pts": 0.95,
+          "p_points": 0.1879,
+          "pos_p10": 8,
           "pos_p90": 21,
           "mkt_prob": 0.0,
           "delta_win": 0.0,
@@ -8225,12 +8469,12 @@
         {
           "driver": "STR",
           "team": "Aston Martin",
-          "pos_exp": 16.52,
-          "p_win": 0.0055,
+          "pos_exp": 16.49,
+          "p_win": 0.0056,
           "p_dnf": 0.4,
-          "p_podio": 0.0133,
-          "exp_pts": 0.56,
-          "p_points": 0.1164,
+          "p_podio": 0.0148,
+          "exp_pts": 0.63,
+          "p_points": 0.123,
           "pos_p10": 11,
           "pos_p90": 21,
           "mkt_prob": 0.0,
@@ -8240,12 +8484,12 @@
         {
           "driver": "PER",
           "team": "Cadillac",
-          "pos_exp": 16.9,
-          "p_win": 0.0073,
+          "pos_exp": 16.8,
+          "p_win": 0.0076,
           "p_dnf": 0.4,
-          "p_podio": 0.0162,
-          "exp_pts": 0.59,
-          "p_points": 0.1104,
+          "p_podio": 0.0183,
+          "exp_pts": 0.67,
+          "p_points": 0.1161,
           "pos_p10": 12,
           "pos_p90": 21,
           "mkt_prob": 0.0,
@@ -8255,13 +8499,13 @@
         {
           "driver": "BOT",
           "team": "Cadillac",
-          "pos_exp": 17.36,
+          "pos_exp": 17.6,
           "p_win": 0.002,
           "p_dnf": 0.4,
-          "p_podio": 0.0044,
-          "exp_pts": 0.14,
-          "p_points": 0.1102,
-          "pos_p10": 13,
+          "p_podio": 0.0045,
+          "exp_pts": 0.2,
+          "p_points": 0.111,
+          "pos_p10": 14,
           "pos_p90": 21,
           "mkt_prob": 0.0,
           "delta_win": 0.0,
@@ -8277,220 +8521,220 @@
         {
           "driver": "ANT",
           "team": "Mercedes",
-          "p_win": 0.2057,
-          "p_podio": 0.507,
-          "exp_pts": 11.08,
-          "p_points": 0.7145,
-          "delta_win": -0.131,
-          "delta_podio": -0.227
+          "p_win": 0.2037,
+          "p_podio": 0.5272,
+          "exp_pts": 11.25,
+          "p_points": 0.7216,
+          "delta_win": -0.129,
+          "delta_podio": -0.24
         },
         {
           "driver": "NOR",
           "team": "McLaren",
-          "p_win": 0.1497,
-          "p_podio": 0.449,
-          "exp_pts": 10.07,
-          "p_points": 0.6909,
-          "delta_win": -0.085,
-          "delta_podio": -0.192
+          "p_win": 0.1611,
+          "p_podio": 0.4788,
+          "exp_pts": 10.46,
+          "p_points": 0.6995,
+          "delta_win": -0.095,
+          "delta_podio": -0.21
+        },
+        {
+          "driver": "HAM",
+          "team": "Ferrari",
+          "p_win": 0.0757,
+          "p_podio": 0.1634,
+          "exp_pts": 5.05,
+          "p_points": 0.4126,
+          "delta_win": -0.025,
+          "delta_podio": -0.017
         },
         {
           "driver": "VER",
           "team": "Red Bull Racing",
-          "p_win": 0.0769,
-          "p_podio": 0.1591,
-          "exp_pts": 4.87,
-          "p_points": 0.3805,
-          "delta_win": -0.026,
+          "p_win": 0.0748,
+          "p_podio": 0.1586,
+          "exp_pts": 4.88,
+          "p_points": 0.3871,
+          "delta_win": -0.024,
           "delta_podio": -0.014
         },
         {
           "driver": "LEC",
           "team": "Ferrari",
-          "p_win": 0.0627,
-          "p_podio": 0.1589,
-          "exp_pts": 5.14,
-          "p_points": 0.467,
-          "delta_win": -0.014,
-          "delta_podio": -0.014
-        },
-        {
-          "driver": "HAM",
-          "team": "Ferrari",
-          "p_win": 0.0577,
-          "p_podio": 0.1519,
-          "exp_pts": 5.05,
-          "p_points": 0.4729,
-          "delta_win": -0.01,
-          "delta_podio": -0.01
-        },
-        {
-          "driver": "PIA",
-          "team": "McLaren",
-          "p_win": 0.0503,
-          "p_podio": 0.274,
-          "exp_pts": 7.82,
-          "p_points": 0.6831,
+          "p_win": 0.0509,
+          "p_podio": 0.1508,
+          "exp_pts": 5.3,
+          "p_points": 0.5341,
           "delta_win": -0.004,
-          "delta_podio": -0.084
-        },
-        {
-          "driver": "RUS",
-          "team": "Mercedes",
-          "p_win": 0.0319,
-          "p_podio": 0.1489,
-          "exp_pts": 5.86,
-          "p_points": 0.6086,
-          "delta_win": 0.011,
-          "delta_podio": -0.008
-        },
-        {
-          "driver": "HUL",
-          "team": "Audi",
-          "p_win": 0.0297,
-          "p_podio": 0.0783,
-          "exp_pts": 3.17,
-          "p_points": 0.2872,
-          "delta_win": 0.013,
-          "delta_podio": 0.036
+          "delta_podio": -0.009
         },
         {
           "driver": "LAW",
           "team": "Racing Bulls",
-          "p_win": 0.0291,
-          "p_podio": 0.1391,
-          "exp_pts": 5.86,
-          "p_points": 0.65,
-          "delta_win": 0.013,
-          "delta_podio": -0.002
-        },
-        {
-          "driver": "GAS",
-          "team": "Alpine",
-          "p_win": 0.0261,
-          "p_podio": 0.1223,
-          "exp_pts": 5.43,
-          "p_points": 0.6057,
-          "delta_win": 0.016,
-          "delta_podio": 0.009
-        },
-        {
-          "driver": "HAD",
-          "team": "Red Bull Racing",
-          "p_win": 0.0256,
-          "p_podio": 0.0872,
-          "exp_pts": 4.22,
-          "p_points": 0.486,
-          "delta_win": 0.016,
-          "delta_podio": 0.03
-        },
-        {
-          "driver": "ALB",
-          "team": "Williams",
-          "p_win": 0.0253,
-          "p_podio": 0.0658,
-          "exp_pts": 2.62,
-          "p_points": 0.1928,
-          "delta_win": 0.016,
-          "delta_podio": 0.043
-        },
-        {
-          "driver": "PER",
-          "team": "Cadillac",
-          "p_win": 0.0245,
-          "p_podio": 0.0619,
-          "exp_pts": 2.39,
-          "p_points": 0.1481,
-          "delta_win": 0.017,
-          "delta_podio": 0.046
+          "p_win": 0.0402,
+          "p_podio": 0.2881,
+          "exp_pts": 8.39,
+          "p_points": 0.7368,
+          "delta_win": 0.004,
+          "delta_podio": -0.093
         },
         {
           "driver": "BOR",
           "team": "Audi",
-          "p_win": 0.024,
-          "p_podio": 0.0888,
-          "exp_pts": 4.35,
-          "p_points": 0.5238,
-          "delta_win": 0.018,
-          "delta_podio": 0.029
+          "p_win": 0.0381,
+          "p_podio": 0.0946,
+          "exp_pts": 3.38,
+          "p_points": 0.2527,
+          "delta_win": 0.006,
+          "delta_podio": 0.026
         },
         {
-          "driver": "SAI",
-          "team": "Williams",
-          "p_win": 0.0239,
-          "p_podio": 0.0622,
-          "exp_pts": 2.64,
-          "p_points": 0.2201,
-          "delta_win": 0.018,
+          "driver": "GAS",
+          "team": "Alpine",
+          "p_win": 0.0359,
+          "p_podio": 0.0989,
+          "exp_pts": 3.7,
+          "p_points": 0.3358,
+          "delta_win": 0.008,
+          "delta_podio": 0.023
+        },
+        {
+          "driver": "COL",
+          "team": "Alpine",
+          "p_win": 0.0259,
+          "p_podio": 0.0716,
+          "exp_pts": 2.93,
+          "p_points": 0.2383,
+          "delta_win": 0.016,
+          "delta_podio": 0.04
+        },
+        {
+          "driver": "RUS",
+          "team": "Mercedes",
+          "p_win": 0.0253,
+          "p_podio": 0.1604,
+          "exp_pts": 6.69,
+          "p_points": 0.6875,
+          "delta_win": 0.016,
+          "delta_podio": -0.015
+        },
+        {
+          "driver": "PER",
+          "team": "Cadillac",
+          "p_win": 0.0246,
+          "p_podio": 0.0632,
+          "exp_pts": 2.43,
+          "p_points": 0.1525,
+          "delta_win": 0.017,
           "delta_podio": 0.045
         },
         {
           "driver": "STR",
           "team": "Aston Martin",
           "p_win": 0.0235,
-          "p_podio": 0.0601,
-          "exp_pts": 2.37,
-          "p_points": 0.1527,
+          "p_podio": 0.061,
+          "exp_pts": 2.41,
+          "p_points": 0.1578,
           "delta_win": 0.018,
-          "delta_podio": 0.047
+          "delta_podio": 0.046
+        },
+        {
+          "driver": "HUL",
+          "team": "Audi",
+          "p_win": 0.023,
+          "p_podio": 0.1123,
+          "exp_pts": 5.64,
+          "p_points": 0.659,
+          "delta_win": 0.018,
+          "delta_podio": 0.015
+        },
+        {
+          "driver": "PIA",
+          "team": "McLaren",
+          "p_win": 0.0229,
+          "p_podio": 0.08,
+          "exp_pts": 4.3,
+          "p_points": 0.5573,
+          "delta_win": 0.018,
+          "delta_podio": 0.035
         },
         {
           "driver": "LIN",
           "team": "Racing Bulls",
-          "p_win": 0.0228,
-          "p_podio": 0.0718,
-          "exp_pts": 3.8,
-          "p_points": 0.4898,
-          "delta_win": 0.019,
-          "delta_podio": 0.04
+          "p_win": 0.0229,
+          "p_podio": 0.0665,
+          "exp_pts": 3.13,
+          "p_points": 0.3506,
+          "delta_win": 0.018,
+          "delta_podio": 0.043
         },
         {
-          "driver": "BEA",
-          "team": "Haas F1 Team",
-          "p_win": 0.0228,
-          "p_podio": 0.0739,
-          "exp_pts": 3.54,
-          "p_points": 0.3885,
-          "delta_win": 0.019,
-          "delta_podio": 0.038
-        },
-        {
-          "driver": "ALO",
-          "team": "Aston Martin",
-          "p_win": 0.0227,
-          "p_podio": 0.0597,
-          "exp_pts": 2.58,
-          "p_points": 0.2027,
+          "driver": "SAI",
+          "team": "Williams",
+          "p_win": 0.0219,
+          "p_podio": 0.0596,
+          "exp_pts": 2.59,
+          "p_points": 0.2081,
           "delta_win": 0.019,
           "delta_podio": 0.047
         },
         {
-          "driver": "COL",
-          "team": "Alpine",
-          "p_win": 0.022,
-          "p_podio": 0.0692,
-          "exp_pts": 3.55,
-          "p_points": 0.4259,
+          "driver": "HAD",
+          "team": "Red Bull Racing",
+          "p_win": 0.0218,
+          "p_podio": 0.0909,
+          "exp_pts": 5.13,
+          "p_points": 0.6186,
           "delta_win": 0.019,
-          "delta_podio": 0.041
+          "delta_podio": 0.028
+        },
+        {
+          "driver": "BEA",
+          "team": "Haas F1 Team",
+          "p_win": 0.0216,
+          "p_podio": 0.0558,
+          "exp_pts": 3.62,
+          "p_points": 0.5228,
+          "delta_win": 0.02,
+          "delta_podio": 0.049
+        },
+        {
+          "driver": "ALB",
+          "team": "Williams",
+          "p_win": 0.0216,
+          "p_podio": 0.0545,
+          "exp_pts": 2.57,
+          "p_points": 0.2755,
+          "delta_win": 0.02,
+          "delta_podio": 0.05
+        },
+        {
+          "driver": "ALO",
+          "team": "Aston Martin",
+          "p_win": 0.0216,
+          "p_podio": 0.0545,
+          "exp_pts": 2.6,
+          "p_points": 0.2946,
+          "delta_win": 0.02,
+          "delta_podio": 0.05
         },
         {
           "driver": "CAM",
           "team": "Haas F1 Team",
-          "p_win": 0.0217,
-          "p_podio": 0.0565,
-          "exp_pts": 2.46,
-          "p_points": 0.1995,
-          "delta_win": 0.019,
-          "delta_podio": 0.049
+          "p_win": 0.0216,
+          "p_podio": 0.0545,
+          "exp_pts": 2.34,
+          "p_points": 0.1878,
+          "delta_win": 0.02,
+          "delta_podio": 0.05
         },
         {
           "driver": "BOT",
           "team": "Cadillac",
           "p_win": 0.0216,
-          "p_podio": 0.0545,
-          "exp_pts": 2.14,
-          "p_points": 0.1479,
+          "p_podio": 0.0546,
+          "exp_pts": 2.18,
+          "p_points": 0.1485,
           "delta_win": 0.02,
           "delta_podio": 0.05
         }
@@ -8504,220 +8748,220 @@
         {
           "driver": "ANT",
           "team": "Mercedes",
-          "p_win": 0.2844,
-          "p_podio": 0.6444,
-          "exp_pts": 14.27,
-          "p_points": 0.8106,
+          "p_win": 0.2813,
+          "p_podio": 0.6722,
+          "exp_pts": 14.52,
+          "p_points": 0.819,
           "delta_win": -0.052,
-          "delta_podio": -0.09
+          "delta_podio": -0.095
         },
         {
           "driver": "NOR",
           "team": "McLaren",
-          "p_win": 0.2009,
-          "p_podio": 0.565,
-          "exp_pts": 12.76,
-          "p_points": 0.7828,
-          "delta_win": -0.034,
-          "delta_podio": -0.076
+          "p_win": 0.2179,
+          "p_podio": 0.6058,
+          "exp_pts": 13.35,
+          "p_points": 0.7929,
+          "delta_win": -0.038,
+          "delta_podio": -0.083
+        },
+        {
+          "driver": "HAM",
+          "team": "Ferrari",
+          "p_win": 0.0905,
+          "p_podio": 0.1735,
+          "exp_pts": 5.28,
+          "p_points": 0.4561,
+          "delta_win": -0.01,
+          "delta_podio": -0.007
         },
         {
           "driver": "VER",
           "team": "Red Bull Racing",
-          "p_win": 0.0923,
-          "p_podio": 0.1675,
-          "exp_pts": 5.0,
-          "p_points": 0.4184,
+          "p_win": 0.0892,
+          "p_podio": 0.1669,
+          "exp_pts": 5.02,
+          "p_points": 0.4262,
           "delta_win": -0.01,
           "delta_podio": -0.005
         },
         {
           "driver": "LEC",
           "team": "Ferrari",
-          "p_win": 0.0712,
-          "p_podio": 0.1672,
-          "exp_pts": 5.4,
-          "p_points": 0.5199,
-          "delta_win": -0.006,
-          "delta_podio": -0.005
-        },
-        {
-          "driver": "HAM",
-          "team": "Ferrari",
-          "p_win": 0.0637,
-          "p_podio": 0.1577,
-          "exp_pts": 5.27,
-          "p_points": 0.5268,
-          "delta_win": -0.004,
-          "delta_podio": -0.004
-        },
-        {
-          "driver": "PIA",
-          "team": "McLaren",
-          "p_win": 0.0526,
-          "p_podio": 0.325,
-          "exp_pts": 9.4,
-          "p_points": 0.7737,
+          "p_win": 0.0535,
+          "p_podio": 0.1562,
+          "exp_pts": 5.65,
+          "p_points": 0.5987,
           "delta_win": -0.002,
-          "delta_podio": -0.033
-        },
-        {
-          "driver": "RUS",
-          "team": "Mercedes",
-          "p_win": 0.0252,
-          "p_podio": 0.1536,
-          "exp_pts": 6.48,
-          "p_points": 0.6862,
-          "delta_win": 0.004,
-          "delta_podio": -0.003
-        },
-        {
-          "driver": "HUL",
-          "team": "Audi",
-          "p_win": 0.022,
-          "p_podio": 0.0567,
-          "exp_pts": 2.47,
-          "p_points": 0.3088,
-          "delta_win": 0.005,
-          "delta_podio": 0.014
+          "delta_podio": -0.004
         },
         {
           "driver": "LAW",
           "team": "Racing Bulls",
-          "p_win": 0.0211,
-          "p_podio": 0.1401,
-          "exp_pts": 6.48,
-          "p_points": 0.7348,
-          "delta_win": 0.005,
-          "delta_podio": -0.001
-        },
-        {
-          "driver": "GAS",
-          "team": "Alpine",
-          "p_win": 0.0166,
-          "p_podio": 0.117,
-          "exp_pts": 5.84,
-          "p_points": 0.6828,
-          "delta_win": 0.006,
-          "delta_podio": 0.003
-        },
-        {
-          "driver": "HAD",
-          "team": "Red Bull Racing",
-          "p_win": 0.0158,
-          "p_podio": 0.0689,
-          "exp_pts": 4.04,
-          "p_points": 0.5423,
-          "delta_win": 0.007,
-          "delta_podio": 0.012
-        },
-        {
-          "driver": "ALB",
-          "team": "Williams",
-          "p_win": 0.0155,
-          "p_podio": 0.0396,
-          "exp_pts": 1.65,
-          "p_points": 0.198,
-          "delta_win": 0.007,
-          "delta_podio": 0.017
-        },
-        {
-          "driver": "PER",
-          "team": "Cadillac",
-          "p_win": 0.0142,
-          "p_podio": 0.0342,
-          "exp_pts": 1.31,
-          "p_points": 0.1455,
-          "delta_win": 0.007,
-          "delta_podio": 0.018
+          "p_win": 0.0376,
+          "p_podio": 0.3444,
+          "exp_pts": 10.26,
+          "p_points": 0.8367,
+          "delta_win": 0.002,
+          "delta_podio": -0.037
         },
         {
           "driver": "BOR",
           "team": "Audi",
-          "p_win": 0.0134,
-          "p_podio": 0.0711,
-          "exp_pts": 4.24,
-          "p_points": 0.5866,
-          "delta_win": 0.007,
-          "delta_podio": 0.012
+          "p_win": 0.0344,
+          "p_podio": 0.0791,
+          "exp_pts": 2.79,
+          "p_points": 0.2683,
+          "delta_win": 0.002,
+          "delta_podio": 0.01
         },
         {
-          "driver": "SAI",
-          "team": "Williams",
-          "p_win": 0.0133,
-          "p_podio": 0.0347,
-          "exp_pts": 1.69,
-          "p_points": 0.2301,
+          "driver": "GAS",
+          "team": "Alpine",
+          "p_win": 0.0312,
+          "p_podio": 0.085,
+          "exp_pts": 3.27,
+          "p_points": 0.3659,
+          "delta_win": 0.003,
+          "delta_podio": 0.009
+        },
+        {
+          "driver": "COL",
+          "team": "Alpine",
+          "p_win": 0.0163,
+          "p_podio": 0.0476,
+          "exp_pts": 2.11,
+          "p_points": 0.2514,
+          "delta_win": 0.006,
+          "delta_podio": 0.016
+        },
+        {
+          "driver": "RUS",
+          "team": "Mercedes",
+          "p_win": 0.0154,
+          "p_podio": 0.1693,
+          "exp_pts": 7.72,
+          "p_points": 0.7788,
+          "delta_win": 0.007,
+          "delta_podio": -0.006
+        },
+        {
+          "driver": "PER",
+          "team": "Cadillac",
+          "p_win": 0.0144,
+          "p_podio": 0.036,
+          "exp_pts": 1.38,
+          "p_points": 0.1507,
           "delta_win": 0.007,
           "delta_podio": 0.018
         },
         {
           "driver": "STR",
           "team": "Aston Martin",
-          "p_win": 0.0127,
-          "p_podio": 0.0318,
-          "exp_pts": 1.29,
-          "p_points": 0.1509,
+          "p_win": 0.0128,
+          "p_podio": 0.033,
+          "exp_pts": 1.34,
+          "p_points": 0.1569,
           "delta_win": 0.007,
           "delta_podio": 0.018
         },
         {
+          "driver": "HUL",
+          "team": "Audi",
+          "p_win": 0.012,
+          "p_podio": 0.1033,
+          "exp_pts": 6.16,
+          "p_points": 0.7454,
+          "delta_win": 0.007,
+          "delta_podio": 0.006
+        },
+        {
+          "driver": "PIA",
+          "team": "McLaren",
+          "p_win": 0.0119,
+          "p_podio": 0.0591,
+          "exp_pts": 4.16,
+          "p_points": 0.6259,
+          "delta_win": 0.007,
+          "delta_podio": 0.014
+        },
+        {
           "driver": "LIN",
           "team": "Racing Bulls",
-          "p_win": 0.0116,
-          "p_podio": 0.0479,
-          "exp_pts": 3.42,
-          "p_points": 0.5468,
+          "p_win": 0.0119,
+          "p_podio": 0.0405,
+          "exp_pts": 2.42,
+          "p_points": 0.3832,
           "delta_win": 0.007,
-          "delta_podio": 0.016
+          "delta_podio": 0.017
+        },
+        {
+          "driver": "SAI",
+          "team": "Williams",
+          "p_win": 0.0104,
+          "p_podio": 0.0312,
+          "exp_pts": 1.61,
+          "p_points": 0.216,
+          "delta_win": 0.008,
+          "delta_podio": 0.019
+        },
+        {
+          "driver": "HAD",
+          "team": "Red Bull Racing",
+          "p_win": 0.0102,
+          "p_podio": 0.0741,
+          "exp_pts": 5.4,
+          "p_points": 0.698,
+          "delta_win": 0.008,
+          "delta_podio": 0.011
         },
         {
           "driver": "BEA",
           "team": "Haas F1 Team",
-          "p_win": 0.0116,
-          "p_podio": 0.0507,
-          "exp_pts": 3.02,
-          "p_points": 0.4277,
-          "delta_win": 0.007,
-          "delta_podio": 0.015
+          "p_win": 0.0098,
+          "p_podio": 0.026,
+          "exp_pts": 3.15,
+          "p_points": 0.5854,
+          "delta_win": 0.008,
+          "delta_podio": 0.019
+        },
+        {
+          "driver": "ALB",
+          "team": "Williams",
+          "p_win": 0.0098,
+          "p_podio": 0.0242,
+          "exp_pts": 1.57,
+          "p_points": 0.2951,
+          "delta_win": 0.008,
+          "delta_podio": 0.02
         },
         {
           "driver": "ALO",
           "team": "Aston Martin",
-          "p_win": 0.0115,
-          "p_podio": 0.0312,
-          "exp_pts": 1.59,
-          "p_points": 0.2096,
-          "delta_win": 0.007,
-          "delta_podio": 0.019
-        },
-        {
-          "driver": "COL",
-          "team": "Alpine",
-          "p_win": 0.0105,
-          "p_podio": 0.0443,
-          "exp_pts": 3.04,
-          "p_points": 0.4717,
+          "p_win": 0.0098,
+          "p_podio": 0.0242,
+          "exp_pts": 1.62,
+          "p_points": 0.3175,
           "delta_win": 0.008,
-          "delta_podio": 0.016
+          "delta_podio": 0.02
         },
         {
           "driver": "CAM",
           "team": "Haas F1 Team",
-          "p_win": 0.0101,
-          "p_podio": 0.0269,
-          "exp_pts": 1.42,
-          "p_points": 0.2059,
+          "p_win": 0.0098,
+          "p_podio": 0.0242,
+          "exp_pts": 1.24,
+          "p_points": 0.1921,
           "delta_win": 0.008,
-          "delta_podio": 0.019
+          "delta_podio": 0.02
         },
         {
           "driver": "BOT",
           "team": "Cadillac",
           "p_win": 0.0098,
-          "p_podio": 0.0242,
-          "exp_pts": 0.94,
-          "p_points": 0.1453,
+          "p_podio": 0.0243,
+          "exp_pts": 0.99,
+          "p_points": 0.146,
           "delta_win": 0.008,
           "delta_podio": 0.02
         }
@@ -8731,220 +8975,220 @@
         {
           "driver": "ANT",
           "team": "Mercedes",
-          "p_win": 0.2495,
-          "p_podio": 0.5847,
-          "exp_pts": 12.85,
-          "p_points": 0.7901,
-          "delta_win": -0.087,
-          "delta_podio": -0.149
+          "p_win": 0.2468,
+          "p_podio": 0.6092,
+          "exp_pts": 13.07,
+          "p_points": 0.7979,
+          "delta_win": -0.086,
+          "delta_podio": -0.158
         },
         {
           "driver": "NOR",
           "team": "McLaren",
-          "p_win": 0.1781,
-          "p_podio": 0.5145,
-          "exp_pts": 11.56,
-          "p_points": 0.7642,
-          "delta_win": -0.057,
-          "delta_podio": -0.126
+          "p_win": 0.1927,
+          "p_podio": 0.5505,
+          "exp_pts": 12.07,
+          "p_points": 0.7736,
+          "delta_win": -0.063,
+          "delta_podio": -0.138
+        },
+        {
+          "driver": "HAM",
+          "team": "Ferrari",
+          "p_win": 0.0839,
+          "p_podio": 0.1691,
+          "exp_pts": 5.18,
+          "p_points": 0.459,
+          "delta_win": -0.016,
+          "delta_podio": -0.011
         },
         {
           "driver": "VER",
           "team": "Red Bull Racing",
-          "p_win": 0.0855,
-          "p_podio": 0.1638,
-          "exp_pts": 4.94,
-          "p_points": 0.4238,
-          "delta_win": -0.017,
+          "p_win": 0.0828,
+          "p_podio": 0.1633,
+          "exp_pts": 4.96,
+          "p_points": 0.4311,
+          "delta_win": -0.016,
           "delta_podio": -0.009
         },
         {
           "driver": "LEC",
           "team": "Ferrari",
-          "p_win": 0.0674,
-          "p_podio": 0.1636,
-          "exp_pts": 5.28,
-          "p_points": 0.5186,
-          "delta_win": -0.009,
-          "delta_podio": -0.009
-        },
-        {
-          "driver": "HAM",
-          "team": "Ferrari",
-          "p_win": 0.061,
-          "p_podio": 0.1552,
-          "exp_pts": 5.17,
-          "p_points": 0.5251,
-          "delta_win": -0.007,
-          "delta_podio": -0.006
-        },
-        {
-          "driver": "PIA",
-          "team": "McLaren",
-          "p_win": 0.0516,
-          "p_podio": 0.3028,
-          "exp_pts": 8.7,
-          "p_points": 0.7557,
+          "p_win": 0.0523,
+          "p_podio": 0.1539,
+          "exp_pts": 5.49,
+          "p_points": 0.5922,
           "delta_win": -0.003,
-          "delta_podio": -0.055
-        },
-        {
-          "driver": "RUS",
-          "team": "Mercedes",
-          "p_win": 0.0282,
-          "p_podio": 0.1515,
-          "exp_pts": 6.21,
-          "p_points": 0.6739,
-          "delta_win": 0.007,
-          "delta_podio": -0.005
-        },
-        {
-          "driver": "HUL",
-          "team": "Audi",
-          "p_win": 0.0254,
-          "p_podio": 0.0661,
-          "exp_pts": 2.78,
-          "p_points": 0.3214,
-          "delta_win": 0.009,
-          "delta_podio": 0.023
+          "delta_podio": -0.006
         },
         {
           "driver": "LAW",
           "team": "Racing Bulls",
-          "p_win": 0.0247,
-          "p_podio": 0.1397,
-          "exp_pts": 6.21,
-          "p_points": 0.7193,
-          "delta_win": 0.009,
-          "delta_podio": -0.001
-        },
-        {
-          "driver": "GAS",
-          "team": "Alpine",
-          "p_win": 0.0208,
-          "p_podio": 0.1193,
-          "exp_pts": 5.65,
-          "p_points": 0.6708,
-          "delta_win": 0.011,
-          "delta_podio": 0.006
-        },
-        {
-          "driver": "HAD",
-          "team": "Red Bull Racing",
-          "p_win": 0.0201,
-          "p_podio": 0.0768,
-          "exp_pts": 4.12,
-          "p_points": 0.5395,
-          "delta_win": 0.011,
-          "delta_podio": 0.02
-        },
-        {
-          "driver": "ALB",
-          "team": "Williams",
-          "p_win": 0.0199,
-          "p_podio": 0.051,
-          "exp_pts": 2.08,
-          "p_points": 0.2179,
-          "delta_win": 0.011,
-          "delta_podio": 0.028
-        },
-        {
-          "driver": "PER",
-          "team": "Cadillac",
-          "p_win": 0.0187,
-          "p_podio": 0.0462,
-          "exp_pts": 1.79,
-          "p_points": 0.1688,
-          "delta_win": 0.011,
-          "delta_podio": 0.03
+          "p_win": 0.0388,
+          "p_podio": 0.3199,
+          "exp_pts": 9.43,
+          "p_points": 0.8145,
+          "delta_win": 0.003,
+          "delta_podio": -0.061
         },
         {
           "driver": "BOR",
           "team": "Audi",
-          "p_win": 0.0181,
-          "p_podio": 0.0788,
-          "exp_pts": 4.29,
-          "p_points": 0.5809,
-          "delta_win": 0.012,
-          "delta_podio": 0.019
+          "p_win": 0.036,
+          "p_podio": 0.0858,
+          "exp_pts": 3.05,
+          "p_points": 0.2836,
+          "delta_win": 0.004,
+          "delta_podio": 0.017
         },
         {
-          "driver": "SAI",
-          "team": "Williams",
-          "p_win": 0.018,
-          "p_podio": 0.0467,
-          "exp_pts": 2.11,
-          "p_points": 0.2479,
-          "delta_win": 0.012,
+          "driver": "GAS",
+          "team": "Alpine",
+          "p_win": 0.0333,
+          "p_podio": 0.091,
+          "exp_pts": 3.46,
+          "p_points": 0.3747,
+          "delta_win": 0.005,
+          "delta_podio": 0.015
+        },
+        {
+          "driver": "COL",
+          "team": "Alpine",
+          "p_win": 0.0206,
+          "p_podio": 0.058,
+          "exp_pts": 2.48,
+          "p_points": 0.2678,
+          "delta_win": 0.011,
+          "delta_podio": 0.026
+        },
+        {
+          "driver": "RUS",
+          "team": "Mercedes",
+          "p_win": 0.0198,
+          "p_podio": 0.1654,
+          "exp_pts": 7.26,
+          "p_points": 0.7604,
+          "delta_win": 0.011,
+          "delta_podio": -0.01
+        },
+        {
+          "driver": "PER",
+          "team": "Cadillac",
+          "p_win": 0.019,
+          "p_podio": 0.0478,
+          "exp_pts": 1.85,
+          "p_points": 0.1737,
+          "delta_win": 0.011,
           "delta_podio": 0.03
         },
         {
           "driver": "STR",
           "team": "Aston Martin",
-          "p_win": 0.0175,
-          "p_podio": 0.0441,
-          "exp_pts": 1.77,
-          "p_points": 0.1739,
+          "p_win": 0.0176,
+          "p_podio": 0.0452,
+          "exp_pts": 1.82,
+          "p_points": 0.1795,
           "delta_win": 0.012,
-          "delta_podio": 0.031
+          "delta_podio": 0.03
+        },
+        {
+          "driver": "HUL",
+          "team": "Audi",
+          "p_win": 0.0169,
+          "p_podio": 0.1072,
+          "exp_pts": 5.93,
+          "p_points": 0.7292,
+          "delta_win": 0.012,
+          "delta_podio": 0.01
+        },
+        {
+          "driver": "PIA",
+          "team": "McLaren",
+          "p_win": 0.0168,
+          "p_podio": 0.0682,
+          "exp_pts": 4.23,
+          "p_points": 0.6176,
+          "delta_win": 0.012,
+          "delta_podio": 0.023
         },
         {
           "driver": "LIN",
           "team": "Racing Bulls",
-          "p_win": 0.0166,
-          "p_podio": 0.0583,
-          "exp_pts": 3.59,
-          "p_points": 0.5437,
+          "p_win": 0.0168,
+          "p_podio": 0.0518,
+          "exp_pts": 2.74,
+          "p_points": 0.3909,
           "delta_win": 0.012,
-          "delta_podio": 0.026
+          "delta_podio": 0.028
+        },
+        {
+          "driver": "SAI",
+          "team": "Williams",
+          "p_win": 0.0155,
+          "p_podio": 0.0435,
+          "exp_pts": 2.04,
+          "p_points": 0.2347,
+          "delta_win": 0.013,
+          "delta_podio": 0.031
+        },
+        {
+          "driver": "HAD",
+          "team": "Red Bull Racing",
+          "p_win": 0.0154,
+          "p_podio": 0.0814,
+          "exp_pts": 5.28,
+          "p_points": 0.685,
+          "delta_win": 0.013,
+          "delta_podio": 0.018
         },
         {
           "driver": "BEA",
           "team": "Haas F1 Team",
-          "p_win": 0.0166,
-          "p_podio": 0.0608,
-          "exp_pts": 3.25,
-          "p_points": 0.4325,
-          "delta_win": 0.012,
-          "delta_podio": 0.025
+          "p_win": 0.015,
+          "p_podio": 0.039,
+          "exp_pts": 3.36,
+          "p_points": 0.5798,
+          "delta_win": 0.013,
+          "delta_podio": 0.032
+        },
+        {
+          "driver": "ALB",
+          "team": "Williams",
+          "p_win": 0.015,
+          "p_podio": 0.0374,
+          "exp_pts": 2.01,
+          "p_points": 0.3086,
+          "delta_win": 0.013,
+          "delta_podio": 0.033
         },
         {
           "driver": "ALO",
           "team": "Aston Martin",
-          "p_win": 0.0165,
-          "p_podio": 0.0436,
-          "exp_pts": 2.03,
-          "p_points": 0.2288,
-          "delta_win": 0.012,
-          "delta_podio": 0.031
-        },
-        {
-          "driver": "COL",
-          "team": "Alpine",
-          "p_win": 0.0156,
-          "p_podio": 0.0552,
-          "exp_pts": 3.27,
-          "p_points": 0.4736,
+          "p_win": 0.015,
+          "p_podio": 0.0374,
+          "exp_pts": 2.06,
+          "p_points": 0.3296,
           "delta_win": 0.013,
-          "delta_podio": 0.027
+          "delta_podio": 0.033
         },
         {
           "driver": "CAM",
           "team": "Haas F1 Team",
-          "p_win": 0.0152,
-          "p_podio": 0.0398,
-          "exp_pts": 1.88,
-          "p_points": 0.2253,
+          "p_win": 0.015,
+          "p_podio": 0.0374,
+          "exp_pts": 1.73,
+          "p_points": 0.2124,
           "delta_win": 0.013,
-          "delta_podio": 0.032
+          "delta_podio": 0.033
         },
         {
           "driver": "BOT",
           "team": "Cadillac",
           "p_win": 0.015,
-          "p_podio": 0.0374,
-          "exp_pts": 1.48,
-          "p_points": 0.1687,
+          "p_podio": 0.0375,
+          "exp_pts": 1.52,
+          "p_points": 0.1694,
           "delta_win": 0.013,
           "delta_podio": 0.033
         }
@@ -20121,128 +20365,128 @@
   ],
   "ers_heatmap": {
     "sessions": [
-      "Spanish Grand Prix 2026",
       "Azerbaijan Grand Prix 2026",
       "Malaysian Grand Prix 2026",
       "Singapore Grand Prix 2026",
       "United States Grand Prix 2026",
-      "Mexico City Grand Prix 2026"
+      "Mexico City Grand Prix 2026",
+      "Sao Paulo Grand Prix 2026"
     ],
     "teams": [
-      "Alpine",
-      "Haas F1 Team",
       "Racing Bulls",
       "Mercedes",
-      "Cadillac",
+      "Alpine",
+      "Ferrari",
+      "Haas F1 Team",
       "Red Bull Racing",
       "McLaren",
+      "Cadillac",
       "Williams",
-      "Ferrari",
       "Audi",
       "Aston Martin"
     ],
     "data": {
-      "Alpine": [
-        304.0,
-        322.5,
-        322.0,
-        303.0,
-        341.0,
-        351.0
-      ],
-      "Haas F1 Team": [
-        306.0,
-        326.0,
-        324.0,
-        300.5,
-        327.5,
-        348.5
-      ],
       "Racing Bulls": [
-        302.0,
         325.0,
         321.0,
         303.0,
         324.0,
-        350.0
+        350.0,
+        255.5
       ],
       "Mercedes": [
-        304.5,
         325.0,
         307.5,
         304.0,
         329.0,
-        350.0
+        350.0,
+        260.0
       ],
-      "Cadillac": [
-        289.0,
-        326.0,
-        325.5,
-        300.5,
-        326.0,
-        349.0
-      ],
-      "Red Bull Racing": [
-        302.5,
+      "Alpine": [
+        322.5,
         322.0,
-        310.5,
-        302.5,
-        326.0,
-        350.5
-      ],
-      "McLaren": [
-        301.0,
-        318.5,
-        313.0,
         303.0,
-        329.0,
-        349.5
-      ],
-      "Williams": [
-        299.0,
-        324.5,
-        315.0,
-        303.0,
-        322.0,
-        347.5
+        341.0,
+        351.0,
+        233.0
       ],
       "Ferrari": [
-        298.5,
         327.5,
         313.5,
         301.0,
         322.0,
-        347.0
+        347.0,
+        261.5
+      ],
+      "Haas F1 Team": [
+        326.0,
+        324.0,
+        300.5,
+        327.5,
+        348.5,
+        245.0
+      ],
+      "Red Bull Racing": [
+        322.0,
+        310.5,
+        302.5,
+        326.0,
+        350.5,
+        253.5
+      ],
+      "McLaren": [
+        318.5,
+        313.0,
+        303.0,
+        329.0,
+        349.5,
+        252.0
+      ],
+      "Cadillac": [
+        326.0,
+        325.5,
+        300.5,
+        326.0,
+        349.0,
+        232.0
+      ],
+      "Williams": [
+        324.5,
+        315.0,
+        303.0,
+        322.0,
+        347.5,
+        245.5
       ],
       "Audi": [
-        308.0,
         316.0,
         313.5,
         298.5,
         322.5,
-        349.0
+        349.0,
+        230.5
       ],
       "Aston Martin": [
-        297.0,
         308.5,
         305.0,
         295.5,
         312.5,
-        340.0
+        340.0,
+        238.5
       ]
     },
     "avg": {
-      "Alpine": 323.9,
-      "Haas F1 Team": 322.1,
-      "Racing Bulls": 320.8,
-      "Mercedes": 320.0,
-      "Cadillac": 319.3,
-      "Red Bull Racing": 319.0,
-      "McLaren": 319.0,
-      "Williams": 318.5,
-      "Ferrari": 318.2,
-      "Audi": 317.9,
-      "Aston Martin": 309.8
+      "Racing Bulls": 313.1,
+      "Mercedes": 312.6,
+      "Alpine": 312.1,
+      "Ferrari": 312.1,
+      "Haas F1 Team": 311.9,
+      "Red Bull Racing": 310.8,
+      "McLaren": 310.8,
+      "Cadillac": 309.8,
+      "Williams": 309.6,
+      "Audi": 305.0,
+      "Aston Martin": 300.0
     }
   },
   "super_times": {
@@ -23506,16 +23750,16 @@
       "dnf_rate": 13.2
     },
     {
-      "team": "Ferrari",
+      "team": "McLaren",
       "races": 38,
-      "dnf_mech": 2,
-      "dnf_incident": 2,
+      "dnf_mech": 3,
+      "dnf_incident": 1,
       "dnf_other": 0,
       "dnf_total": 4,
       "dnf_rate": 10.5
     },
     {
-      "team": "McLaren",
+      "team": "Mercedes",
       "races": 38,
       "dnf_mech": 3,
       "dnf_incident": 1,
@@ -23533,10 +23777,10 @@
       "dnf_rate": 10.5
     },
     {
-      "team": "Mercedes",
+      "team": "Ferrari",
       "races": 38,
-      "dnf_mech": 3,
-      "dnf_incident": 1,
+      "dnf_mech": 2,
+      "dnf_incident": 2,
       "dnf_other": 0,
       "dnf_total": 4,
       "dnf_rate": 10.5
@@ -23903,34 +24147,34 @@
     "source": "openmeteo",
     "race_name": "São Paulo Grand Prix",
     "race_date": "2026-11-08",
-    "fetched_at": "2026-11-07T16:30Z",
+    "fetched_at": "2026-11-07T23:04Z",
     "friday": null,
     "saturday": {
       "date": "2026-11-07",
       "weekday": "Saturday",
-      "tmax": 29.3,
+      "tmax": 28.0,
       "tmin": 18.9,
-      "rain_mm": 5.8,
-      "rain_prob": 80,
-      "wind_kmh": 19.6,
-      "wind_dir": 320,
-      "weather_code": 95,
-      "weather_desc": "Temporale"
+      "rain_mm": 12.7,
+      "rain_prob": 100,
+      "wind_kmh": 17.7,
+      "wind_dir": 329,
+      "weather_code": 96,
+      "weather_desc": "Temporale con grandine"
     },
     "sunday": {
       "date": "2026-11-08",
       "weekday": "Sunday",
       "tmax": 20.5,
-      "tmin": 14.5,
-      "rain_mm": 6.4,
-      "rain_prob": 96,
-      "wind_kmh": 18.7,
-      "wind_dir": 161,
-      "weather_code": 53,
-      "weather_desc": "Pioggerella moderata"
+      "tmin": 13.9,
+      "rain_mm": 8.4,
+      "rain_prob": 100,
+      "wind_kmh": 19.6,
+      "wind_dir": 166,
+      "weather_code": 55,
+      "weather_desc": "Pioggerella intensa"
     },
     "rain_risk": "alto",
-    "max_rain_prob": 96,
+    "max_rain_prob": 100,
     "race_window": {
       "ore_locali": [
         "2026-11-08T14:00",
@@ -23938,54 +24182,26 @@
         "2026-11-08T16:00"
       ],
       "prob": [
-        95,
-        92,
-        87
+        97,
+        96,
+        94
       ],
-      "media": 91.3,
-      "massimo": 95
+      "media": 95.7,
+      "massimo": 97
     },
     "sprint_window": null,
     "lat": -23.7036,
     "lon": -46.6997
   },
   "driver_form": {
-    "GAS": {
+    "BEA": {
       "positions": [
-        11,
-        10,
-        17
-      ],
-      "trend": "down",
-      "dnfs": 0,
-      "races": [
-        "SIN",
-        "UNI",
-        "MEX"
-      ]
-    },
-    "STR": {
-      "positions": [
+        12,
         null,
-        15,
         null
       ],
       "trend": "flat",
       "dnfs": 2,
-      "races": [
-        "SIN",
-        "UNI",
-        "MEX"
-      ]
-    },
-    "HAD": {
-      "positions": [
-        10,
-        6,
-        9
-      ],
-      "trend": "flat",
-      "dnfs": 0,
       "races": [
         "SIN",
         "UNI",
@@ -23998,6 +24214,20 @@
       ],
       "trend": "flat",
       "dnfs": 0,
+      "races": [
+        "SIN",
+        "UNI",
+        "MEX"
+      ]
+    },
+    "ALO": {
+      "positions": [
+        16,
+        16,
+        null
+      ],
+      "trend": "flat",
+      "dnfs": 1,
       "races": [
         "SIN",
         "UNI",
@@ -24018,13 +24248,83 @@
         "MEX"
       ]
     },
-    "LEC": {
+    "PIA": {
       "positions": [
-        2,
-        2,
-        4
+        5,
+        7,
+        13
       ],
       "trend": "down",
+      "dnfs": 0,
+      "races": [
+        "SIN",
+        "UNI",
+        "MEX"
+      ]
+    },
+    "SAI": {
+      "positions": [
+        14,
+        18,
+        12
+      ],
+      "trend": "up",
+      "dnfs": 0,
+      "races": [
+        "SIN",
+        "UNI",
+        "MEX"
+      ]
+    },
+    "BOT": {
+      "positions": [
+        19,
+        null,
+        null
+      ],
+      "trend": "flat",
+      "dnfs": 2,
+      "races": [
+        "SIN",
+        "UNI",
+        "MEX"
+      ]
+    },
+    "NOR": {
+      "positions": [
+        4,
+        5,
+        5
+      ],
+      "trend": "flat",
+      "dnfs": 0,
+      "races": [
+        "SIN",
+        "UNI",
+        "MEX"
+      ]
+    },
+    "RUS": {
+      "positions": [
+        9,
+        8,
+        6
+      ],
+      "trend": "up",
+      "dnfs": 0,
+      "races": [
+        "SIN",
+        "UNI",
+        "MEX"
+      ]
+    },
+    "PER": {
+      "positions": [
+        17,
+        19,
+        16
+      ],
+      "trend": "flat",
       "dnfs": 0,
       "races": [
         "SIN",
@@ -24046,27 +24346,14 @@
         "MEX"
       ]
     },
-    "PIA": {
+    "BOR": {
       "positions": [
-        5,
-        7,
-        13
-      ],
-      "trend": "down",
-      "dnfs": 0,
-      "races": [
-        "SIN",
-        "UNI",
-        "MEX"
-      ]
-    },
-    "OCO": {
-      "positions": [
+        null,
         13,
-        14
+        8
       ],
-      "trend": "flat",
-      "dnfs": 0,
+      "trend": "up",
+      "dnfs": 1,
       "races": [
         "SIN",
         "UNI",
@@ -24101,13 +24388,13 @@
         "MEX"
       ]
     },
-    "NOR": {
+    "GAS": {
       "positions": [
-        4,
-        5,
-        5
+        11,
+        10,
+        17
       ],
-      "trend": "flat",
+      "trend": "down",
       "dnfs": 0,
       "races": [
         "SIN",
@@ -24115,25 +24402,10 @@
         "MEX"
       ]
     },
-    "BOR": {
+    "OCO": {
       "positions": [
-        null,
         13,
-        8
-      ],
-      "trend": "up",
-      "dnfs": 1,
-      "races": [
-        "SIN",
-        "UNI",
-        "MEX"
-      ]
-    },
-    "PER": {
-      "positions": [
-        17,
-        19,
-        16
+        14
       ],
       "trend": "flat",
       "dnfs": 0,
@@ -24143,14 +24415,42 @@
         "MEX"
       ]
     },
-    "BEA": {
+    "VER": {
       "positions": [
-        12,
-        null,
-        null
+        1,
+        3,
+        1
       ],
       "trend": "flat",
-      "dnfs": 2,
+      "dnfs": 0,
+      "races": [
+        "SIN",
+        "UNI",
+        "MEX"
+      ]
+    },
+    "LEC": {
+      "positions": [
+        2,
+        2,
+        4
+      ],
+      "trend": "down",
+      "dnfs": 0,
+      "races": [
+        "SIN",
+        "UNI",
+        "MEX"
+      ]
+    },
+    "HAD": {
+      "positions": [
+        10,
+        6,
+        9
+      ],
+      "trend": "flat",
+      "dnfs": 0,
       "races": [
         "SIN",
         "UNI",
@@ -24164,34 +24464,6 @@
         3
       ],
       "trend": "flat",
-      "dnfs": 0,
-      "races": [
-        "SIN",
-        "UNI",
-        "MEX"
-      ]
-    },
-    "BOT": {
-      "positions": [
-        19,
-        null,
-        null
-      ],
-      "trend": "flat",
-      "dnfs": 2,
-      "races": [
-        "SIN",
-        "UNI",
-        "MEX"
-      ]
-    },
-    "RUS": {
-      "positions": [
-        9,
-        8,
-        6
-      ],
-      "trend": "up",
       "dnfs": 0,
       "races": [
         "SIN",
@@ -24213,28 +24485,14 @@
         "MEX"
       ]
     },
-    "VER": {
+    "STR": {
       "positions": [
-        1,
-        3,
-        1
+        null,
+        15,
+        null
       ],
       "trend": "flat",
-      "dnfs": 0,
-      "races": [
-        "SIN",
-        "UNI",
-        "MEX"
-      ]
-    },
-    "SAI": {
-      "positions": [
-        14,
-        18,
-        12
-      ],
-      "trend": "up",
-      "dnfs": 0,
+      "dnfs": 2,
       "races": [
         "SIN",
         "UNI",
@@ -24249,20 +24507,6 @@
       ],
       "trend": "down",
       "dnfs": 0,
-      "races": [
-        "SIN",
-        "UNI",
-        "MEX"
-      ]
-    },
-    "ALO": {
-      "positions": [
-        16,
-        16,
-        null
-      ],
-      "trend": "flat",
-      "dnfs": 1,
       "races": [
         "SIN",
         "UNI",
