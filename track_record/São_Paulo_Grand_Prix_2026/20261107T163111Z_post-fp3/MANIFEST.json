@@ -1,0 +1,21 @@
+{
+ "race": "São Paulo Grand Prix 2026",
+ "stage": "post-fp3",
+ "frozen_at_utc": "20261107T163111Z",
+ "note": "Freeze di correzione: penalità note prima del freeze delle 17:02 (FIA, rapporto del delegato tecnico doc 30 del 07/11): HAM 10, LEC 10, VER fondo, PER fondo",
+ "files": {
+  "São_Paulo_Grand_Prix_2026_grid.csv": "14d3df2711dcc25472a0c353c8acc83efe48b30514ef582547c75e4db930dcbb",
+  "São_Paulo_Grand_Prix_2026_h2h.csv": "95f80bb28f5fbd6d681f9f8c83d8e49462dc459b5ce3685a1f51fad90f609df5",
+  "São_Paulo_Grand_Prix_2026_probabilities.csv": "dffaaeacfe734e4b63d031567c1e8658b0a57e101e3a47d6098417202a35b254",
+  "São_Paulo_Grand_Prix_2026_quali_grid.csv": "8a34c9e081563122cbe379965b85c58b0552730cc791f6b9e67c1a523e2c685d",
+  "São_Paulo_Grand_Prix_2026_quali_griglie.json": "73732ebc1a426aa3586dbefb6ddbee89186d61eccd109022639ee5b3299217cd",
+  "São_Paulo_Grand_Prix_2026_quali_probabilities.csv": "6e23af6e47d88de87fd69e637659ca4102a14cde422b4271ad52603304a697bd",
+  "São_Paulo_Grand_Prix_2026_quali_summary.txt": "bef34cc2ecc6412d9a743d4e5c09697723c02f6dab597a9757de0681b8df0c12",
+  "São_Paulo_Grand_Prix_2026_summary.txt": "52520c30aab3af9c254491ced68b07ff1a0b7819f4eb0207b89977e176eec8d9",
+  "São_Paulo_Grand_Prix_2026_team_points.csv": "4443143908a99ddb813f03998b64fd234c4d5842bbfe343c4f39fac3c37c32e6"
+ },
+ "results_db_sha256": "deb56754eb844626fef3b21401c93c7a24af206bf5eef95c4a473d9a3d72d2fe",
+ "results_db_races": 25,
+ "git_commit": "42adb58e932d5a8a973e934aa0e4bfd223c0c27d",
+ "market_files": {}
+}
