@@ -219,6 +219,20 @@
    "sha256": "1c2707b4a3dfeda5b7b790db8e40f31fb0ec8029b331e3335626259675ea32db",
    "registrato_utc": "2026-10-27T13:39:48Z",
    "commit_privato": "c974f20e25ab3f51590ef6c71d9a0c7ad3112c05"
+  },
+  {
+   "titolo": "Forma pre-weekend della qualifica: media o mediana, distacchi tagliati, pesi delle sessioni? Protocollo fissato il 09/11 alle 10:20, prima di qualunque run",
+   "versione": 1,
+   "sha256": "d41bd7841f150126c12e65406b7359cd4b9ba092a70d69179a97c220e792ab7e",
+   "registrato_utc": "2026-11-09T10:11:10Z",
+   "commit_privato": "2e1423c935765586890ad4d506b9dabffee8be29"
+  },
+  {
+   "titolo": "Stagione passata nella forma pre-weekend della qualifica: le prime gare migliorano? Protocollo fissato il 09/11 alle 10:20, prima di qualunque run",
+   "versione": 1,
+   "sha256": "ffd3dd5b072b322293b2352b97e4f408692c75a0777d2023089f1e80328fbd2b",
+   "registrato_utc": "2026-11-09T10:11:10Z",
+   "commit_privato": "2e1423c935765586890ad4d506b9dabffee8be29"
   }
  ]
 }
