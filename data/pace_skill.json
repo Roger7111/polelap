@@ -1,10 +1,10 @@
 {
- "generato_utc": "2026-11-02T01:32:19Z",
+ "generato_utc": "2026-11-09T10:30:43Z",
  "metodo": "previsione leakage-free vs passo gara fuel-corrected (DNF-immune), 2026",
  "season": {
   "n_gare": 19,
   "spearman_pace": 0.888,
-  "spearman_finish": 0.678
+  "spearman_finish": 0.676
  },
  "gare": [
   {
@@ -119,7 +119,7 @@
    "race": "Mexico City Grand Prix",
    "circuit": "balanced",
    "spearman_pace": 0.773,
-   "spearman_finish": 0.794
+   "spearman_finish": 0.749
   }
  ]
 }
