@@ -233,6 +233,13 @@
    "sha256": "ffd3dd5b072b322293b2352b97e4f408692c75a0777d2023089f1e80328fbd2b",
    "registrato_utc": "2026-11-09T10:11:10Z",
    "commit_privato": "2e1423c935765586890ad4d506b9dabffee8be29"
+  },
+  {
+   "titolo": "Pioggia nella qualifica: piu' incertezza quando si qualifica sul bagnato o le libere sono bagnate? Protocollo fissato il 09/11 alle 11:47, prima di qualunque run",
+   "versione": 1,
+   "sha256": "61339d6547871c33101c696ecdef811225b362030f8966900b608dfcf5674678",
+   "registrato_utc": "2026-11-09T10:55:56Z",
+   "commit_privato": "0391a5f8532ee476fcdcca8d08ba9e838bbe6c74"
   }
  ]
 }
