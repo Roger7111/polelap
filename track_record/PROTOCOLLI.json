@@ -261,6 +261,20 @@
    "sha256": "ffeb2c3477ed1f1167a686ee164577e880d5dc0fbac5d1cd59fe10c32adc4682",
    "registrato_utc": "2026-11-09T16:06:49Z",
    "commit_privato": "c4a4eb89761906b0f5606f2f302dfa1c4ee3e944"
+  },
+  {
+   "titolo": "Candidato TS, somme di podio e top10: tornano a 3 e 10 senza peggiorare? Protocollo fissato il 09/11 alle 17:16, prima di qualunque run",
+   "versione": 1,
+   "sha256": "4275b8b73a2c5a3b07049d1acdd4165c8367ad12e4bf72d23300651c0dc29e5b",
+   "registrato_utc": "2026-11-09T16:19:03Z",
+   "commit_privato": "23786c96fc98ec20cf1fde28ccb3c8a931b046e8"
+  },
+  {
+   "titolo": "Banco di dicembre: le squadre di ogni gara, non la mappa del 2026. Emendamento del 09/11 alle 17:16, prima di qualunque run",
+   "versione": 1,
+   "sha256": "30f1879620f3c5576a509c0932e0c837f7017b8c5f393d7a90ccbe71011a357d",
+   "registrato_utc": "2026-11-09T16:19:03Z",
+   "commit_privato": "23786c96fc98ec20cf1fde28ccb3c8a931b046e8"
   }
  ]
 }
