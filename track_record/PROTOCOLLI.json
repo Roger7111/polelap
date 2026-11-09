@@ -247,6 +247,20 @@
    "sha256": "c693d2cac00139d48fc04e48456aa16e4ebd9c63b6527f54eb351265236e4d2d",
    "registrato_utc": "2026-11-09T11:32:08Z",
    "commit_privato": "b54d2749ecbd5bd117ace0f77c4580d17a40dce5"
+  },
+  {
+   "titolo": "Candidato PA, pioggia nel passo di gara: la memoria del passo va meglio senza le gare bagnate? Protocollo fissato il 09/11 alle 17:03, prima di qualunque run",
+   "versione": 1,
+   "sha256": "b23f96ce4b4345a784884dc98c30b334fb86bf3807886d1430cccaf19078422d",
+   "registrato_utc": "2026-11-09T16:06:49Z",
+   "commit_privato": "c4a4eb89761906b0f5606f2f302dfa1c4ee3e944"
+  },
+  {
+   "titolo": "Candidato SP, stagione passata nel passo di gara: le prime gare migliorano col passo della stagione prima? Protocollo fissato il 09/11 alle 17:03, prima di qualunque run",
+   "versione": 1,
+   "sha256": "ffeb2c3477ed1f1167a686ee164577e880d5dc0fbac5d1cd59fe10c32adc4682",
+   "registrato_utc": "2026-11-09T16:06:49Z",
+   "commit_privato": "c4a4eb89761906b0f5606f2f302dfa1c4ee3e944"
   }
  ]
 }
