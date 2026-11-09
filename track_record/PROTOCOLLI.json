@@ -240,6 +240,13 @@
    "sha256": "61339d6547871c33101c696ecdef811225b362030f8966900b608dfcf5674678",
    "registrato_utc": "2026-11-09T10:55:56Z",
    "commit_privato": "0391a5f8532ee476fcdcca8d08ba9e838bbe6c74"
+  },
+  {
+   "titolo": "Piste fredde nella qualifica: la correzione per il freddo aiuta, con la tabella di oggi o con la temperatura misurata? Protocollo fissato il 09/11 alle 12:30, prima di qualunque run",
+   "versione": 1,
+   "sha256": "c693d2cac00139d48fc04e48456aa16e4ebd9c63b6527f54eb351265236e4d2d",
+   "registrato_utc": "2026-11-09T11:32:08Z",
+   "commit_privato": "b54d2749ecbd5bd117ace0f77c4580d17a40dce5"
   }
  ]
 }
