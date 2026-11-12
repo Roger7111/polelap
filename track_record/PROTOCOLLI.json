@@ -275,6 +275,13 @@
    "sha256": "30f1879620f3c5576a509c0932e0c837f7017b8c5f393d7a90ccbe71011a357d",
    "registrato_utc": "2026-11-09T16:19:03Z",
    "commit_privato": "23786c96fc98ec20cf1fde28ccb3c8a931b046e8"
+  },
+  {
+   "titolo": "Candidato QN, rumore della qualifica normale: con piu' incertezza la previsione migliora, come nella qualifica sprint? Protocollo fissato il 12/11 alle 13:12, prima di qualunque run",
+   "versione": 1,
+   "sha256": "51559686fc785c342072e862c71ef4d5f6607220b8e7187c4d02168ab9fbaa15",
+   "registrato_utc": "2026-11-12T12:19:37Z",
+   "commit_privato": "0fe863cd5234e21f9ebf15d5f5f274bf1f792a93"
   }
  ]
 }
