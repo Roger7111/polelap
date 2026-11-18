@@ -282,6 +282,20 @@
    "sha256": "51559686fc785c342072e862c71ef4d5f6607220b8e7187c4d02168ab9fbaa15",
    "registrato_utc": "2026-11-12T12:19:37Z",
    "commit_privato": "0fe863cd5234e21f9ebf15d5f5f274bf1f792a93"
+  },
+  {
+   "titolo": "Candidato PS, partenze per squadra: la posizione dopo il via, al posto della griglia, migliora la previsione? Protocollo fissato il 18/11 alle 14:06, prima di qualunque run",
+   "versione": 1,
+   "sha256": "6c2908eb2690c69ef54bb2e110c69db8c9c51d21341edd739a7ba2231a4a7f22",
+   "registrato_utc": "2026-11-18T15:09:25Z",
+   "commit_privato": "4de6128eef93d38f5025a6c872e37078069059d5"
+  },
+  {
+   "titolo": "Candidato SRD, sorpassi col distacco: il fattore di sorpasso misurato va meglio se il modello dei duelli tiene conto del distacco? Protocollo fissato il 18/11 alle 14:06, prima di qualunque run",
+   "versione": 1,
+   "sha256": "920ebb44a74236643d77815f6fd5b1e81ee461039e8dfca0af9896811b1d492e",
+   "registrato_utc": "2026-11-18T15:09:25Z",
+   "commit_privato": "4de6128eef93d38f5025a6c872e37078069059d5"
   }
  ]
 }
