@@ -1,0 +1,19 @@
+{
+ "race": "Las Vegas Grand Prix 2026",
+ "stage": "post-quali",
+ "frozen_at_utc": "20261121T081713Z",
+ "note": "Freeze ufficiale post-qualifiche",
+ "files": {
+  "Las_Vegas_Grand_Prix_2026_grid.csv": "4f71ff47bf87e1639601b661756ec835dceea32c62f19b07e9bdccbcec6e2a7e",
+  "Las_Vegas_Grand_Prix_2026_h2h.csv": "1766e15c29ed37efcc7a2e2e42724c03051e3ec27cbae6fbf9362210efbe284e",
+  "Las_Vegas_Grand_Prix_2026_probabilities.csv": "02560ca1959934f99d8471f92949574bb2b16bb7b2a58b3bcf1a0af6f374b10a",
+  "Las_Vegas_Grand_Prix_2026_quali_grid.csv": "2ed4dfd9dc0f77c4eb1c642937729c0305aad92ef7b63d36b329b82eafce506d",
+  "Las_Vegas_Grand_Prix_2026_quali_probabilities.csv": "06200ce2d22f14282083a11f22cccb597945f8e75d147f661dc3e5fc87736842",
+  "Las_Vegas_Grand_Prix_2026_summary.txt": "51ab5270a12ca3d07096a151003fee2d3ef71451eba0d9e7bbb4033ba20fb9da",
+  "Las_Vegas_Grand_Prix_2026_team_points.csv": "52244f417d4f321e9a66f1281dbff8c72326d335a8dfe86626ce7c360859021f"
+ },
+ "results_db_sha256": "11d385ae3a890a1853e7d2401efa8534afae25285400d1046e639df93fbe30d4",
+ "results_db_races": 26,
+ "git_commit": "85f54d928cc7fddf41a6c528d61ea265d855cb2e",
+ "market_files": {}
+}
