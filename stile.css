@@ -279,3 +279,9 @@ details summary { cursor: pointer; font-size: 14px; color: var(--ink-2); padding
 .lr .ps span { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; }
 .lr .ps small { color: var(--muted); }
 .foot a { color: var(--ink); }
+/* 24/11: l'indice di Analisi porta alla scheda sotto la barra in alto */
+.panel { scroll-margin-top: 84px; }
+#a-indice { margin-top: 24px; }
+.hm th { white-space: nowrap; }
+.hm th.r .sw { height: 14px; vertical-align: -2px; margin-right: 7px; }
+.hm th.r { position: sticky; left: 0; z-index: 1; background: var(--surface); }
