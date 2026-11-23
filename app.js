@@ -173,6 +173,19 @@ const D = {};        // i dati della pagina, caricati all'avvio
       h += '</div><p class="note">Mescole: S morbida, M media, H dura. Solo i piloti con abbastanza giri di fila.</p></div>';
     }
 
+    var wx = D.weather || {}, fa = new Date(wx.fetched_at || '');
+    var giorni = ['friday', 'saturday', 'sunday'].map(function (k) { return wx[k]; }).filter(function (g) { return g && g.date; });
+    if (giorni.length && (!wi.race_date || wx.race_date === wi.race_date)) {     // 24/11: il meteo del sito vecchio, dai dati della previsione
+      var rw = wx.race_window || {};
+      h += '<div class="block"><div class="block-head"><div><h2>Meteo del weekend</h2><p class="lead">Previsione di Open-Meteo per ' + esc(citta) + (isNaN(fa) ? '' : ', presa ' + itDT(fa)) + '. Il modello la usa per la pioggia in gara.</p></div></div><div class="sched">';
+      giorni.forEach(function (g) {
+        var temp = (g.tmin != null && g.tmax != null) ? nf0.format(g.tmin) + '–' + nf0.format(g.tmax) + ' °C · ' : '';
+        h += '<div class="sess"><span class="n">' + esc(fGiorno.format(new Date(g.date + 'T12:00:00Z'))) + '</span><span class="it">' + esc(g.weather_desc || '') + '</span>'
+          + '<span class="lo">' + temp + 'pioggia ' + nf0.format(g.rain_prob || 0) + '%' + (g.rain_mm ? ' (' + nf1.format(g.rain_mm) + ' mm)' : '') + (g.wind_kmh != null ? ' · vento ' + nf0.format(g.wind_kmh) + ' km/h' : '') + '</span></div>';
+      });
+      h += '</div>' + ((rw.prob || []).length ? '<p class="note">Nelle ore della gara: ' + (rw.massimo ? 'pioggia fino al ' + nf0.format(rw.massimo) + '%' : 'pioggia non prevista') + '.</p>' : '') + '</div>';
+    }
+
     if (sess.length) {
       h += '<div class="block"><div class="block-head"><div><h2>Orari del weekend</h2><p class="lead">In grande l\'ora italiana, sotto quella di ' + esc(citta) + '.</p></div></div><div class="sched">';
       var now = Date.now(), segnata = false;
@@ -483,45 +496,177 @@ const D = {};        // i dati della pagina, caricati all'avvio
   }
 
   /* ── Analisi ────────────────────────────────────────────────────────────── */
+  function calore(x) {          // x da 0 a 1: 1 = cella più carica (stessa scala del testa a testa)
+    var p = Math.round(Math.max(0, Math.min(1, x)) * 80);
+    return 'background:color-mix(in srgb, var(--s1) ' + p + '%, transparent);color:' + (p >= 52 ? '#fff' : 'var(--ink)');
+  }
+  function media(a) { var ok = (a || []).filter(function (x) { return x != null; }); return ok.length ? ok.reduce(function (s, x) { return s + x; }, 0) / ok.length : null; }
+  function gomme(ts) {          // 24/11: il simulatore di strategia del sito vecchio. Degrado lineare, niente traffico né safety car.
+    var c = ts.compounds || {}, N = ts.total_laps || 0, base = ts.base_lap || 0, pit = ts.pit_loss || 0, MIN = 5;
+    var M = { SOFT: 'Morbida', MEDIUM: 'Media', HARD: 'Dura' }, k = ['SOFT', 'MEDIUM', 'HARD'].filter(function (x) { return c[x]; });
+    function stint(m, n) { var g = c[m]; return n * (base + (g.delta_vs_soft || 0)) + (g.deg_per_lap || 0) * n * (n - 1) / 2; }
+    var out = [];
+    k.forEach(function (a) { k.forEach(function (b) {
+      if (a === b) return;
+      var best = null;
+      for (var p = MIN; p <= N - MIN; p++) { var t = stint(a, p) + stint(b, N - p) + pit; if (!best || t < best.t) best = { t: t, giri: [p] }; }
+      if (best) out.push({ seq: [a, b], t: best.t, giri: best.giri });
+    }); });
+    k.forEach(function (a) { k.forEach(function (b) { k.forEach(function (d) {
+      if (a === b && b === d) return;
+      var best = null;
+      for (var p1 = MIN; p1 <= N - 2 * MIN; p1++) for (var p2 = p1 + MIN; p2 <= N - MIN; p2++) {
+        var t = stint(a, p1) + stint(b, p2 - p1) + stint(d, N - p2) + 2 * pit;
+        if (!best || t < best.t) best = { t: t, giri: [p1, p2] };
+      }
+      if (best) out.push({ seq: [a, b, d], t: best.t, giri: best.giri });
+    }); }); });
+    out.sort(function (x, y) { return x.t - y.t; });
+    return out.map(function (r) { return { nome: r.seq.map(function (m) { return M[m]; }).join(' → '), soste: r.seq.length - 1, giri: r.giri, t: r.t }; });
+  }
+
   function renderAnalisi() {
-    var h = '<div class="intro"><p class="eyebrow">Analisi</p><h1>Dentro i numeri</h1><p class="lead">I dati che il modello usa, letti da vicino: passo, sorpassi, ritiri, safety car, velocità e la forma delle squadre.</p></div><div class="panels">';
+    var h = '', indice = [], squadraDi = {};
+    (D.race_prediction || []).forEach(function (r) { squadraDi[r.driver] = r.team; });
+    function pannello(id, titolo, corpo, wide) {
+      indice.push([id, titolo]);
+      return '<article class="panel' + (wide ? ' wide' : '') + '" id="' + id + '"><h3>' + titolo + '</h3>' + corpo + '</article>';
+    }
+
     var pg = (D.race_pace_gare || []).filter(function (g) { return (g.drivers || []).length; });
     if (!pg.length && D.race_pace && (D.race_pace.drivers || []).length) pg = [D.race_pace];
     if (pg.length) {
-      h += '<article class="panel"><h3>Passo gara</h3><label class="note" for="pg-sel">Distacco medio al giro dal più veloce, sui giri validi, corretto per il carburante. I primi 12.</label>'
-        + '<select class="sel" id="pg-sel">' + pg.map(function (g, i) { return '<option value="' + i + '">' + esc(gp(g.race)) + '</option>'; }).join('') + '</select><div id="pg"></div></article>';
+      h += pannello('a-passo', 'Passo gara', '<label class="note" for="pg-sel">Distacco medio al giro dal più veloce, sui giri validi, corretto per il carburante. I primi 12.</label>'
+        + '<select class="sel" id="pg-sel">' + pg.map(function (g, i) { return '<option value="' + i + '">' + esc(gp(g.race)) + '</option>'; }).join('') + '</select><div id="pg"></div>');
     }
 
+    var gf = (D.grid_finish || []).filter(function (r) { return r.race; }), gare = [];
+    gf.forEach(function (r) { if (gare.indexOf(r.race) < 0) gare.push(r.race); });
     var acc = {};
-    (D.grid_finish || []).forEach(function (r) { if (r.finish == null || r.grid == null || r.grid <= 0) return; var a = acc[r.driver] || (acc[r.driver] = { s: 0, n: 0, team: r.team }); a.s += r.gained; a.n++; a.team = r.team; });
+    gf.forEach(function (r) { if (r.finish == null || r.grid == null || r.grid <= 0) return; var a = acc[r.driver] || (acc[r.driver] = { s: 0, n: 0, team: r.team }); a.s += r.gained; a.n++; a.team = r.team; });
     var gr = Object.keys(acc).filter(function (k) { return acc[k].n >= 5; }).map(function (k) { return { d: k, v: acc[k].s / acc[k].n, team: acc[k].team }; }).sort(function (a, b) { return b.v - a.v; });
-    if (gr.length) {
-      var mg = Math.max.apply(null, gr.map(function (g) { return Math.abs(g.v); })) || 1;
-      h += '<article class="panel"><h3>Posizioni guadagnate in gara</h3><p class="note">Media della stagione fra casella di partenza e arrivo, solo le gare finite, piloti con almeno 5 gare.</p>'
-        + '<div class="key"><span><i></i>guadagnate</span><span><i class="b"></i>perse</span></div>'
-        + barList(gr.map(function (g) { return { lab: sw(g.team) + esc(nm(g.d)), v: g.v, txt: (g.v > 0 ? '+' : g.v < 0 ? '−' : '') + nf1.format(Math.abs(g.v)) }; }), { max: mg, div: true }) + '</article>';
+    if (gare.length) {
+      var mg = Math.max.apply(null, gr.map(function (g) { return Math.abs(g.v); }).concat([1]));
+      h += pannello('a-griglia', 'Griglia → Arrivo', '<label class="note" for="gf-sel">Casella di partenza e posizione d\'arrivo, gara per gara.</label>'
+        + '<select class="sel" id="gf-sel">' + gare.map(function (g, i) { return '<option value="' + i + '"' + (i === gare.length - 1 ? ' selected' : '') + '>' + esc(gp(g)) + '</option>'; }).join('') + '</select><div class="tbl" id="gf"></div>'
+        + (gr.length ? '<p class="note">Media della stagione, solo le gare finite, piloti con almeno 5 gare:</p><div class="key"><span><i></i>posizioni guadagnate</span><span><i class="b"></i>perse</span></div>'
+          + barList(gr.map(function (g) { return { lab: sw(g.team) + esc(nm(g.d)), v: g.v, txt: (g.v > 0 ? '+' : g.v < 0 ? '−' : '') + nf1.format(Math.abs(g.v)) }; }), { max: mg, div: true }) : ''));
+    }
+
+    var stt = D.super_times || {}, cir = stt.circuits || [];
+    if (cir.length) {
+      var su = Object.keys(stt.drivers || {}).map(function (c) {
+        var v = stt.drivers[c] || [];
+        return { d: c, v: v, m: media(v), zero: v.filter(function (x) { return x === 0; }).length };
+      }).filter(function (r) { return r.m != null; }).sort(function (a, b) { return a.m - b.m; });
+      h += pannello('a-supertimes', 'Super Times', '<p class="note">Distacco in percentuale dal tempo più veloce del weekend, in qualunque sessione, gara per gara. ★ è il più veloce del weekend; più la cella è scura, più è vicino.</p>'
+        + '<div class="tbl"><table class="hm"><thead><tr><th></th><th>Media</th><th title="Volte più veloce del weekend">★</th>' + cir.map(function (c) { return '<th>' + esc(c) + '</th>'; }).join('') + '</tr></thead><tbody>'
+        + su.map(function (r) {
+          return '<tr><th class="r">' + esc(nm(r.d)) + '</th><td class="io"><b>' + nf2.format(r.m) + '</b></td><td class="io">' + (r.zero || '') + '</td>' + r.v.map(function (x, i) {
+            if (x == null) return '<td class="io">–</td>';
+            return '<td style="' + calore(1 - Math.min(x, 2) / 2) + '" title="' + esc(nm(r.d)) + ', ' + esc(cir[i]) + ': ' + (x === 0 ? 'il più veloce' : '+' + nf2.format(x) + '%') + '">' + (x === 0 ? '★' : nf2.format(x)) + '</td>';
+          }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>', true);
+    }
+
+    var ers = D.ers_heatmap || {}, es = ers.sessions || [], et = (ers.teams || []).filter(function (t) { return (ers.data || {})[t]; });
+    if (es.length && et.length) {
+      var lim = es.map(function (_, j) {
+        var v = et.map(function (t) { return ers.data[t][j]; }).filter(function (x) { return x != null; });
+        return [Math.min.apply(null, v), Math.max.apply(null, v)];
+      });
+      et = et.slice().sort(function (a, b) { return (ers.avg[b] || 0) - (ers.avg[a] || 0); });
+      h += pannello('a-ers', 'ERS Deployment', '<p class="note">Velocità massima allo speed trap in qualifica, in km/h, squadra per squadra nelle ultime ' + es.length + ' gare: dice quanta energia elettrica scaricano in rettilineo. Il colore confronta le squadre nella stessa gara.</p>'
+        + '<div class="tbl"><table class="hm"><thead><tr><th></th><th>Media</th>' + es.map(function (s) { return '<th>' + esc(gp(s)) + '</th>'; }).join('') + '</tr></thead><tbody>'
+        + et.map(function (t) {
+          return '<tr><th class="r">' + sw(t) + esc(sq(t)) + '</th><td class="io"><b>' + (ers.avg[t] != null ? nf1.format(ers.avg[t]) : '–') + '</b></td>' + ers.data[t].map(function (x, j) {
+            if (x == null) return '<td class="io">–</td>';
+            var a = lim[j][0], b = lim[j][1];
+            return '<td style="' + calore(b > a ? (x - a) / (b - a) : 1) + '">' + nf1.format(x) + '</td>';
+          }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>', true);
+    }
+
+    var td = D.team_development || {}, tc = td.circuits || [];
+    if (td.teams && Object.keys(td.teams).length) {
+      var svil = Object.keys(td.teams).map(function (t) { var v = td.teams[t] || []; return { t: t, v: v, a: media(v.slice(0, 5)), b: media(v.slice(-5)) }; })
+        .filter(function (r) { return r.a != null && r.b != null; }).sort(function (x, y) { return x.b - y.b; });
+      h += pannello('a-sviluppo', 'Sviluppo delle squadre', '<p class="note">Posizione media dei due piloti all\'arrivo, gara per gara (ritiri esclusi). Più la cella è scura, più la squadra è davanti. Accanto al nome le prime 5 gare contro le ultime 5.</p>'
+        + '<div class="tbl"><table class="hm"><thead><tr><th></th><th>Prime 5</th><th>Ultime 5</th><th>Cambio</th>' + tc.map(function (c) { return '<th>' + esc(c) + '</th>'; }).join('') + '</tr></thead><tbody>'
+        + svil.map(function (r) {
+          var dlt = r.b - r.a, sgn = Math.abs(dlt) < 0.05 ? '=' : (dlt < 0 ? '<span class="st ok">▲ ' + nf1.format(-dlt) + '</span>' : '<span class="st no">▼ ' + nf1.format(dlt) + '</span>');
+          return '<tr><th class="r">' + sw(r.t) + esc(sq(r.t)) + '</th><td class="io">' + nf1.format(r.a) + '</td><td class="io"><b>' + nf1.format(r.b) + '</b></td><td class="io">' + sgn + '</td>' + r.v.map(function (x, i) {
+            if (x == null) return '<td class="io">–</td>';
+            return '<td style="' + calore(1 - (x - 1) / 21) + '" title="' + esc(sq(r.t)) + ', ' + esc(tc[i] || '') + ': ' + nf1.format(x) + '">' + nf1.format(x) + '</td>';
+          }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>', true);
+    }
+
+    var fo = D.driver_form || {}, giro = [];
+    Object.keys(fo).forEach(function (c) { (fo[c].races || []).forEach(function (r) { if (giro.indexOf(r) < 0) giro.push(r); }); });
+    var forme = Object.keys(fo).map(function (c) { var p = fo[c].positions || []; return { d: c, p: p, m: media(p), t: fo[c].trend }; })
+      .filter(function (r) { return r.m != null; }).sort(function (a, b) { return a.m - b.m; });
+    if (forme.length) {
+      var TR = { up: '<span class="st ok">▲ in crescita</span>', down: '<span class="st no">▼ in calo</span>', flat: '<span class="st ne">= stabile</span>' };
+      h += pannello('a-forma', 'Forma recente', '<p class="note">Le posizioni d\'arrivo nelle ultime gare' + (giro.length ? ' (' + esc(giro.join(', ')) + ')' : '') + ', in ordine di media. "rit." è un ritiro.</p>'
+        + '<div class="tbl"><table class="t"><thead><tr><th>Pilota</th><th>Ultime gare</th><th class="num">Media</th><th class="hide-s">Tendenza</th></tr></thead><tbody>'
+        + forme.map(function (r) {
+          return '<tr><td><div class="drv">' + sw(squadraDi[r.d]) + '<b>' + esc(nm(r.d)) + '</b></div></td><td><span class="forma">' + r.p.map(function (x) { return x == null ? '<span class="rit">rit.</span>' : '<span>' + x + '</span>'; }).join('') + '</span></td>'
+            + '<td class="num">' + nf1.format(r.m) + '</td><td class="hide-s">' + (TR[r.t] || '') + '</td></tr>';
+        }).join('') + '</tbody></table></div>');
     }
 
     var rel = (D.reliability || []).slice().sort(function (a, b) { return b.dnf_rate - a.dnf_rate; });
     if (rel.length) {
       var mr = Math.max(10, Math.ceil(Math.max.apply(null, rel.map(function (r) { return r.dnf_rate; })) / 10) * 10);
-      h += '<article class="panel"><h3>Ritiri per squadra</h3><p class="note">Quota di partenze finite con un ritiro, in questa stagione. Ogni squadra ha due macchine per gara.</p>'
+      h += pannello('a-affidabilita', 'Affidabilità', '<p class="note">Quota di partenze finite con un ritiro, in questa stagione. Ogni squadra ha due macchine per gara.</p>'
         + '<div class="key"><span><i></i>guasti</span><span><i class="b"></i>incidenti</span></div>'
-        + barList(rel.map(function (r) { return { lab: sw(r.team) + esc(sq(r.team)), parts: [{ v: r.dnf_mech / r.races * 100 }, { v: ((r.dnf_incident || 0) + (r.dnf_other || 0)) / r.races * 100, cls: 'b' }], txt: nf0.format(r.dnf_rate) + '% · ' + r.dnf_total + '/' + r.races }; }), { max: mr }) + '</article>';
+        + barList(rel.map(function (r) { return { lab: sw(r.team) + esc(sq(r.team)), parts: [{ v: r.dnf_mech / r.races * 100 }, { v: ((r.dnf_incident || 0) + (r.dnf_other || 0)) / r.races * 100, cls: 'b' }], txt: nf0.format(r.dnf_rate) + '% · ' + r.dnf_total + '/' + r.races }; }), { max: mr }));
     }
 
     var scs = (D.safety_car || []).slice().sort(function (a, b) { return a.round - b.round; });
     if (scs.length) {
       var restano = {}; cal.forEach(function (r) { if (r.status !== 'past') restano[gp(r.name)] = 1; });
-      h += '<article class="panel"><h3>Safety car, gara per gara</h3><p class="note">Probabilità che entri la safety car, secondo il modello.</p>'
+      h += pannello('a-sc', 'Safety car', '<p class="note">Probabilità che entri la safety car, gara per gara, secondo il modello.</p>'
         + '<div class="key"><span><i></i>da correre</span><span><i class="dim"></i>già corse</span></div>'
-        + barList(scs.map(function (r) { return { lab: esc(gp(r.name)), v: r.sc_prob, cls: restano[gp(r.name)] ? '' : 'dim', txt: pct(r.sc_prob) }; }), { max: 1 }) + '</article>';
+        + barList(scs.map(function (r) { return { lab: esc(gp(r.name)), v: r.sc_prob, cls: restano[gp(r.name)] ? '' : 'dim', txt: pct(r.sc_prob) }; }), { max: 1 }));
+    }
+
+    var ff = (D.fantaf1 || []).slice().sort(function (a, b) { return b.exp_pts - a.exp_pts; }).slice(0, 12);
+    if (ff.length) {
+      h += pannello('a-fantaf1', 'FantaF1, punti attesi', '<p class="note">Media dei punti nelle gare simulate di questo Gran Premio. I primi 12.</p>'
+        + barList(ff.map(function (r) { return { lab: sw(r.team) + esc(nm(r.driver)), v: r.exp_pts, txt: nf1.format(r.exp_pts) }; }), { max: Math.max(1, ff[0].exp_pts) }));
+    }
+
+    var ts = D.tyre_strategy || {};
+    if (ts.compounds && ts.total_laps && ts.base_lap) {
+      var st = gomme(ts).slice(0, 6), dalleLibere = /^fp/i.test(ts.source || '');
+      if (st.length) {
+        h += pannello('a-gomme', 'Strategia gomme', '<p class="note">Le strategie più veloci con i numeri sotto: ' + ts.total_laps + ' giri, ' + nf0.format(ts.pit_loss) + ' s persi a ogni sosta, degrado lineare. Niente traffico né safety car: dice quale strategia conviene con questi numeri, non quale useranno.</p>'
+          + '<p>' + (dalleLibere ? '<span class="st ok">Parametri dalle libere</span>' : '<span class="st ne">Parametri stimati, non dalle libere di questo weekend</span>') + '</p>'
+          + '<div class="tbl"><table class="t"><thead><tr><th>Strategia</th><th class="num">Soste</th><th class="num">Giri delle soste</th><th class="num">Distacco</th></tr></thead><tbody>'
+          + st.map(function (r, i) {
+            return '<tr><td>' + esc(r.nome) + '</td><td class="num">' + r.soste + '</td><td class="num">' + r.giri.join(', ') + '</td><td class="num">' + (i ? '+' + nf1.format(r.t - st[0].t) + ' s' : 'la più veloce') + '</td></tr>';
+          }).join('') + '</tbody></table></div>'
+          + '<p class="note">Degrado per giro: ' + ['SOFT', 'MEDIUM', 'HARD'].filter(function (m) { return ts.compounds[m]; }).map(function (m) { return { SOFT: 'morbida', MEDIUM: 'media', HARD: 'dura' }[m] + ' ' + nf2.format(ts.compounds[m].deg_per_lap) + ' s'; }).join(', ') + '.</p>');
+      }
+    }
+
+    var po = (D.pit_optimizer || []).slice().sort(function (a, b) { return a.avg_pit_lap - b.avg_pit_lap; });
+    if (po.length) {
+      var fin = function (w) { return (w && w.length === 2) ? 'giri ' + w[0] + '–' + w[1] : '–'; };
+      var MESC = { soft: 'morbida', medium: 'media', hard: 'dura' };
+      h += pannello('a-pit', 'Strategie e pit stop', '<p class="note">Dalle soste della stagione: giro medio della prima sosta, soste per gara e finestre per anticipare o ritardare la sosta rispetto a chi sta davanti.</p>'
+        + '<div class="tbl"><table class="t"><thead><tr><th>Squadra</th><th class="num">Sosta</th><th class="num">Soste</th><th class="hide-s">Mescola</th><th class="hide-m">Anticipo</th><th class="hide-m">Ritardo</th></tr></thead><tbody>'
+        + po.map(function (r) {
+          return '<tr><td><div class="drv">' + sw(r.team) + '<b>' + esc(sq(r.team)) + '</b></div></td><td class="num">' + nf1.format(r.avg_pit_lap) + '</td><td class="num">' + nf1.format(r.avg_stops) + '</td><td class="hide-s">' + esc(MESC[r.strategy] || r.strategy || '') + '</td><td class="hide-m">' + fin(r.undercut_window) + '</td><td class="hide-m">' + fin(r.overcut_window) + '</td></tr>';
+        }).join('') + '</tbody></table></div>');
     }
 
     var hh = D.h2h || {};
     if ((hh.drivers || []).length && (hh.matrix || []).length) {
       var mat = {}; hh.matrix.forEach(function (r) { mat[r.driver] = r.vs || {}; });
-      h += '<article class="panel wide"><h3>Testa a testa</h3><p class="note">Probabilità che il pilota della riga arrivi davanti a quello della colonna. Sopra il 50% è favorito.</p><div class="tbl"><table class="hm"><thead><tr><th></th>'
+      h += pannello('a-h2h', 'H2H, testa a testa', '<p class="note">Probabilità che il pilota della riga arrivi davanti a quello della colonna. Sopra il 50% è favorito.</p><div class="tbl"><table class="hm"><thead><tr><th></th>'
         + hh.drivers.map(function (c) { return '<th title="' + esc(nm(c)) + '">' + esc(c) + '</th>'; }).join('') + '</tr></thead><tbody>'
         + hh.drivers.map(function (a) {
           return '<tr><th class="r">' + esc(nm(a)) + '</th>' + hh.drivers.map(function (b) {
@@ -531,75 +676,26 @@ const D = {};        // i dati della pagina, caricati all'avvio
             var pc = Math.round(v * 100), forte = pc >= 62;
             return '<td style="background:color-mix(in srgb, var(--s1) ' + Math.round(v * 85) + '%, transparent);color:' + (forte ? '#fff' : 'var(--ink)') + '" title="' + esc(nm(a)) + ' davanti a ' + esc(nm(b)) + ': ' + pc + '%">' + pc + '</td>';
           }).join('') + '</tr>';
-        }).join('') + '</tbody></table></div></article>';
-    }
-
-    var ff = (D.fantaf1 || []).slice().sort(function (a, b) { return b.exp_pts - a.exp_pts; }).slice(0, 12);
-    if (ff.length) {
-      h += '<article class="panel"><h3>Punti attesi in questa gara</h3><p class="note">Media dei punti nelle gare simulate: utile per il FantaF1. I primi 12.</p>'
-        + barList(ff.map(function (r) { return { lab: sw(r.team) + esc(nm(r.driver)), v: r.exp_pts, txt: nf1.format(r.exp_pts) }; }), { max: Math.max(1, ff[0].exp_pts) }) + '</article>';
-    }
-
-    var stt = D.super_times || {};
-    if ((stt.circuits || []).length) {
-      var su = Object.keys(stt.drivers || {}).map(function (c) {
-        var v = stt.drivers[c] || []; var ok = v.filter(function (x) { return x != null; });
-        return { d: c, v: ok.reduce(function (a, b) { return a + b; }, 0) / Math.max(1, ok.length), zero: ok.filter(function (x) { return x === 0; }).length };
-      }).sort(function (a, b) { return a.v - b.v; });
-      var squadraDi = {}; (D.race_prediction || []).forEach(function (r) { squadraDi[r.driver] = r.team; });
-      h += '<article class="panel"><h3>Distacco dal più veloce del weekend</h3><p class="note">Media della stagione, in percentuale sul tempo più veloce del weekend in qualunque sessione. Più corta è meglio.</p>'
-        + barList(su.map(function (r) { return { lab: sw(squadraDi[r.d]) + esc(nm(r.d)), v: r.v, txt: nf2.format(r.v) + '%' + (r.zero ? ' · ' + r.zero + '×' : '') }; }), { max: Math.max.apply(null, su.map(function (r) { return r.v; })) || 1 })
-        + '<p class="note">Il numero dopo il punto: quante volte è stato il più veloce del weekend.</p></article>';
-    }
-
-    var ers = D.ers_heatmap || {};
-    if (ers.avg && Object.keys(ers.avg).length) {
-      var vel = Object.keys(ers.avg).map(function (t) { return { t: t, v: ers.avg[t] }; }).sort(function (a, b) { return b.v - a.v; });
-      var lo = Math.floor(Math.min.apply(null, vel.map(function (r) { return r.v; })) - 1), hi = Math.ceil(Math.max.apply(null, vel.map(function (r) { return r.v; })) + 1);
-      h += '<article class="panel"><h3>Velocità di punta</h3><p class="note">Velocità massima allo speed trap in qualifica, media delle ultime ' + (ers.sessions || []).length + ' gare: dice quanta energia elettrica scaricano in rettilineo.</p><div class="ds">'
-        + vel.map(function (r) { return '<div class="row"><span class="lab">' + sw(r.t) + esc(sq(r.t)) + '</span><span class="trk"><span class="dot" style="left:' + ((r.v - lo) / (hi - lo) * 100) + '%"></span></span><span class="val">' + nf1.format(r.v) + ' km/h</span></div>'; }).join('')
-        + '<div class="row"><span></span><span class="ax"><span>' + lo + '</span><span>' + hi + ' km/h</span></span><span></span></div></div></article>';
-    }
-
-    var td = D.team_development || {};
-    if (td.teams && Object.keys(td.teams).length) {
-      var media = function (a) { var ok = a.filter(function (x) { return x != null; }); return ok.length ? ok.reduce(function (s, x) { return s + x; }, 0) / ok.length : null; };
-      var svil = Object.keys(td.teams).map(function (t) { var v = td.teams[t] || []; return { t: t, a: media(v.slice(0, 5)), b: media(v.slice(-5)) }; })
-        .filter(function (r) { return r.a != null && r.b != null; }).sort(function (x, y) { return x.b - y.b; });
-      h += '<article class="panel"><h3>Sviluppo delle squadre</h3><p class="note">Posizione media dei due piloti all\'arrivo (ritiri esclusi): le prime 5 gare contro le ultime 5. Più bassa è meglio.</p>'
-        + '<div class="tbl"><table class="t"><thead><tr><th>Squadra</th><th class="num">Prime 5</th><th class="num">Ultime 5</th><th class="num">Cambio</th></tr></thead><tbody>'
-        + svil.map(function (r) {
-          var dlt = r.b - r.a, sgn = Math.abs(dlt) < 0.05 ? '<span class="note">=</span>' : (dlt < 0 ? '<span class="st ok">▲ ' + nf1.format(-dlt) + '</span>' : '<span class="st no">▼ ' + nf1.format(dlt) + '</span>');
-          return '<tr><td><div class="drv">' + sw(r.t) + '<b>' + esc(sq(r.t)) + '</b></div></td><td class="num">' + nf1.format(r.a) + '</td><td class="num">' + nf1.format(r.b) + '</td><td class="num">' + sgn + '</td></tr>';
-        }).join('') + '</tbody></table></div></article>';
-    }
-
-    var po = (D.pit_optimizer || []).slice().sort(function (a, b) { return a.avg_pit_lap - b.avg_pit_lap; });
-    if (po.length) {
-      var fin = function (w) { return (w && w.length === 2) ? 'giri ' + w[0] + '–' + w[1] : '–'; };
-      var MESC = { soft: 'morbida', medium: 'media', hard: 'dura' };
-      h += '<article class="panel"><h3>Strategie e pit stop</h3><p class="note">Dalle soste della stagione: giro medio della prima sosta, soste per gara e finestre per anticipare o ritardare la sosta rispetto a chi sta davanti.</p>'
-        + '<div class="tbl"><table class="t"><thead><tr><th>Squadra</th><th class="num">Sosta</th><th class="num">Soste</th><th class="hide-s">Mescola</th><th class="hide-m">Anticipo</th><th class="hide-m">Ritardo</th></tr></thead><tbody>'
-        + po.map(function (r) {
-          return '<tr><td><div class="drv">' + sw(r.team) + '<b>' + esc(sq(r.team)) + '</b></div></td><td class="num">' + nf1.format(r.avg_pit_lap) + '</td><td class="num">' + nf1.format(r.avg_stops) + '</td><td class="hide-s">' + esc(MESC[r.strategy] || r.strategy || '') + '</td><td class="hide-m">' + fin(r.undercut_window) + '</td><td class="hide-m">' + fin(r.overcut_window) + '</td></tr>';
-        }).join('') + '</tbody></table></div></article>';
+        }).join('') + '</tbody></table></div>', true);
     }
 
     var tr = (D.team_radar || []).slice().sort(function (a, b) { return b.race_pace - a.race_pace; });
     if (tr.length) {
       var voci = [['quali_pace', 'Qualifica'], ['race_pace', 'Passo gara'], ['reliability', 'Affidabilità'], ['pit_speed', 'Pit stop'], ['tyre_deg', 'Gomme']]
         .filter(function (v) { var x = tr.map(function (r) { return r[v[0]]; }).filter(function (q) { return q != null; }); return x.length && Math.max.apply(null, x) > Math.min.apply(null, x); });
-      h += '<article class="panel wide"><h3>Squadre a confronto</h3><p class="note">Punteggi da 0 a 100 calcolati sulla stagione: 100 è la migliore in quella voce.</p><div class="tbl"><table class="t"><thead><tr><th>Squadra</th>'
+      h += pannello('a-squadre', 'Squadre a confronto', '<p class="note">Punteggi da 0 a 100 calcolati sulla stagione: 100 è la migliore in quella voce.</p><div class="tbl"><table class="t"><thead><tr><th>Squadra</th>'
         + voci.map(function (v, i) { return '<th class="' + (i > 2 ? 'hide-m' : '') + '">' + v[1] + '</th>'; }).join('') + '</tr></thead><tbody>'
         + tr.map(function (r) {
           return '<tr><td><div class="drv">' + sw(r.team) + '<b>' + esc(sq(r.team)) + '</b></div></td>' + voci.map(function (v, i) {
             var x = Math.max(0, Math.min(100, r[v[0]] || 0));
             return '<td class="' + (i > 2 ? 'hide-m' : '') + '"><div class="meter"><span class="bar"><i style="width:' + x + '%"></i></span><span class="v num">' + nf0.format(x) + '</span></div></td>';
           }).join('') + '</tr>';
-        }).join('') + '</tbody></table></div></article>';
+        }).join('') + '</tbody></table></div>', true);
     }
-    h += '</div>';
-    $('s-analisi').innerHTML = h;
+
+    $('s-analisi').innerHTML = '<div class="intro"><p class="eyebrow">Analisi</p><h1>Dentro i numeri</h1><p class="lead">I dati che il modello usa, letti da vicino: passo, Super Times, ERS, sviluppo, sorpassi, ritiri, safety car e strategie.</p></div>'
+      + (indice.length ? chipsHtml('a-indice', indice, 'Vai a una scheda') : '') + '<div class="panels">' + h + '</div>';
+    suClic('a-indice', function (k) { var el = $(k); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
 
     var sel = $('pg-sel');
     if (sel) {
@@ -611,6 +707,24 @@ const D = {};        // i dati della pagina, caricati all'avvio
       };
       sel.addEventListener('change', disegna);
       disegna();
+    }
+    var gs = $('gf-sel');
+    if (gs) {
+      var arrivi = function () {
+        var g = gare[+gs.value];
+        var righe = gf.filter(function (r) { return r.race === g; }).sort(function (a, b) { return (a.finish == null) - (b.finish == null) || (a.finish || 0) - (b.finish || 0) || (a.grid || 99) - (b.grid || 99); });
+        $('gf').innerHTML = '<table class="t"><thead><tr><th>Pilota</th><th class="num">Partenza</th><th class="num">Arrivo</th><th class="num">±</th></tr></thead><tbody>'
+          + righe.map(function (r) {
+            var via = r.grid > 0 ? r.grid : 'box', fine = r.finish == null ? '<span class="rit">rit.</span>' : r.finish;
+            var d = (r.finish == null || !(r.grid > 0)) ? '' : (r.gained > 0 ? '<span class="st ok">+' + r.gained + '</span>' : r.gained < 0 ? '<span class="st no">−' + (-r.gained) + '</span>' : '=');
+            return '<tr><td><div class="drv">' + sw(r.team) + '<b>' + esc(nm(r.driver)) + '</b></div></td><td class="num">' + via + '</td><td class="num">' + fine + '</td><td class="num">' + d + '</td></tr>';
+          }).join('') + '</tbody></table>';
+        var rh = (D.race_history || []).filter(function (r) { return r.race === g && (r.type || 'race') === 'race'; })[0] || {};
+        var rit = (rh.dnf_mech || []).concat(rh.dnf_incident || []);
+        $('gf').innerHTML += '<p class="note">' + (rit.length ? 'Ritirati, non in tabella: ' + rit.map(nm).join(', ') + '. ' : '') + 'Chi non è partito compare all\'ultimo posto.</p>';
+      };
+      gs.addEventListener('change', arrivi);
+      arrivi();
     }
   }
 
