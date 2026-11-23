@@ -1,0 +1,20 @@
+{
+ "race": "Qatar Grand Prix 2026",
+ "stage": "pre-weekend",
+ "frozen_at_utc": "20261123T164800Z",
+ "note": "",
+ "files": {
+  "Qatar_Grand_Prix_2026_grid.csv": "ea7272a491a7f8783a9df704752add8ed024f4963681c50df1e62273f9be4237",
+  "Qatar_Grand_Prix_2026_h2h.csv": "1b7b270ef953a1f88ad7e01c95fb78d8a31a3bdee0ae60a25790c071fd6ec28e",
+  "Qatar_Grand_Prix_2026_probabilities.csv": "844eefedbb304eb14886ad769cbb162ab53eaea4e4654917a63f1ec7e2b7d200",
+  "Qatar_Grand_Prix_2026_quali_grid.csv": "82a5e358c614469f8bb4d73c15738569148c5e572665f8af1330c350f1b08657",
+  "Qatar_Grand_Prix_2026_quali_probabilities.csv": "7aae3afd46f855567615bfd6228701ba297c5064223fafcc50f3038b7844effe",
+  "Qatar_Grand_Prix_2026_quali_summary.txt": "1f91f53098b055a0a8872053375fe9d09777c127eac6a6aff31015ff55c98624",
+  "Qatar_Grand_Prix_2026_summary.txt": "d887e146befb9f06031c27fd7ad9e129c278bb1b42ffb86ef3b478ae9743ac81",
+  "Qatar_Grand_Prix_2026_team_points.csv": "ff722efb223464cd57f0c724a543d8fe2589fab1c607aa84c49d6434e1881e1d"
+ },
+ "results_db_sha256": "47415c0b2ca9b727a7684b7b14ded3294f9fdc72e0fad3bd2d823adb0360c33d",
+ "results_db_races": 27,
+ "git_commit": "f1ccd1a9071c2e390fd2b00d5e2282fea0dc8ca4",
+ "market_files": {}
+}
