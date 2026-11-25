@@ -303,6 +303,13 @@
    "sha256": "56424281d7942115023d30499d89537cd77eff9f08e6f3ac0b44ab9086b64a6e",
    "registrato_utc": "2026-11-25T17:34:27Z",
    "commit_privato": "f202b26dfa4e83347edb589c702066d69d5687aa"
+  },
+  {
+   "titolo": "Lettore delle decisioni FIA rifatto: con la gara scelta dall'ora della decisione, legge giuste le penalita' di griglia e le avrebbe messe nei freeze del 2026? Protocollo fissato il 25/11 alle 19:15, prima di qualunque run",
+   "versione": 1,
+   "sha256": "fc9362535abcff22a2c18c4398f308d3e397c0e17b71a1fc551d3d7f2391521a",
+   "registrato_utc": "2026-11-25T18:17:03Z",
+   "commit_privato": "50f2360d8aa9181730e78f3075009bf02c00c1ba"
   }
  ]
 }
