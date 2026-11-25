@@ -296,6 +296,13 @@
    "sha256": "920ebb44a74236643d77815f6fd5b1e81ee461039e8dfca0af9896811b1d492e",
    "registrato_utc": "2026-11-18T15:09:25Z",
    "commit_privato": "4de6128eef93d38f5025a6c872e37078069059d5"
+  },
+  {
+   "titolo": "Penalita' dalle decisioni dei commissari FIA: un lettore automatico le avrebbe messe nei freeze del 2026 in cui mancavano? Protocollo fissato il 25/11 alle 18:30, prima di qualunque run",
+   "versione": 1,
+   "sha256": "56424281d7942115023d30499d89537cd77eff9f08e6f3ac0b44ab9086b64a6e",
+   "registrato_utc": "2026-11-25T17:34:27Z",
+   "commit_privato": "f202b26dfa4e83347edb589c702066d69d5687aa"
   }
  ]
 }
